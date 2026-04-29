@@ -1102,11 +1102,33 @@ REGLAS ABSOLUTAS — NO LAS IGNORES BAJO NINGÚN CONCEPTO:
 # INTERFAZ PRINCIPAL
 # ─────────────────────────────────────────────
 def main():
+    # ── LOGIN ────────────────────────────────────
+    APP_PASSWORD = os.environ.get("APP_PASSWORD", "3wla2026")
+
+    if "autenticado" not in st.session_state:
+        st.session_state["autenticado"] = False
+
+    if not st.session_state["autenticado"]:
+        st.markdown("## 🏗️ Sistema de Seguimiento Diario — 3WLA")
+        st.caption("Proyecto LM5 Río Blanco | Creado por Joaquín Cuello Poblete")
+        st.markdown("---")
+        col_l1, col_l2, col_l3 = st.columns([1,2,1])
+        with col_l2:
+            st.markdown("### 🔒 Acceso restringido")
+            pwd = st.text_input("Contraseña", type="password", placeholder="Ingresa la contraseña")
+            if st.button("Ingresar", type="primary", use_container_width=True):
+                if pwd == APP_PASSWORD:
+                    st.session_state["autenticado"] = True
+                    st.rerun()
+                else:
+                    st.error("Contraseña incorrecta")
+        return
+
     # Header
     col_h1, col_h2 = st.columns([3, 1])
     with col_h1:
         st.markdown("## 🏗️ Sistema de Seguimiento Diario — 3WLA")
-        st.caption("Proyecto LM5 Río Blanco | R&Q Ingeniería | Constructora Fe Grande")
+        st.caption("Proyecto LM5 Río Blanco | Creado por Joaquín Cuello Poblete")
 
     estado = cargar_estado()
 
