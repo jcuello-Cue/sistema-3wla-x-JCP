@@ -168,17 +168,75 @@ def leer_trisemanal(filepath):
     }
 
 # ─────────────────────────────────────────────
-# GESTIÓN DE ESTADO
+# GESTIÓN DE ESTADO (GitHub como base de datos)
 # ─────────────────────────────────────────────
+GITHUB_TOKEN = os.environ.get("GITHUB_TOKEN", "")
+GITHUB_REPO  = os.environ.get("GITHUB_REPO", "jcuello-Cue/sistema-3wla-x-JCP")
+GITHUB_FILE  = "estado_3wla.json"
+GITHUB_API   = f"https://api.github.com/repos/{GITHUB_REPO}/contents/{GITHUB_FILE}"
+
 def cargar_estado():
+    # Intentar desde GitHub si hay token
+    if GITHUB_TOKEN:
+        try:
+            import urllib.request, base64
+            req = urllib.request.Request(
+                GITHUB_API,
+                headers={
+                    "Authorization": f"token {GITHUB_TOKEN}",
+                    "Accept": "application/vnd.github.v3+json"
+                }
+            )
+            with urllib.request.urlopen(req) as resp:
+                data = json.loads(resp.read())
+                content_b64 = data["content"].replace("\n","")
+                estado = json.loads(base64.b64decode(content_b64).decode("utf-8"))
+                # Guardar SHA para updates
+                st.session_state["github_sha"] = data["sha"]
+                return estado
+        except Exception:
+            pass
+    # Fallback: archivo local
     if os.path.exists(STATE_FILE):
         with open(STATE_FILE, "r", encoding="utf-8") as f:
             return json.load(f)
     return None
 
 def guardar_estado(estado):
+    # Guardar local siempre
     with open(STATE_FILE, "w", encoding="utf-8") as f:
         json.dump(estado, f, ensure_ascii=False, indent=2)
+    # Subir a GitHub si hay token
+    if GITHUB_TOKEN:
+        try:
+            import urllib.request, base64
+            content_b64 = base64.b64encode(
+                json.dumps(estado, ensure_ascii=False, indent=2).encode("utf-8")
+            ).decode("utf-8")
+            sha = st.session_state.get("github_sha", "")
+            payload = {
+                "message": "Actualización estado 3WLA",
+                "content": content_b64,
+                "branch": "main"
+            }
+            if sha:
+                payload["sha"] = sha
+            data = json.dumps(payload).encode("utf-8")
+            req = urllib.request.Request(
+                GITHUB_API,
+                data=data,
+                method="PUT",
+                headers={
+                    "Authorization": f"token {GITHUB_TOKEN}",
+                    "Accept": "application/vnd.github.v3+json",
+                    "Content-Type": "application/json"
+                }
+            )
+            with urllib.request.urlopen(req) as resp:
+                result = json.loads(resp.read())
+                st.session_state["github_sha"] = result["content"]["sha"]
+        except Exception as e:
+            pass  # Si falla GitHub, igual quedó guardado local
 
 # ─────────────────────────────────────────────
 # LÓGICA DE CÁLCULO
