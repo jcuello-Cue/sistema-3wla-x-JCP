@@ -320,9 +320,10 @@ def calcular_acumulado(estado, hasta_fecha_str=None):
     por_area = {}
 
     tri       = estado["trisemanal"]
-    registro  = estado.get("registro", {})
     hoy       = date.fromisoformat(hasta_fecha_str) if hasta_fecha_str else date.today()
     fechas_s1 = tri["fechas_s1"]
+    # Solo considerar registro de fechas del trisemanal actual (filtra períodos anteriores)
+    registro  = {k:v for k,v in estado.get("registro",{}).items() if k in fechas_s1}
 
     for fecha_str in fechas_s1:
         fd = date.fromisoformat(fecha_str)
