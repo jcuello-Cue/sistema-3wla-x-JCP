@@ -1344,6 +1344,19 @@
           "termino": "2026-05-04",
           "cant_ejecutada": 1.0,
           "hh_ejecutadas": 138.52
+        },
+        {
+          "corr": 209,
+          "nombre": "Posicionamiento de tuberías (5 un) -CR C4 a Curva del espejo",
+          "area": "TRAMO 2",
+          "unidad": "un",
+          "rendimiento": 107.7348,
+          "cant_dia": 1.0,
+          "fecha_planificada": "30/04",
+          "inicio": "2026-04-30",
+          "termino": "2026-05-04",
+          "cant_ejecutada": 1.0,
+          "hh_ejecutadas": 107.73
         }
       ]
     }
