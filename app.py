@@ -290,7 +290,7 @@ def pendientes_acumulados(estado, fecha_str):
         for fs in fechas_s1:
             if fs < fd:
                 act_reg = registro.get(fs.isoformat(), {}).get(str(a["corr"]))
-                if act_reg is not None:
+                if act_reg is not None and isinstance(act_reg, dict):
                     hh_ejecutadas += act_reg.get("cant_ejecutada", 0) * a["rendimiento"]
 
         # PASO 3: Pendiente neto en HH → convertir a unidades
@@ -352,6 +352,8 @@ def calcular_acumulado(estado, hasta_fecha_str=None):
         if fecha_str in fechas_s1:
             reg_dia = registro.get(fecha_str, {})
             for corr_str, act_reg in reg_dia.items():
+                if corr_str.startswith("_") or not isinstance(act_reg, dict):
+                    continue  # Saltar claves internas como _adelantos
                 cant_ej = act_reg.get("cant_ejecutada", 0)
                 rend    = act_reg.get("rendimiento", 0)
                 hh_ej   = round(cant_ej * rend, 2)
