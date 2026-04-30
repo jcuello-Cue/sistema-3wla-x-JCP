@@ -754,15 +754,41 @@ def panel_acumulado(estado, fecha_str, tab_key="a"):
                 filtro_resp = st.selectbox("Filtrar por responsable:", responsables_unicos, key=f"filtro_responsable_{tab_key}")
                 if filtro_resp != "Todos":
                     df_det = df_det[df_det["Responsable"] == filtro_resp]
-                st.dataframe(
-                    df_det, use_container_width=True, hide_index=True,
-                    column_config={
-                        "HH Esperadas":  st.column_config.NumberColumn(format="%.1f"),
-                        "HH Ejecutadas": st.column_config.NumberColumn(format="%.1f"),
-                        "HH Déficit":    st.column_config.NumberColumn(format="%.1f"),
-                        "Justificación": st.column_config.TextColumn(width="large"),
-                    }
-                )
+                # Mostrar como HTML para que el texto se vea completo
+                import html as _html
+                html_rows = ""
+                for _, row in df_det.iterrows():
+                    html_rows += f"""
+                    <tr style="border-bottom:1px solid #E5E7EB;vertical-align:top">
+                        <td style="padding:8px;font-size:12px;white-space:nowrap">{row['Fecha']}</td>
+                        <td style="padding:8px;font-size:12px;white-space:nowrap">{row['Área']}</td>
+                        <td style="padding:8px;font-size:12px">{_html.escape(str(row['Actividad']))}</td>
+                        <td style="padding:8px;font-size:12px;text-align:center">{row['HH Esperadas']:.1f}</td>
+                        <td style="padding:8px;font-size:12px;text-align:center">{row['HH Ejecutadas']:.1f}</td>
+                        <td style="padding:8px;font-size:12px;text-align:center;color:#EF4444;font-weight:600">{row['HH Déficit']:.1f}</td>
+                        <td style="padding:8px;font-size:12px;white-space:nowrap">{_html.escape(str(row['Responsable']))}</td>
+                        <td style="padding:8px;font-size:12px;line-height:1.5">{_html.escape(str(row['Justificación']))}</td>
+                    </tr>"""
+
+                st.markdown(f"""
+                <div style="overflow-x:auto">
+                <table style="width:100%;border-collapse:collapse;font-family:sans-serif">
+                    <thead>
+                        <tr style="background:#1E3A5F;color:white">
+                            <th style="padding:8px;font-size:11px;text-align:left">Fecha</th>
+                            <th style="padding:8px;font-size:11px;text-align:left">Área</th>
+                            <th style="padding:8px;font-size:11px;text-align:left">Actividad</th>
+                            <th style="padding:8px;font-size:11px;text-align:center">HH Esp.</th>
+                            <th style="padding:8px;font-size:11px;text-align:center">HH Ej.</th>
+                            <th style="padding:8px;font-size:11px;text-align:center">HH Déf.</th>
+                            <th style="padding:8px;font-size:11px;text-align:left">Responsable</th>
+                            <th style="padding:8px;font-size:11px;text-align:left">Justificación</th>
+                        </tr>
+                    </thead>
+                    <tbody>{html_rows}</tbody>
+                </table>
+                </div>
+                """, unsafe_allow_html=True)
                 total_def = df_det["HH Déficit"].sum()
                 st.caption(f"Total HH no ejecutadas mostradas: **{total_def:,.1f} HH** | Registros: {len(df_det)}")
             else:
