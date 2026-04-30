@@ -347,18 +347,18 @@ def calcular_acumulado(estado, hasta_fecha_str=None):
                 por_area[area] = {"esperado": 0, "ejecutado": 0}
             por_area[area]["esperado"] += a["hh_dia"]
 
-        # HH EJECUTADAS: todo lo que está en el registro ese día
-        # (independiente de si la actividad está en rango o no)
-        reg_dia = registro.get(fecha_str, {})
-        for corr_str, act_reg in reg_dia.items():
-            cant_ej = act_reg.get("cant_ejecutada", 0)
-            rend    = act_reg.get("rendimiento", 0)
-            hh_ej   = round(cant_ej * rend, 2)
-            hh_ej_dia += hh_ej
-            area = act_reg.get("area", "Sin área")
-            if area not in por_area:
-                por_area[area] = {"esperado": 0, "ejecutado": 0}
-            por_area[area]["ejecutado"] += hh_ej
+        # HH EJECUTADAS: solo de fechas dentro del trisemanal actual
+        if fecha_str in fechas_s1:
+            reg_dia = registro.get(fecha_str, {})
+            for corr_str, act_reg in reg_dia.items():
+                cant_ej = act_reg.get("cant_ejecutada", 0)
+                rend    = act_reg.get("rendimiento", 0)
+                hh_ej   = round(cant_ej * rend, 2)
+                hh_ej_dia += hh_ej
+                area = act_reg.get("area", "Sin área")
+                if area not in por_area:
+                    por_area[area] = {"esperado": 0, "ejecutado": 0}
+                por_area[area]["ejecutado"] += hh_ej
 
         por_dia[fecha_str] = {
             "esperado":   round(hh_esp_dia, 2),
@@ -1207,6 +1207,34 @@ def main():
         return
 
     tri = estado["trisemanal"]
+
+    # Botón para archivar período actual manualmente
+    with st.expander("📦 Archivar período actual y empezar nuevo", expanded=False):
+        st.caption("Guarda el período actual en el historial y limpia el registro para recibir el nuevo trisemanal.")
+        if st.button("📦 Archivar período y limpiar registro", type="secondary", use_container_width=True):
+            historico = estado.get("historico", [])
+            if estado.get("registro"):
+                tri_act = estado["trisemanal"]
+                acu_act = calcular_acumulado(estado, tri_act["fechas_s1"][-1])
+                historico.append({
+                    "num_trisemanal": tri_act.get("num_trisemanal","—"),
+                    "periodo": f"{tri_act['fechas_s1'][0]} → {tri_act['fechas_s1'][-1]}",
+                    "fechas_s1": tri_act["fechas_s1"],
+                    "hh_meta": tri_act["hh_totales_s1"],
+                    "hh_ejecutadas": acu_act["hh_ejecutadas"],
+                    "hh_esperadas": acu_act["hh_esperadas"],
+                    "por_area": acu_act["por_area"],
+                    "por_resp": acu_act["por_resp"],
+                    "registro": estado["registro"],
+                    "actividades": tri_act["actividades"],
+                })
+                estado["historico"] = historico
+                estado["registro"]  = {}
+                guardar_estado(estado)
+                st.success("✅ Período archivado correctamente. Ahora carga el nuevo trisemanal.")
+                st.rerun()
+            else:
+                st.warning("No hay registro que archivar.")
 
     # Info rápida
     with col_h2:
