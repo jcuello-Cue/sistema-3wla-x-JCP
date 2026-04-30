@@ -811,6 +811,8 @@ def panel_acumulado(estado, fecha_str, tab_key="a"):
 
         # Construir tabla detallada por actividad y día
         fechas_s1_dates_local = [date.fromisoformat(d) for d in tri["fechas_s1"]]
+        # Filtrar registro solo a fechas del trisemanal actual
+        registro_filtrado = {k:v for k,v in estado.get("registro",{}).items() if k in set(tri["fechas_s1"])}
         rows_final = []
 
         for a_f in tri["actividades"]:
@@ -824,7 +826,7 @@ def panel_acumulado(estado, fecha_str, tab_key="a"):
             for fd_f in fechas_s1_dates_local:
                 if ini_f <= fd_f <= ter_f:
                     hh_esp_total_f += a_f["hh_dia"]
-                reg_f = registro.get(fd_f.isoformat(), {}).get(str(a_f["corr"]))
+                reg_f = registro_filtrado.get(fd_f.isoformat(), {}).get(str(a_f["corr"]))
                 if reg_f:
                     hh_ej_total_f += (reg_f.get("cant_ejecutada", 0) or 0) * a_f["rendimiento"]
 
@@ -835,7 +837,7 @@ def panel_acumulado(estado, fecha_str, tab_key="a"):
             # Recopilar justificaciones por día
             justificaciones = []
             for fd_f in sorted(fechas_s1_dates_local):
-                reg_f = registro.get(fd_f.isoformat(), {}).get(str(a_f["corr"]))
+                reg_f = registro_filtrado.get(fd_f.isoformat(), {}).get(str(a_f["corr"]))
                 if not reg_f: continue
                 cant_ej_f  = reg_f.get("cant_ejecutada", 0) or 0
                 hh_ej_f    = round(cant_ej_f * a_f["rendimiento"], 1)
@@ -1605,11 +1607,145 @@ def main():
                     }
 
         st.markdown("---")
+        # ── ACTIVIDADES ADELANTADAS ──────────────────────────────
+        st.markdown("---")
+        st.markdown("#### ⚡ ¿Ejecutaste alguna actividad planificada para días posteriores?")
+        st.caption("Si adelantaste trabajo de días futuros, regístralo aquí. Se descontará automáticamente del pendiente de ese día.")
+
+        fd_hoy = date.fromisoformat(fecha_str)
+
+        # Obtener actividades planificadas para fechas futuras que NO están en el rango de hoy
+        acts_futuras = []
+        for a in tri["actividades"]:
+            if not a["inicio"] or not a["termino"]: continue
+            ini_a = date.fromisoformat(a["inicio"])
+            ter_a = date.fromisoformat(a["termino"])
+            # Actividad cuyo inicio es posterior a hoy
+            if ini_a > fd_hoy:
+                # Buscar primera fecha activa de S1
+                primera_fecha = min((date.fromisoformat(f) for f in a["fechas_s1"]
+                                     if date.fromisoformat(f) >= ini_a), default=None)
+                if primera_fecha:
+                    acts_futuras.append({
+                        "corr": a["corr"],
+                        "nombre": a["nombre"],
+                        "area": a["area"],
+                        "unidad": a["unidad"],
+                        "rendimiento": a["rendimiento"],
+                        "cant_dia": a["cant_dia"],
+                        "hh_dia": a["hh_dia"],
+                        "fecha_planificada": primera_fecha.strftime("%d/%m"),
+                        "inicio": a["inicio"],
+                        "termino": a["termino"],
+                    })
+
+        if not acts_futuras:
+            st.info("No hay actividades futuras disponibles para adelantar en este trisemanal.")
+        else:
+            # Inicializar lista de adelantos en session_state
+            if f"adelantos_{fecha_str}" not in st.session_state:
+                # Cargar adelantos guardados si existen
+                adelantos_guardados = estado.get("registro",{}).get(fecha_str,{}).get("_adelantos",[])
+                st.session_state[f"adelantos_{fecha_str}"] = adelantos_guardados if adelantos_guardados else []
+
+            adelantos = st.session_state[f"adelantos_{fecha_str}"]
+
+            # Mostrar adelantos ya agregados
+            for idx_a, adel in enumerate(adelantos):
+                with st.container():
+                    st.markdown(
+                        f'<div style="background:#EEF2FF;border-left:4px solid #6366F1;'
+                        f'border-radius:6px;padding:10px 14px;margin-bottom:8px">'
+                        f'<span style="font-size:13px;font-weight:600;color:#4338CA">⚡ {adel["nombre"]}</span><br>'
+                        f'<span style="font-size:12px;color:#6B7280">Planificado para {adel["fecha_planificada"]} | '
+                        f'{adel["cant_ejecutada"]} {adel["unidad"]} → {round(adel["cant_ejecutada"]*adel["rendimiento"],2)} HH</span>'
+                        f'</div>',
+                        unsafe_allow_html=True
+                    )
+                    if st.button(f"🗑️ Quitar", key=f"quitar_adel_{idx_a}_{fecha_str}"):
+                        adelantos.pop(idx_a)
+                        st.session_state[f"adelantos_{fecha_str}"] = adelantos
+                        st.rerun()
+
+            # Formulario para agregar nuevo adelanto
+            opciones_futuras = {f"{a['nombre']} (área: {a['area']} | planif.: {a['fecha_planificada']})": a
+                                 for a in acts_futuras
+                                 if not any(ad["corr"]==a["corr"] for ad in adelantos)}
+
+            if opciones_futuras:
+                sel_label = st.selectbox(
+                    "Selecciona la actividad adelantada:",
+                    ["— Selecciona —"] + list(opciones_futuras.keys()),
+                    key=f"sel_adelanto_{fecha_str}"
+                )
+
+                if sel_label != "— Selecciona —":
+                    act_sel = opciones_futuras[sel_label]
+                    col_a1, col_a2 = st.columns([3,2])
+                    with col_a1:
+                        cant_adel = st.number_input(
+                            f"¿Cuántas {act_sel['unidad']} ejecutaste hoy?",
+                            min_value=0.0,
+                            max_value=float(act_sel["cant_dia"] * 10),
+                            value=float(act_sel["cant_dia"]),
+                            step=float(max(act_sel["cant_dia"]/4, 0.0001)),
+                            format="%.4f",
+                            key=f"cant_adel_{act_sel['corr']}_{fecha_str}"
+                        )
+                    with col_a2:
+                        hh_adel = round(cant_adel * act_sel["rendimiento"], 2)
+                        st.metric("HH ejecutadas", f"{hh_adel:,.2f}")
+
+                    if st.button("➕ Agregar actividad adelantada", key=f"agregar_adel_{fecha_str}"):
+                        adelantos.append({
+                            "corr":            act_sel["corr"],
+                            "nombre":          act_sel["nombre"],
+                            "area":            act_sel["area"],
+                            "unidad":          act_sel["unidad"],
+                            "rendimiento":     act_sel["rendimiento"],
+                            "cant_dia":        act_sel["cant_dia"],
+                            "fecha_planificada": act_sel["fecha_planificada"],
+                            "inicio":          act_sel["inicio"],
+                            "termino":         act_sel["termino"],
+                            "cant_ejecutada":  cant_adel,
+                            "hh_ejecutadas":   hh_adel,
+                        })
+                        st.session_state[f"adelantos_{fecha_str}"] = adelantos
+                        st.rerun()
+            else:
+                st.success("✅ Ya registraste todas las actividades futuras disponibles.")
+
+        # Agregar adelantos al registro_nuevo para que se guarden
+        adelantos_final = st.session_state.get(f"adelantos_{fecha_str}", [])
+        if adelantos_final:
+            registro_nuevo["_adelantos"] = adelantos_final
+            # Agregar cada adelanto como entrada individual al registro del día
+            for adel in adelantos_final:
+                corr_adel = str(adel["corr"])
+                if corr_adel not in registro_nuevo:
+                    registro_nuevo[corr_adel] = {
+                        "corr":           adel["corr"],
+                        "nombre":         adel["nombre"],
+                        "area":           adel["area"],
+                        "unidad":         adel["unidad"],
+                        "rendimiento":    adel["rendimiento"],
+                        "cant_dia_base":  adel["cant_dia"],
+                        "cant_esperada":  0.0,
+                        "cant_ejecutada": adel["cant_ejecutada"],
+                        "hh_esperadas":   0.0,
+                        "hh_ejecutadas":  adel["hh_ejecutadas"],
+                        "categoria":      "Adelantada",
+                        "causa":          "Actividad adelantada desde días posteriores.",
+                        "responsable":    "",
+                    }
+
+        st.markdown("---")
         # Verificar si el usuario realmente modificó algo
         hay_datos = any(
             r.get("causa") or r.get("cant_ejecutada",0) != r.get("cant_esperada",0)
             for r in registro_nuevo.values()
-        )
+            if not str(r).startswith("_")
+        ) or bool(adelantos_final)
         if not hay_datos and not ya_registrado:
             st.info("ℹ️ Ingresa las cantidades ejecutadas antes de guardar.")
 
