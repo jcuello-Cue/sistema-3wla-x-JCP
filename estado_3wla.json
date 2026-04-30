@@ -1251,12 +1251,12 @@
         "rendimiento": 124.8495,
         "cant_dia_base": 1.0,
         "cant_esperada": 1.0,
-        "cant_ejecutada": 2.0,
+        "cant_ejecutada": 0.0,
         "hh_esperadas": 124.85,
-        "hh_ejecutadas": 249.7,
+        "hh_ejecutadas": 0.0,
         "categoria": "Planificada del día",
-        "causa": "",
-        "responsable": ""
+        "causa": "Se hacen 2 termofusiones tubo (1000mm)-Codo 45°.",
+        "responsable": "Fe Grande"
       },
       "442": {
         "corr": 442,
@@ -1329,6 +1329,19 @@
           "termino": "2026-05-04",
           "cant_ejecutada": 1.0,
           "hh_ejecutadas": 138.52
+        },
+        {
+          "corr": 209,
+          "nombre": "Posicionamiento de tuberías (5 un) -CR C4 a Curva del espejo",
+          "area": "TRAMO 2",
+          "unidad": "un",
+          "rendimiento": 107.7348,
+          "cant_dia": 1.0,
+          "fecha_planificada": "30/04",
+          "inicio": "2026-04-30",
+          "termino": "2026-05-04",
+          "cant_ejecutada": 1.0,
+          "hh_ejecutadas": 107.73
         }
       ],
       "203": {
@@ -1357,6 +1370,21 @@
         "cant_ejecutada": 1.0,
         "hh_esperadas": 0.0,
         "hh_ejecutadas": 138.52,
+        "categoria": "Adelantada",
+        "causa": "Actividad adelantada desde días posteriores.",
+        "responsable": ""
+      },
+      "209": {
+        "corr": 209,
+        "nombre": "Posicionamiento de tuberías (5 un) -CR C4 a Curva del espejo",
+        "area": "TRAMO 2",
+        "unidad": "un",
+        "rendimiento": 107.7348,
+        "cant_dia_base": 1.0,
+        "cant_esperada": 0.0,
+        "cant_ejecutada": 1.0,
+        "hh_esperadas": 0.0,
+        "hh_ejecutadas": 107.73,
         "categoria": "Adelantada",
         "causa": "Actividad adelantada desde días posteriores.",
         "responsable": ""
