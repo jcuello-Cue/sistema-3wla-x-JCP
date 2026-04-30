@@ -1605,9 +1605,18 @@ def main():
                     }
 
         st.markdown("---")
+        # Verificar si el usuario realmente modificó algo
+        hay_datos = any(
+            r.get("causa") or r.get("cant_ejecutada",0) != r.get("cant_esperada",0)
+            for r in registro_nuevo.values()
+        )
+        if not hay_datos and not ya_registrado:
+            st.info("ℹ️ Ingresa las cantidades ejecutadas antes de guardar.")
+
         col_b1, col_b2 = st.columns(2)
         with col_b1:
-            if st.button("💾 Guardar registro", use_container_width=True):
+            if st.button("💾 Guardar registro", use_container_width=True,
+                         disabled=(not hay_datos and not ya_registrado)):
                 if "registro" not in estado:
                     estado["registro"] = {}
                 estado["registro"][fecha_str] = registro_nuevo
@@ -1616,7 +1625,8 @@ def main():
                 st.rerun()
 
         with col_b2:
-            if st.button("✉️ Guardar y generar email de cierre", type="primary", use_container_width=True):
+            if st.button("✉️ Guardar y generar email de cierre", type="primary", use_container_width=True,
+                         disabled=(not hay_datos and not ya_registrado)):
                 if "registro" not in estado:
                     estado["registro"] = {}
                 estado["registro"][fecha_str] = registro_nuevo
