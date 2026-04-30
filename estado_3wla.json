@@ -1317,61 +1317,7 @@
         "categoria": "Planificada + pendiente",
         "causa": "Actividad no planificada para el día, no se destinan maquinarías ni personal para el sector. ",
         "responsable": "Fe Grande"
-      },
-      "_adelantos": [
-        {
-          "corr": 203,
-          "nombre": "Traslado Tubería HDPE BODEGA - PTO TRABAJO",
-          "area": "TRAMO 2",
-          "unidad": "un",
-          "rendimiento": 25.4777,
-          "cant_dia": 1.0,
-          "fecha_planificada": "30/04",
-          "inicio": "2026-04-30",
-          "termino": "2026-05-04",
-          "cant_ejecutada": 1.0,
-          "hh_ejecutadas": 25.48
-        },
-        {
-          "corr": 208,
-          "nombre": "Unión de tuberías tubo - Tubo (5 un) - CR C4 a Curva del espejo",
-          "area": "TRAMO 2",
-          "unidad": "un",
-          "rendimiento": 138.5162,
-          "cant_dia": 1.0,
-          "fecha_planificada": "30/04",
-          "inicio": "2026-04-30",
-          "termino": "2026-05-04",
-          "cant_ejecutada": 1.0,
-          "hh_ejecutadas": 138.52
-        },
-        {
-          "corr": 209,
-          "nombre": "Posicionamiento de tuberías (5 un) -CR C4 a Curva del espejo",
-          "area": "TRAMO 2",
-          "unidad": "un",
-          "rendimiento": 107.7348,
-          "cant_dia": 1.0,
-          "fecha_planificada": "30/04",
-          "inicio": "2026-04-30",
-          "termino": "2026-05-04",
-          "cant_ejecutada": 1.0,
-          "hh_ejecutadas": 107.73
-        },
-        {
-          "corr": 365,
-          "nombre": "Uniones tuberías HDPE: tubo (1000mm)-Codo 45° (2 un)",
-          "area": "TRAMO 4",
-          "unidad": "un",
-          "rendimiento": 118.4983,
-          "cant_dia": 1.0,
-          "fecha_planificada": "01/05",
-          "inicio": "2026-05-01",
-          "termino": "2026-05-02",
-          "cant_ejecutada": 2.0,
-          "hh_ejecutadas": 237.0
-        }
-      ]
+      }
     }
   },
   "historico": [
