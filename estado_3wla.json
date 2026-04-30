@@ -1553,9 +1553,9 @@
         "rendimiento": 124.8495,
         "cant_dia_base": 1.0,
         "cant_esperada": 1.0,
-        "cant_ejecutada": 1.0,
+        "cant_ejecutada": 2.0,
         "hh_esperadas": 124.85,
-        "hh_ejecutadas": 124.85,
+        "hh_ejecutadas": 249.7,
         "categoria": "Planificada del día",
         "causa": "",
         "responsable": ""
