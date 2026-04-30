@@ -1358,52 +1358,7 @@
           "cant_ejecutada": 1.0,
           "hh_ejecutadas": 107.73
         }
-      ],
-      "203": {
-        "corr": 203,
-        "nombre": "Traslado Tubería HDPE BODEGA - PTO TRABAJO",
-        "area": "TRAMO 2",
-        "unidad": "un",
-        "rendimiento": 25.4777,
-        "cant_dia_base": 1.0,
-        "cant_esperada": 0.0,
-        "cant_ejecutada": 1.0,
-        "hh_esperadas": 0.0,
-        "hh_ejecutadas": 25.48,
-        "categoria": "Adelantada",
-        "causa": "Actividad adelantada desde días posteriores.",
-        "responsable": ""
-      },
-      "208": {
-        "corr": 208,
-        "nombre": "Unión de tuberías tubo - Tubo (5 un) - CR C4 a Curva del espejo",
-        "area": "TRAMO 2",
-        "unidad": "un",
-        "rendimiento": 138.5162,
-        "cant_dia_base": 1.0,
-        "cant_esperada": 0.0,
-        "cant_ejecutada": 1.0,
-        "hh_esperadas": 0.0,
-        "hh_ejecutadas": 138.52,
-        "categoria": "Adelantada",
-        "causa": "Actividad adelantada desde días posteriores.",
-        "responsable": ""
-      },
-      "209": {
-        "corr": 209,
-        "nombre": "Posicionamiento de tuberías (5 un) -CR C4 a Curva del espejo",
-        "area": "TRAMO 2",
-        "unidad": "un",
-        "rendimiento": 107.7348,
-        "cant_dia_base": 1.0,
-        "cant_esperada": 0.0,
-        "cant_ejecutada": 1.0,
-        "hh_esperadas": 0.0,
-        "hh_ejecutadas": 107.73,
-        "categoria": "Adelantada",
-        "causa": "Actividad adelantada desde días posteriores.",
-        "responsable": ""
-      }
+      ]
     }
   },
   "historico": [
