@@ -363,6 +363,18 @@ def calcular_acumulado(estado, hasta_fecha_str=None):
                     por_area[area] = {"esperado": 0, "ejecutado": 0}
                 por_area[area]["ejecutado"] += hh_ej
 
+            # Sumar HH de actividades adelantadas
+            adelantos = reg_dia.get("_adelantos", [])
+            if isinstance(adelantos, list):
+                for adel in adelantos:
+                    if not isinstance(adel, dict): continue
+                    hh_adel = adel.get("hh_ejecutadas", 0)
+                    hh_ej_dia += hh_adel
+                    area = adel.get("area", "Sin área")
+                    if area not in por_area:
+                        por_area[area] = {"esperado": 0, "ejecutado": 0}
+                    por_area[area]["ejecutado"] += hh_adel
+
         por_dia[fecha_str] = {
             "esperado":   round(hh_esp_dia, 2),
             "ejecutado":  round(hh_ej_dia, 2),
