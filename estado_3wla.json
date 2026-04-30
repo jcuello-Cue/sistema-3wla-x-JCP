@@ -1150,22 +1150,7 @@
           "cant_ejecutada": 1.0,
           "hh_ejecutadas": 30.78
         }
-      ],
-      "207": {
-        "corr": 207,
-        "nombre": "Desfile de tuberías (5 un) - CR C4 a Curva del espejo",
-        "area": "TRAMO 2",
-        "unidad": "un",
-        "rendimiento": 30.7814,
-        "cant_dia_base": 1.0,
-        "cant_esperada": 0.0,
-        "cant_ejecutada": 1.0,
-        "hh_esperadas": 0.0,
-        "hh_ejecutadas": 30.78,
-        "categoria": "Adelantada",
-        "causa": "Actividad adelantada desde días posteriores.",
-        "responsable": ""
-      }
+      ]
     },
     "2026-04-29": {
       "41": {
