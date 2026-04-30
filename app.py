@@ -1175,9 +1175,24 @@ def main():
             with st.spinner("Leyendo trisemanal..."):
                 try:
                     tri = leer_trisemanal("trisemanal_temp.xlsx")
-                    # Preservar registro si existe
-                    registro_prev = estado.get("registro", {}) if estado else {}
-                    estado_nuevo = {"trisemanal": tri, "registro": registro_prev}
+                    # Archivar trisemanal anterior en histórico si existe
+                    historico = estado.get("historico", []) if estado else []
+                    if estado and estado.get("trisemanal") and estado.get("registro"):
+                        tri_ant = estado["trisemanal"]
+                        acu_ant = calcular_acumulado(estado, tri_ant["fechas_s1"][-1])
+                        historico.append({
+                            "num_trisemanal": tri_ant.get("num_trisemanal","—"),
+                            "periodo": f"{tri_ant['fechas_s1'][0]} → {tri_ant['fechas_s1'][-1]}",
+                            "fechas_s1": tri_ant["fechas_s1"],
+                            "hh_meta": tri_ant["hh_totales_s1"],
+                            "hh_ejecutadas": acu_ant["hh_ejecutadas"],
+                            "hh_esperadas": acu_ant["hh_esperadas"],
+                            "por_area": acu_ant["por_area"],
+                            "por_resp": acu_ant["por_resp"],
+                            "registro": estado["registro"],
+                            "actividades": tri_ant["actividades"],
+                        })
+                    estado_nuevo = {"trisemanal": tri, "registro": {}, "historico": historico}
                     guardar_estado(estado_nuevo)
                     estado = estado_nuevo
                     st.success(f"✅ Trisemanal N°{tri['num_trisemanal']} cargado — "
@@ -1230,8 +1245,132 @@ def main():
         panel_acumulado(estado, fecha_str, tab_key="noacts")
         return
 
-    # ── TABS ─────────────────────────────────
-    tab1, tab2 = st.tabs(["🌅  INICIO DEL DÍA", "🌆  FIN DEL DÍA"])
+    # ── TABS PRINCIPALES ─────────────────────
+    tab_actual, tab_historico = st.tabs(["📋  TRISEMANAL ACTUAL", "📈  COMPILADO HISTÓRICO"])
+
+    with tab_historico:
+        historico = estado.get("historico", [])
+        if not historico:
+            st.info("Aún no hay períodos anteriores archivados. El historial se construye automáticamente al cargar un nuevo trisemanal.")
+        else:
+            import pandas as pd
+
+            # ── RESUMEN GENERAL ──────────────────────────────
+            st.markdown("### Resumen acumulado de todos los períodos")
+            total_ej  = sum(h["hh_ejecutadas"] for h in historico)
+            total_meta = sum(h["hh_meta"] for h in historico)
+            total_esp = sum(h["hh_esperadas"] for h in historico)
+            pct_total = round(total_ej / total_meta * 100, 1) if total_meta else 0
+
+            c1, c2, c3, c4 = st.columns(4)
+            with c1: st.metric("✅ HH Ejecutadas", f"{total_ej:,.1f}")
+            with c2: st.metric("📅 HH Esperadas", f"{total_esp:,.1f}")
+            with c3: st.metric("📊 HH Meta total", f"{total_meta:,.1f}")
+            with c4: st.metric("🎯 Avance global", f"{pct_total}%")
+            st.progress(pct_total / 100, text=f"Avance acumulado: {pct_total}%")
+
+            # ── TABLA POR PERÍODO ────────────────────────────
+            st.markdown("---")
+            st.markdown("### Detalle por período")
+            rows_hist = []
+            for h in historico:
+                pct_h = round(h["hh_ejecutadas"]/h["hh_meta"]*100,1) if h["hh_meta"] else 0
+                rows_hist.append({
+                    "Período":         h["periodo"],
+                    "Trisemanal":      f"N°{h['num_trisemanal']}",
+                    "Meta (HH)":       round(h["hh_meta"],1),
+                    "Esperadas (HH)":  round(h["hh_esperadas"],1),
+                    "Ejecutadas (HH)": round(h["hh_ejecutadas"],1),
+                    "Déficit (HH)":    round(h["hh_esperadas"]-h["hh_ejecutadas"],1),
+                    "% Cumpl.":        f"{pct_h}%",
+                })
+            df_hist = pd.DataFrame(rows_hist)
+            st.dataframe(df_hist, use_container_width=True, hide_index=True)
+
+            # ── GRÁFICO COMPARATIVO ──────────────────────────
+            try:
+                import plotly.graph_objects as go
+                periodos = [h["periodo"].split(" → ")[0] for h in historico]
+                vals_meta = [h["hh_meta"] for h in historico]
+                vals_ej   = [h["hh_ejecutadas"] for h in historico]
+                vals_esp  = [h["hh_esperadas"] for h in historico]
+
+                fig_hist = go.Figure()
+                fig_hist.add_trace(go.Bar(name="Meta", x=periodos, y=vals_meta,
+                    marker_color="#E2E8F0", text=[f"{v:,.0f}" for v in vals_meta], textposition="outside"))
+                fig_hist.add_trace(go.Bar(name="Esperado", x=periodos, y=vals_esp,
+                    marker_color="#93C5FD", text=[f"{v:,.0f}" for v in vals_esp], textposition="outside"))
+                fig_hist.add_trace(go.Bar(name="Ejecutado", x=periodos, y=vals_ej,
+                    marker_color="#2563EB", text=[f"{v:,.0f}" for v in vals_ej], textposition="outside"))
+                fig_hist.update_layout(title="HH por período — Meta vs Esperado vs Ejecutado",
+                    barmode="group", height=420, legend=dict(orientation="h", y=-0.2),
+                    margin=dict(t=50,b=60))
+                st.plotly_chart(fig_hist, use_container_width=True, key="chart_hist_1")
+            except Exception:
+                pass
+
+            # ── DETALLE POR ÁREA ACUMULADO ───────────────────
+            st.markdown("---")
+            st.markdown("### Detalle por área — acumulado histórico")
+            areas_acum = {}
+            for h in historico:
+                for area, v in h.get("por_area", {}).items():
+                    if area not in areas_acum:
+                        areas_acum[area] = {"esp":0,"ej":0}
+                    areas_acum[area]["esp"] += v.get("esp",0)
+                    areas_acum[area]["ej"]  += v.get("ej",0)
+
+            if areas_acum:
+                rows_area_h = []
+                for area, v in sorted(areas_acum.items()):
+                    pct_a = round(v["ej"]/v["esp"]*100,1) if v["esp"]>0 else 0
+                    rows_area_h.append({"Área": area, "HH Esperadas": round(v["esp"],1),
+                        "HH Ejecutadas": round(v["ej"],1), "% Cumpl.": f"{pct_a}%"})
+                st.dataframe(pd.DataFrame(rows_area_h), use_container_width=True, hide_index=True)
+
+            # ── RESPONSABILIDADES ACUMULADAS ─────────────────
+            st.markdown("---")
+            st.markdown("### HH no ejecutadas por responsable — acumulado histórico")
+            resp_acum = {}
+            for h in historico:
+                for resp, v in h.get("por_resp", {}).items():
+                    resp_acum[resp] = resp_acum.get(resp,0) + v
+            if resp_acum:
+                total_r = sum(resp_acum.values())
+                rows_resp_h = [{"Responsable":r, "HH no ejecutadas":round(v,1),
+                    "% del total":f"{round(v/total_r*100,1)}%"} for r,v in sorted(resp_acum.items(),key=lambda x:-x[1])]
+                st.dataframe(pd.DataFrame(rows_resp_h), use_container_width=True, hide_index=True)
+
+            # ── ACTIVIDADES NO CUMPLIDAS HISTÓRICAS ──────────
+            st.markdown("---")
+            st.markdown("### Actividades no cumplidas — todos los períodos")
+            rows_hist_acts = []
+            for h in historico:
+                fechas_h = [date.fromisoformat(d) for d in h["fechas_s1"]]
+                for a in h.get("actividades",[]):
+                    if not a["inicio"] or not a["termino"]: continue
+                    ini_h = date.fromisoformat(a["inicio"])
+                    ter_h = date.fromisoformat(a["termino"])
+                    hh_esp_h = sum(a["hh_dia"] for fd in fechas_h if ini_h<=fd<=ter_h)
+                    hh_ej_h  = sum((h["registro"].get(fd.isoformat(),{}).get(str(a["corr"]),{}).get("cant_ejecutada",0) or 0)*a["rendimiento"]
+                                   for fd in fechas_h)
+                    deficit_h = round(hh_esp_h - hh_ej_h, 1)
+                    if deficit_h > 0.5:
+                        resp_h = ""
+                        for fd in sorted(fechas_h, reverse=True):
+                            reg_h = h["registro"].get(fd.isoformat(),{}).get(str(a["corr"]))
+                            if reg_h and reg_h.get("responsable"):
+                                resp_h = reg_h["responsable"]; break
+                        rows_hist_acts.append({"Período": h["periodo"].split(" → ")[0],
+                            "Área": a["area"], "Actividad": a["nombre"],
+                            "HH Déficit": deficit_h, "Responsable": resp_h})
+            if rows_hist_acts:
+                df_ha = pd.DataFrame(sorted(rows_hist_acts, key=lambda x:-x["HH Déficit"]))
+                st.dataframe(df_ha, use_container_width=True, hide_index=True,
+                    column_config={"HH Déficit": st.column_config.NumberColumn(format="%.1f HH")})
+
+    with tab_actual:
+        tab1, tab2 = st.tabs(["🌅  INICIO DEL DÍA", "🌆  FIN DEL DÍA"])
 
     # ══════════════════════════════════════════
     # TAB 1 — INICIO DEL DÍA
