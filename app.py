@@ -1729,29 +1729,10 @@ def main():
             else:
                 st.success("✅ Ya registraste todas las actividades futuras disponibles.")
 
-        # Agregar adelantos al registro_nuevo para que se guarden
+        # Agregar adelantos al registro_nuevo — SOLO en _adelantos, no como entradas duplicadas
         adelantos_final = st.session_state.get(f"adelantos_{fecha_str}", [])
         if adelantos_final:
             registro_nuevo["_adelantos"] = adelantos_final
-            # Agregar cada adelanto como entrada individual al registro del día
-            for adel in adelantos_final:
-                corr_adel = str(adel["corr"])
-                if corr_adel not in registro_nuevo:
-                    registro_nuevo[corr_adel] = {
-                        "corr":           adel["corr"],
-                        "nombre":         adel["nombre"],
-                        "area":           adel["area"],
-                        "unidad":         adel["unidad"],
-                        "rendimiento":    adel["rendimiento"],
-                        "cant_dia_base":  adel["cant_dia"],
-                        "cant_esperada":  0.0,
-                        "cant_ejecutada": adel["cant_ejecutada"],
-                        "hh_esperadas":   0.0,
-                        "hh_ejecutadas":  adel["hh_ejecutadas"],
-                        "categoria":      "Adelantada",
-                        "causa":          "Actividad adelantada desde días posteriores.",
-                        "responsable":    "",
-                    }
 
         st.markdown("---")
         # Verificar si el usuario realmente modificó algo
