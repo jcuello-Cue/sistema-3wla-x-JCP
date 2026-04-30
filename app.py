@@ -819,11 +819,12 @@ def panel_acumulado(estado, fecha_str, tab_key="a"):
                         f"[{resp_f}]"
                     )
 
+            pct_cumpl = round(hh_ej_total_f / hh_esp_total_f * 100) if hh_esp_total_f > 0 else 0
             rows_final.append({
                 "Área":         a_f["area"],
                 "Actividad":    a_f["nombre"],
                 "HH Déficit":   deficit_f,
-                "% Cumpl.":     f"{round(hh_ej_total_f/hh_esp_total_f*100) if hh_esp_total_f>0 else 0}%",
+                "% Cumpl.":     f"{pct_cumpl}%",
                 "Justificaciones por día": " | ".join(justificaciones) if justificaciones else "Sin registros.",
             })
 
