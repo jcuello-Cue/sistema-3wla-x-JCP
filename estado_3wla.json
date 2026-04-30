@@ -1317,7 +1317,22 @@
         "categoria": "Planificada + pendiente",
         "causa": "Actividad no planificada para el día, no se destinan maquinarías ni personal para el sector. ",
         "responsable": "Fe Grande"
-      }
+      },
+      "_adelantos": [
+        {
+          "corr": 203,
+          "nombre": "Traslado Tubería HDPE BODEGA - PTO TRABAJO",
+          "area": "TRAMO 2",
+          "unidad": "un",
+          "rendimiento": 25.4777,
+          "cant_dia": 1.0,
+          "fecha_planificada": "30/04",
+          "inicio": "2026-04-30",
+          "termino": "2026-05-04",
+          "cant_ejecutada": 2.0,
+          "hh_ejecutadas": 50.96
+        }
+      ]
     }
   },
   "historico": [
