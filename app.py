@@ -390,10 +390,16 @@ def calcular_acumulado(estado, hasta_fecha_str=None):
                     resp_r = reg_r["responsable"]; break
             por_resp[resp_r] = por_resp.get(resp_r, 0) + deficit_r
 
+    # Si hh_totales_s1 es 0, calcularlo como suma de todas las HH de S1
+    hh_meta = tri["hh_totales_s1"]
+    if not hh_meta or hh_meta == 0:
+        hh_meta = sum(a["hh_s1"] for a in tri["actividades"] if isinstance(a.get("hh_s1"), (int,float)))
+        hh_meta = round(hh_meta, 2)
+
     return {
         "hh_ejecutadas": round(hh_ej_total, 2),
         "hh_esperadas":  round(hh_esp_total, 2),
-        "hh_meta":       tri["hh_totales_s1"],
+        "hh_meta":       hh_meta,
         "por_dia":       por_dia,
         "por_area":      por_area,
         "por_resp":      por_resp,
@@ -1163,8 +1169,9 @@ def main():
     with st.expander("📂 Cargar nuevo trisemanal (.xlsx)", expanded=not bool(estado)):
         uploaded = st.file_uploader("Selecciona el archivo", type=["xlsx"], label_visibility="collapsed")
         if uploaded:
+            xlsx_bytes = uploaded.read()
             with open("trisemanal_temp.xlsx", "wb") as f:
-                f.write(uploaded.read())
+                f.write(xlsx_bytes)
             with st.spinner("Leyendo trisemanal..."):
                 try:
                     tri = leer_trisemanal("trisemanal_temp.xlsx")
@@ -1178,7 +1185,7 @@ def main():
                                f"Meta: {tri['hh_totales_s1']:,.1f} HH")
                     st.rerun()
                 except Exception as e:
-                    st.error(f"Error: {e}")
+                    st.error(f"Error leyendo trisemanal: {e}. Detalle: hh_totales={tri.get('hh_totales_s1','?') if 'tri' in dir() else '?'}")
 
     if not estado:
         st.info("👆 Carga el trisemanal para comenzar.")
@@ -1372,11 +1379,13 @@ def main():
                     c1, c2 = st.columns([3, 2])
                     with c1:
                         step = max(round(a["cant_dia"] / 4, 4), 0.0001)
+                        max_val = float(max(cant_total, a["cant_dia"]) * 3)
+                        safe_prev = min(float(prev_ej), max_val)
                         ejecutado = st.number_input(
                             f"¿Cuánto {a['unidad']} se ejecutó?",
                             min_value=0.0,
-                            max_value=float(max(cant_total, a["cant_dia"]) * 3),
-                            value=float(prev_ej),
+                            max_value=max_val,
+                            value=safe_prev,
                             step=float(step),
                             key=f"ej_{a['corr']}_{fecha_str}",
                             format="%.4f"
