@@ -1472,11 +1472,11 @@
         "rendimiento": 0.0639,
         "cant_dia_base": 666.666667,
         "cant_esperada": 1400.41,
-        "cant_ejecutada": 300.0,
+        "cant_ejecutada": 0.0,
         "hh_esperadas": 89.49,
-        "hh_ejecutadas": 19.17,
+        "hh_ejecutadas": 0.0,
         "categoria": "Planificada + pendiente",
-        "causa": "Horario mal programado, tarea depende de traslado de material desde IIFF (en proceso trabajos en IIFF)  -material en el área, tarea comenzará posterior a horario de colación.  Personal en proceso de pre armado ",
+        "causa": "La actividad presenta una programación horaria deficiente, debido a que su inicio dependía del traslado de material desde Instalación de Faena, donde aún se mantenían trabajos en proceso. Posteriormente, el material fue dispuesto en el área, estimándose el inicio de la tarea después del horario de colación; sin embargo, la actividad debió detenerse por una restricción de suministro, asociada a la falta de 13 estribos necesarios para el prearmado del pedestal, condición que impide continuar con el prearmado y cierre de la malla exterior, ya que para dar continuidad a la tarea es necesario posicionar previamente los pedestales y posteriormente ejecutar el cierre de la malla. Durante la jornada, solo se logró rematar el posicionamiento de elementos verticales y horizontales.",
         "responsable": "Fe Grande"
       },
       "264": {
@@ -1506,7 +1506,7 @@
         "hh_esperadas": 25.98,
         "hh_ejecutadas": 0.0,
         "categoria": "Planificada + pendiente",
-        "causa": "No planificado por POD",
+        "causa": "No planificado por POD, se priorizan trabajos línea 28",
         "responsable": "Fe Grande"
       },
       "288": {
