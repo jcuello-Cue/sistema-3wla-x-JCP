@@ -1673,22 +1673,7 @@
         "categoria": "Planificada + pendiente",
         "causa": "Tarea no planificada en POD.",
         "responsable": "Fe Grande"
-      },
-      "_adelantos": [
-        {
-          "corr": 265,
-          "nombre": "Instalación cama de arena para durmientes (6 un)",
-          "area": "TRAMO 2",
-          "unidad": "m3",
-          "rendimiento": 1.1538,
-          "cant_dia": 0.6,
-          "fecha_planificada": "01/05",
-          "inicio": "2026-05-01",
-          "termino": "2026-05-01",
-          "cant_ejecutada": 0.6,
-          "hh_ejecutadas": 0.69
-        }
-      ]
+      }
     }
   },
   "historico": [
