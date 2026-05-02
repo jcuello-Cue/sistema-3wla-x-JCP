@@ -1521,7 +1521,7 @@
         "hh_esperadas": 0.69,
         "hh_ejecutadas": 0.0,
         "categoria": "Planificada del día",
-        "causa": "No planificado en POD",
+        "causa": "No planificado por POD, se priorizan trabajos línea 28",
         "responsable": "Fe Grande"
       },
       "296": {
@@ -1536,7 +1536,7 @@
         "hh_esperadas": 20.88,
         "hh_ejecutadas": 7.83,
         "categoria": "Solo pendiente",
-        "causa": "Aunque se realiza actividad",
+        "causa": "Aunque se realiza actividad, por la presencia de agua de días anteriores no se ha podido recuperar lo solicitado por trisemanal",
         "responsable": "CODELCO"
       },
       "297": {
@@ -1551,7 +1551,7 @@
         "hh_esperadas": 55.18,
         "hh_ejecutadas": 0.0,
         "categoria": "Planificada del día",
-        "causa": "No planificado por agua al interior de la excavación linea 28",
+        "causa": "No planificado por agua al interior de la excavación linea 28, planificado para el día sábado 02/05",
         "responsable": "CODELCO"
       },
       "299": {
@@ -1566,7 +1566,7 @@
         "hh_esperadas": 331.11,
         "hh_ejecutadas": 0.0,
         "categoria": "Planificada del día",
-        "causa": "No planificado por agua al interior de la excavación linea 28",
+        "causa": "No planificado por agua al interior de la excavación linea 28, planificado para el día sábado 02/05",
         "responsable": "CODELCO"
       },
       "300": {
@@ -1581,7 +1581,7 @@
         "hh_esperadas": 220.74,
         "hh_ejecutadas": 0.0,
         "categoria": "Planificada del día",
-        "causa": "No planificado por agua al interior de la excavación linea 28",
+        "causa": "No planificado por agua al interior de la excavación linea 28, planificado para el día sábado 02/05",
         "responsable": "CODELCO"
       },
       "363": {
