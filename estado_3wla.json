@@ -1507,7 +1507,7 @@
         "hh_ejecutadas": 0.0,
         "categoria": "Planificada + pendiente",
         "causa": "No planificado por POD, se priorizan trabajos línea 28",
-        "responsable": "Fe Grande"
+        "responsable": "CODELCO"
       },
       "288": {
         "corr": 288,
@@ -1522,7 +1522,7 @@
         "hh_ejecutadas": 0.0,
         "categoria": "Planificada del día",
         "causa": "No planificado por POD, se priorizan trabajos línea 28",
-        "responsable": "Fe Grande"
+        "responsable": "CODELCO"
       },
       "296": {
         "corr": 296,
@@ -1596,7 +1596,7 @@
         "hh_esperadas": 249.7,
         "hh_ejecutadas": 124.85,
         "categoria": "Planificada + pendiente",
-        "causa": "blavlalak",
+        "causa": "Se justifica porque ya se realizaron de uniones tubo con codo de 45° de días posteriores.",
         "responsable": "Fe Grande"
       },
       "442": {
@@ -1607,11 +1607,11 @@
         "rendimiento": 0.4834,
         "cant_dia_base": 30.0,
         "cant_esperada": 80.0,
-        "cant_ejecutada": 10.0,
+        "cant_ejecutada": 4.0,
         "hh_esperadas": 38.67,
-        "hh_ejecutadas": 4.83,
+        "hh_ejecutadas": 1.93,
         "categoria": "Planificada + pendiente",
-        "causa": "",
+        "causa": "A pesar del trabajo no se logra llegar a lo planificado por trisemanal",
         "responsable": "Fe Grande"
       },
       "443": {
@@ -1622,12 +1622,12 @@
         "rendimiento": 1.6222,
         "cant_dia_base": 2.0,
         "cant_esperada": 2.0,
-        "cant_ejecutada": 2.0,
+        "cant_ejecutada": 0.0,
         "hh_esperadas": 3.24,
-        "hh_ejecutadas": 3.24,
+        "hh_ejecutadas": 0.0,
         "categoria": "Planificada del día",
-        "causa": "",
-        "responsable": ""
+        "causa": "Tarea no planificada en POD.",
+        "responsable": "Fe Grande"
       },
       "444": {
         "corr": 444,
@@ -1637,12 +1637,12 @@
         "rendimiento": 17.304,
         "cant_dia_base": 2.0,
         "cant_esperada": 2.0,
-        "cant_ejecutada": 2.0,
+        "cant_ejecutada": 0.0,
         "hh_esperadas": 34.61,
-        "hh_ejecutadas": 34.61,
+        "hh_ejecutadas": 0.0,
         "categoria": "Planificada del día",
-        "causa": "",
-        "responsable": ""
+        "causa": "Tarea no planificada en POD.",
+        "responsable": "Fe Grande"
       },
       "464": {
         "corr": 464,
