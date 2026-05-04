@@ -1706,6 +1706,66 @@
         "causa": "",
         "responsable": ""
       },
+      "203": {
+        "corr": 203,
+        "nombre": "Traslado Tubería HDPE BODEGA - PTO TRABAJO",
+        "area": "TRAMO 2",
+        "unidad": "un",
+        "rendimiento": 25.4777,
+        "cant_dia_base": 1.0,
+        "cant_esperada": 1.0,
+        "cant_ejecutada": 1.0,
+        "hh_esperadas": 25.48,
+        "hh_ejecutadas": 25.48,
+        "categoria": "Planificada del día",
+        "causa": "",
+        "responsable": ""
+      },
+      "207": {
+        "corr": 207,
+        "nombre": "Desfile de tuberías (5 un) - CR C4 a Curva del espejo",
+        "area": "TRAMO 2",
+        "unidad": "un",
+        "rendimiento": 30.7814,
+        "cant_dia_base": 1.0,
+        "cant_esperada": 1.0,
+        "cant_ejecutada": 1.0,
+        "hh_esperadas": 30.78,
+        "hh_ejecutadas": 30.78,
+        "categoria": "Planificada del día",
+        "causa": "",
+        "responsable": ""
+      },
+      "208": {
+        "corr": 208,
+        "nombre": "Unión de tuberías tubo - Tubo (5 un) - CR C4 a Curva del espejo",
+        "area": "TRAMO 2",
+        "unidad": "un",
+        "rendimiento": 138.5162,
+        "cant_dia_base": 1.0,
+        "cant_esperada": 1.0,
+        "cant_ejecutada": 1.0,
+        "hh_esperadas": 138.52,
+        "hh_ejecutadas": 138.52,
+        "categoria": "Planificada del día",
+        "causa": "",
+        "responsable": ""
+      },
+      "209": {
+        "corr": 209,
+        "nombre": "Posicionamiento de tuberías (5 un) -CR C4 a Curva del espejo",
+        "area": "TRAMO 2",
+        "unidad": "un",
+        "rendimiento": 107.7348,
+        "cant_dia_base": 1.0,
+        "cant_esperada": 1.0,
+        "cant_ejecutada": 1.0,
+        "hh_esperadas": 107.73,
+        "hh_ejecutadas": 107.73,
+        "categoria": "Planificada del día",
+        "causa": "",
+        "responsable": ""
+      },
       "255": {
         "corr": 255,
         "nombre": "Armadura Fundación F2",
@@ -1728,13 +1788,13 @@
         "unidad": "gl",
         "rendimiento": 220,
         "cant_dia_base": 0.25,
-        "cant_esperada": 0.5,
+        "cant_esperada": 0.25,
         "cant_ejecutada": 0.25,
-        "hh_esperadas": 110.0,
+        "hh_esperadas": 55.0,
         "hh_ejecutadas": 55.0,
-        "categoria": "Planificada + pendiente",
+        "categoria": "Planificada del día",
         "causa": "",
-        "responsable": "Fe Grande"
+        "responsable": ""
       },
       "265": {
         "corr": 265,
@@ -1811,6 +1871,21 @@
         "causa": "No planificada en POD, recursos enfocados en línea 28",
         "responsable": "CODELCO"
       },
+      "296": {
+        "corr": 296,
+        "nombre": "Excavación en zanja (línea 28)",
+        "area": "TRAMO 3",
+        "unidad": "m3",
+        "rendimiento": 0.5219,
+        "cant_dia_base": 20.0,
+        "cant_esperada": 25.0034,
+        "cant_ejecutada": 25.0034,
+        "hh_esperadas": 13.05,
+        "hh_ejecutadas": 13.05,
+        "categoria": "Solo pendiente",
+        "causa": "",
+        "responsable": ""
+      },
       "297": {
         "corr": 297,
         "nombre": "Traslado de Camisa de Protección Cruce de Camino Diámetro 60\" e=12,7 mm",
@@ -1886,6 +1961,21 @@
         "causa": "Actividad planificada para sábado 02/05/2026, por interferencia  (agua)",
         "responsable": "CODELCO"
       },
+      "363": {
+        "corr": 363,
+        "nombre": "Uniones tuberías HDPE: tubo (1000mm)-Codo 90° (2 un)",
+        "area": "TRAMO 4",
+        "unidad": "un",
+        "rendimiento": 124.8495,
+        "cant_dia_base": 1.0,
+        "cant_esperada": 1.0,
+        "cant_ejecutada": 2.0,
+        "hh_esperadas": 124.85,
+        "hh_ejecutadas": 249.7,
+        "categoria": "Solo pendiente",
+        "causa": "",
+        "responsable": ""
+      },
       "364": {
         "corr": 364,
         "nombre": "Uniones tuberías HDPE: tubo - tubo (1 un)",
@@ -1900,6 +1990,21 @@
         "categoria": "Planificada del día",
         "causa": "No planificada en POD, termofusionadora aún en West Sapos. Se cambia prioridad para lograr unión con codo de 90° en West Sapos, retrasando traslado de termofusionadora",
         "responsable": "Fe Grande"
+      },
+      "365": {
+        "corr": 365,
+        "nombre": "Uniones tuberías HDPE: tubo (1000mm)-Codo 45° (2 un)",
+        "area": "TRAMO 4",
+        "unidad": "un",
+        "rendimiento": 118.4983,
+        "cant_dia_base": 1.0,
+        "cant_esperada": 1.0,
+        "cant_ejecutada": 1.0,
+        "hh_esperadas": 118.5,
+        "hh_ejecutadas": 118.5,
+        "categoria": "Planificada del día",
+        "causa": "",
+        "responsable": ""
       },
       "442": {
         "corr": 442,
