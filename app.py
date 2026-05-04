@@ -264,28 +264,24 @@ def actividades_del_dia(estado, fecha_str):
         if not en_rango and not con_deuda:
             continue
 
-        # Calcular si ya se completó totalmente durante la semana
+        # Calcular pendiente neto para decidir si mostrar
         hh_esp_total = sum(
             a["hh_dia"] for fs in fechas_s1
-            if date.fromisoformat(fs) <= fd and ini <= date.fromisoformat(fs) <= ter
+            if ini <= date.fromisoformat(fs) <= ter
         )
         hh_ej_total = 0.0
         for fs in fechas_s1:
-            if date.fromisoformat(fs) > fd:
-                continue
-            # Registro normal
+            fd_fs = date.fromisoformat(fs)
+            if fd_fs > fd: continue
             reg = registro.get(fs, {}).get(str(a["corr"]))
             if reg and isinstance(reg, dict):
-                hh_ej_total += reg.get("cant_ejecutada", 0) * a["rendimiento"]
-            # Adelantos
-            adelantos = registro.get(fs, {}).get("_adelantos", [])
-            if isinstance(adelantos, list):
-                for adel in adelantos:
-                    if isinstance(adel, dict) and adel.get("corr") == a["corr"]:
-                        hh_ej_total += adel.get("hh_ejecutadas", 0)
+                hh_ej_total += (reg.get("cant_ejecutada", 0) or 0) * a["rendimiento"]
+            for adel in registro.get(fs, {}).get("_adelantos", []):
+                if isinstance(adel, dict) and adel.get("corr") == a["corr"]:
+                    hh_ej_total += adel.get("hh_ejecutadas", 0)
 
-        # Si ya ejecutó el 100% o más, no mostrar
-        if hh_esp_total > 0 and hh_ej_total >= hh_esp_total - 0.01:
+        # Solo ocultar si ya completó el 100% Y ya no está en rango hoy
+        if not en_rango and hh_esp_total > 0 and hh_ej_total >= hh_esp_total - 0.01:
             continue
 
         acts.append(a)
@@ -1692,26 +1688,26 @@ def main():
 
         fd_hoy = date.fromisoformat(fecha_str)
 
-        # TODAS las actividades del trisemanal disponibles para registrar HH extras
+        # TODAS las actividades del trisemanal disponibles para HH extras
+        # Sin filtros — cualquier actividad puede tener HH extra cualquier día
         acts_futuras = []
         for a in tri["actividades"]:
             if not a["inicio"] or not a["termino"]: continue
             ini_a = date.fromisoformat(a["inicio"])
-            ter_a = date.fromisoformat(a["termino"])
-            en_rango_hoy = ini_a <= fd_hoy <= ter_a
-            # Incluir todas EXCEPTO las que ya están en el formulario principal de hoy
+            en_rango_hoy = ini_a <= fd_hoy <= date.fromisoformat(a["termino"])
+            # Excluir solo las que ya están en el formulario principal de hoy
             if not en_rango_hoy:
                 acts_futuras.append({
-                    "corr": a["corr"],
-                    "nombre": a["nombre"],
-                    "area": a["area"],
-                    "unidad": a["unidad"],
-                    "rendimiento": a["rendimiento"],
-                    "cant_dia": a["cant_dia"],
-                    "hh_dia": a["hh_dia"],
+                    "corr":             a["corr"],
+                    "nombre":           a["nombre"],
+                    "area":             a["area"],
+                    "unidad":           a["unidad"],
+                    "rendimiento":      a["rendimiento"],
+                    "cant_dia":         a["cant_dia"],
+                    "hh_dia":           a["hh_dia"],
                     "fecha_planificada": ini_a.strftime("%d/%m"),
-                    "inicio": a["inicio"],
-                    "termino": a["termino"],
+                    "inicio":           a["inicio"],
+                    "termino":          a["termino"],
                 })
 
         if not acts_futuras:
