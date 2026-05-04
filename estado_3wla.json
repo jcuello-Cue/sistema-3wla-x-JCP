@@ -2196,12 +2196,12 @@
         "rendimiento": 0.5219,
         "cant_dia_base": 9.5,
         "cant_esperada": 9.5,
-        "cant_ejecutada": 9.5,
+        "cant_ejecutada": 5.0,
         "hh_esperadas": 4.96,
-        "hh_ejecutadas": 4.96,
+        "hh_ejecutadas": 2.61,
         "categoria": "Planificada del día",
-        "causa": "",
-        "responsable": ""
+        "causa": "Entibación np considerada en partidas del trisemanal, restricción para avanzar en el resto de la excavación. ",
+        "responsable": "Fe Grande"
       },
       "255": {
         "corr": 255,
