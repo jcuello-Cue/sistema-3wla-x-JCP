@@ -1001,21 +1001,6 @@
         "causa": "",
         "responsable": ""
       },
-      "43": {
-        "corr": 43,
-        "nombre": "Instalaciones y Controles de Acceso Vial",
-        "area": "IIFF",
-        "unidad": "gl",
-        "rendimiento": 333.2229,
-        "cant_dia_base": 0.047619,
-        "cant_esperada": 0.0476,
-        "cant_ejecutada": 0.0476,
-        "hh_esperadas": 15.86,
-        "hh_ejecutadas": 15.86,
-        "categoria": "Planificada del día",
-        "causa": "",
-        "responsable": ""
-      },
       "255": {
         "corr": 255,
         "nombre": "Armadura Fundación F2",
@@ -1031,21 +1016,6 @@
         "causa": "Falta la confección de 367 kg para cumplir con meta del día según trisemanal. Considerar que actividad se comienza más tarde por ingreso de turno A.",
         "responsable": "Fe Grande"
       },
-      "264": {
-        "corr": 264,
-        "nombre": "Excavación manual x Durmientes DP-04 (3 un) - UDR",
-        "area": "TRAMO 2",
-        "unidad": "gl",
-        "rendimiento": 220,
-        "cant_dia_base": 0.25,
-        "cant_esperada": 0.25,
-        "cant_ejecutada": 0.25,
-        "hh_esperadas": 55.0,
-        "hh_ejecutadas": 55.0,
-        "categoria": "Planificada del día",
-        "causa": "",
-        "responsable": ""
-      },
       "284": {
         "corr": 284,
         "nombre": "Demolición de asfalto y losa de hormigón",
@@ -1060,21 +1030,6 @@
         "categoria": "Planificada del día",
         "causa": "No se alcanza a cumplir meta del día según lo planificado en trisemanal (4 m3 de 7,9 m3). Las observaciones del día son las siguientes: A las 15:30 horas, la actividad aún no había iniciado, debido a que se encontraba considerada su ejecución con la misma excavadora utilizada en Tte 8 para la excavación en zanja. Posteriormente, a las 16:15 horas, se detuvo dicha excavación para dar inicio a esta actividad. Finalmente, a las 17:20 horas, se alcanzan a terminar 4 m3.",
         "responsable": "Fe Grande"
-      },
-      "288": {
-        "corr": 288,
-        "nombre": "Excavación Suelo Común (S.C.)",
-        "area": "TRAMO 3",
-        "unidad": "m3",
-        "rendimiento": 0.4834,
-        "cant_dia_base": 1.428571,
-        "cant_esperada": 1.4286,
-        "cant_ejecutada": 1.4286,
-        "hh_esperadas": 0.69,
-        "hh_ejecutadas": 0.69,
-        "categoria": "Planificada del día",
-        "causa": "",
-        "responsable": ""
       },
       "296": {
         "corr": 296,
