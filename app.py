@@ -1692,33 +1692,30 @@ def main():
 
         fd_hoy = date.fromisoformat(fecha_str)
 
-        # Obtener actividades planificadas para fechas futuras que NO están en el rango de hoy
+        # TODAS las actividades del trisemanal disponibles para registrar HH extras
         acts_futuras = []
         for a in tri["actividades"]:
             if not a["inicio"] or not a["termino"]: continue
             ini_a = date.fromisoformat(a["inicio"])
             ter_a = date.fromisoformat(a["termino"])
-            # Actividad cuyo inicio es posterior a hoy
-            if ini_a > fd_hoy:
-                # Buscar primera fecha activa de S1
-                primera_fecha = min((date.fromisoformat(f) for f in a["fechas_s1"]
-                                     if date.fromisoformat(f) >= ini_a), default=None)
-                if primera_fecha:
-                    acts_futuras.append({
-                        "corr": a["corr"],
-                        "nombre": a["nombre"],
-                        "area": a["area"],
-                        "unidad": a["unidad"],
-                        "rendimiento": a["rendimiento"],
-                        "cant_dia": a["cant_dia"],
-                        "hh_dia": a["hh_dia"],
-                        "fecha_planificada": primera_fecha.strftime("%d/%m"),
-                        "inicio": a["inicio"],
-                        "termino": a["termino"],
-                    })
+            en_rango_hoy = ini_a <= fd_hoy <= ter_a
+            # Incluir todas EXCEPTO las que ya están en el formulario principal de hoy
+            if not en_rango_hoy:
+                acts_futuras.append({
+                    "corr": a["corr"],
+                    "nombre": a["nombre"],
+                    "area": a["area"],
+                    "unidad": a["unidad"],
+                    "rendimiento": a["rendimiento"],
+                    "cant_dia": a["cant_dia"],
+                    "hh_dia": a["hh_dia"],
+                    "fecha_planificada": ini_a.strftime("%d/%m"),
+                    "inicio": a["inicio"],
+                    "termino": a["termino"],
+                })
 
         if not acts_futuras:
-            st.info("No hay actividades futuras disponibles para adelantar en este trisemanal.")
+            st.info("Todas las actividades del trisemanal están activas hoy.")
         else:
             # Inicializar lista de adelantos en session_state
             if f"adelantos_{fecha_str}" not in st.session_state:
