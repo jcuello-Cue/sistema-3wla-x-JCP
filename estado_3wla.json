@@ -1871,21 +1871,6 @@
         "causa": "No planificada en POD, recursos enfocados en línea 28",
         "responsable": "CODELCO"
       },
-      "296": {
-        "corr": 296,
-        "nombre": "Excavación en zanja (línea 28)",
-        "area": "TRAMO 3",
-        "unidad": "m3",
-        "rendimiento": 0.5219,
-        "cant_dia_base": 20.0,
-        "cant_esperada": 25.0034,
-        "cant_ejecutada": 25.0034,
-        "hh_esperadas": 13.05,
-        "hh_ejecutadas": 13.05,
-        "categoria": "Solo pendiente",
-        "causa": "",
-        "responsable": ""
-      },
       "297": {
         "corr": 297,
         "nombre": "Traslado de Camisa de Protección Cruce de Camino Diámetro 60\" e=12,7 mm",
@@ -1961,21 +1946,6 @@
         "causa": "Actividad planificada para sábado 02/05/2026, por interferencia  (agua)",
         "responsable": "CODELCO"
       },
-      "363": {
-        "corr": 363,
-        "nombre": "Uniones tuberías HDPE: tubo (1000mm)-Codo 90° (2 un)",
-        "area": "TRAMO 4",
-        "unidad": "un",
-        "rendimiento": 124.8495,
-        "cant_dia_base": 1.0,
-        "cant_esperada": 1.0,
-        "cant_ejecutada": 2.0,
-        "hh_esperadas": 124.85,
-        "hh_ejecutadas": 249.7,
-        "categoria": "Solo pendiente",
-        "causa": "",
-        "responsable": ""
-      },
       "364": {
         "corr": 364,
         "nombre": "Uniones tuberías HDPE: tubo - tubo (1 un)",
@@ -1999,12 +1969,12 @@
         "rendimiento": 118.4983,
         "cant_dia_base": 1.0,
         "cant_esperada": 1.0,
-        "cant_ejecutada": 1.0,
+        "cant_ejecutada": 0.0,
         "hh_esperadas": 118.5,
-        "hh_ejecutadas": 118.5,
+        "hh_ejecutadas": 0.0,
         "categoria": "Planificada del día",
-        "causa": "",
-        "responsable": ""
+        "causa": "Actividad ya realizada",
+        "responsable": "Fe Grande"
       },
       "442": {
         "corr": 442,
