@@ -490,7 +490,7 @@ def panel_acumulado(estado, fecha_str, tab_key="a"):
 
     # ── META PROGRAMA (ingreso manual) ──────────────────────────
     st.markdown("---")
-    meta_prog_key = f"meta_programa_{tri.get('num_trisemanal','?')}_{tri.get('fecha_inicio_s1','')}"
+    tri_panel = estado["trisemanal"]
     meta_prog_guardada = estado.get("meta_programa", 0.0)
 
     col_mp1, col_mp2 = st.columns([2, 3])
