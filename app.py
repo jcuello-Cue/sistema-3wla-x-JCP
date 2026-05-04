@@ -244,21 +244,51 @@ def guardar_estado(estado):
 def actividades_del_dia(estado, fecha_str):
     """
     Retorna actividades activas hoy O que tienen pendiente acumulado de días anteriores.
-    Aunque la actividad no esté programada hoy, si tiene deuda se muestra igual.
+    Excluye actividades que ya fueron completamente ejecutadas durante la semana.
     """
-    fd = date.fromisoformat(fecha_str)
+    fd       = date.fromisoformat(fecha_str)
+    registro = estado.get("registro", {})
+    fechas_s1 = set(estado["trisemanal"]["fechas_s1"])
     pendientes = pendientes_acumulados(estado, fecha_str)
     acts = []
+
     for a in estado["trisemanal"]["actividades"]:
         if not a["inicio"] or not a["termino"]:
             continue
         ini = date.fromisoformat(a["inicio"])
         ter = date.fromisoformat(a["termino"])
-        # Mostrar si: hoy está en rango O tiene pendiente acumulado
-        en_rango   = ini <= fd <= ter
-        con_deuda  = pendientes.get(a["corr"], 0) > 0.0001
-        if en_rango or con_deuda:
-            acts.append(a)
+
+        en_rango  = ini <= fd <= ter
+        con_deuda = pendientes.get(a["corr"], 0) > 0.0001
+
+        if not en_rango and not con_deuda:
+            continue
+
+        # Calcular si ya se completó totalmente durante la semana
+        hh_esp_total = sum(
+            a["hh_dia"] for fs in fechas_s1
+            if date.fromisoformat(fs) <= fd and ini <= date.fromisoformat(fs) <= ter
+        )
+        hh_ej_total = 0.0
+        for fs in fechas_s1:
+            if date.fromisoformat(fs) > fd:
+                continue
+            # Registro normal
+            reg = registro.get(fs, {}).get(str(a["corr"]))
+            if reg and isinstance(reg, dict):
+                hh_ej_total += reg.get("cant_ejecutada", 0) * a["rendimiento"]
+            # Adelantos
+            adelantos = registro.get(fs, {}).get("_adelantos", [])
+            if isinstance(adelantos, list):
+                for adel in adelantos:
+                    if isinstance(adel, dict) and adel.get("corr") == a["corr"]:
+                        hh_ej_total += adel.get("hh_ejecutadas", 0)
+
+        # Si ya ejecutó el 100% o más, no mostrar
+        if hh_esp_total > 0 and hh_ej_total >= hh_esp_total - 0.01:
+            continue
+
+        acts.append(a)
     return acts
 
 def pendientes_acumulados(estado, fecha_str):
