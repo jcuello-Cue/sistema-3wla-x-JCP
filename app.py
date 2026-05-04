@@ -488,6 +488,50 @@ def panel_acumulado(estado, fecha_str, tab_key="a"):
 
     st.progress(pct_ej / 100, text=f"Avance: {pct_ej}%")
 
+    # ── META PROGRAMA (ingreso manual) ──────────────────────────
+    st.markdown("---")
+    meta_prog_key = f"meta_programa_{tri.get('num_trisemanal','?')}_{tri.get('fecha_inicio_s1','')}"
+    meta_prog_guardada = estado.get("meta_programa", 0.0)
+
+    col_mp1, col_mp2 = st.columns([2, 3])
+    with col_mp1:
+        meta_prog = st.number_input(
+            "🎯 HH Programa CODELCO (ingreso manual)",
+            min_value=0.0,
+            value=float(meta_prog_guardada) if meta_prog_guardada else float(hh_meta),
+            step=10.0,
+            format="%.1f",
+            key=f"meta_prog_{tab_key}",
+            help="Ingresa las HH comprometidas según el programa CODELCO para este trisemanal"
+        )
+        if meta_prog != meta_prog_guardada:
+            estado["meta_programa"] = meta_prog
+            guardar_estado(estado)
+
+    if meta_prog > 0:
+        pct_prog_ej  = round(hh_ej  / meta_prog * 100, 1)
+        pct_prog_esp = round(hh_esp / meta_prog * 100, 1)
+        pct_esp_ej   = round(hh_ej  / hh_esp   * 100, 1) if hh_esp > 0 else 0
+
+        with col_mp2:
+            c_p1, c_p2, c_p3 = st.columns(3)
+            with c_p1:
+                st.metric("📊 Programa vs Ejecutado",
+                          f"{pct_prog_ej}%",
+                          f"{hh_ej:,.1f} / {meta_prog:,.1f} HH",
+                          delta_color="normal" if pct_prog_ej >= 100 else "inverse")
+            with c_p2:
+                st.metric("📅 Programa vs Esperado",
+                          f"{pct_prog_esp}%",
+                          f"{hh_esp:,.1f} / {meta_prog:,.1f} HH",
+                          delta_color="normal" if pct_prog_esp >= 100 else "inverse")
+            with c_p3:
+                st.metric("✅ Esperado vs Ejecutado",
+                          f"{pct_esp_ej}%",
+                          f"{hh_ej:,.1f} / {hh_esp:,.1f} HH",
+                          delta_color="normal" if pct_esp_ej >= 100 else "inverse")
+    st.markdown("---")
+
     # Botón PowerPoint
     col_ppt1, col_ppt2 = st.columns([2,3])
     with col_ppt1:
