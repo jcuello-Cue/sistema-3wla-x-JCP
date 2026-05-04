@@ -567,22 +567,37 @@ def panel_acumulado(estado, fecha_str, tab_key="a"):
             ter = date.fromisoformat(a["termino"]) if a["termino"] else None
             if not ini or not ter:
                 continue
+
             hh_esp_act = 0.0
             hh_ej_act  = 0.0
-            cursor = ini
-            while cursor <= min(ter, hoy):
-                if cursor in fechas_s1_dates:
+
+            # HH Esperadas: días dentro del rango hasta hoy
+            for fd in fechas_s1_dates:
+                if fd <= hoy and ini <= fd <= ter:
                     hh_esp_act += a["hh_dia"]
-                    reg = registro.get(cursor.isoformat(), {}).get(str(a["corr"]))
-                    if reg:
-                        hh_ej_act += round(reg.get("cant_ejecutada", 0) * a["rendimiento"], 2)
-                cursor += timedelta(days=1)
+
+            # HH Ejecutadas: TODOS los días registrados (incluyendo fuera del rango)
+            for fd in fechas_s1_dates:
+                if fd > hoy:
+                    continue
+                reg = registro.get(fd.isoformat(), {})
+                # Registro normal del día
+                act_reg = reg.get(str(a["corr"]))
+                if act_reg and isinstance(act_reg, dict):
+                    hh_ej_act += round(act_reg.get("cant_ejecutada", 0) * a["rendimiento"], 2)
+                # Adelantos del día
+                adelantos = reg.get("_adelantos", [])
+                if isinstance(adelantos, list):
+                    for adel in adelantos:
+                        if isinstance(adel, dict) and adel.get("corr") == a["corr"]:
+                            hh_ej_act += adel.get("hh_ejecutadas", 0)
+
             if hh_esp_act > 0 or hh_ej_act > 0:
                 nombre_corto = a["nombre"][:40] + "…" if len(a["nombre"]) > 40 else a["nombre"]
                 rows_act.append({
-                    "Actividad": nombre_corto,
-                    "Esperado":  round(hh_esp_act, 1),
-                    "Ejecutado": round(hh_ej_act, 1),
+                    "Actividad":    nombre_corto,
+                    "Esperado":     round(hh_esp_act, 1),
+                    "Ejecutado":    round(hh_ej_act, 1),
                     "Cumplimiento": f"{round(hh_ej_act/hh_esp_act*100,1) if hh_esp_act else 0}%"
                 })
 
@@ -1475,7 +1490,7 @@ def main():
             st.text_area("", value=st.session_state["email_inicio"],
                          height=380, key="ta_inicio", label_visibility="collapsed")
 
-        panel_acumulado(estado, fecha_str, tab_key="inicio")
+        panel_acumulado(estado, date.today().isoformat(), tab_key="inicio")
 
     # ══════════════════════════════════════════
     # TAB 2 — FIN DEL DÍA
@@ -1775,7 +1790,7 @@ def main():
             st.text_area("", value=st.session_state["email_cierre"],
                          height=420, key="ta_cierre", label_visibility="collapsed")
 
-        panel_acumulado(estado, fecha_str, tab_key="fin")
+        panel_acumulado(estado, date.today().isoformat(), tab_key="fin")
 
 if __name__ == "__main__":
     main()
