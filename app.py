@@ -364,26 +364,27 @@ def calcular_acumulado(estado, hasta_fecha_str=None):
         hh_ej_dia  = 0.0
         hh_esp_dia = 0.0
 
-        # HH ESPERADAS: suma de actividades individuales (misma fuente que déficits)
-        for a in tri["actividades"]:
-            if not a["inicio"] or not a["termino"]:
-                continue
-            ini = date.fromisoformat(a["inicio"])
-            ter = date.fromisoformat(a["termino"])
-            if not (ini <= fd <= ter):
-                continue
-            hh_esp_dia += a["hh_dia"]
-            area = a["area"]
-            if area not in por_area:
-                por_area[area] = {"esperado": 0, "ejecutado": 0}
-            por_area[area]["esperado"] += a["hh_dia"]
+        # HH ESPERADAS: solo para días que tienen registro guardado
+        if fecha_str in registro:
+            for a in tri["actividades"]:
+                if not a["inicio"] or not a["termino"]:
+                    continue
+                ini = date.fromisoformat(a["inicio"])
+                ter = date.fromisoformat(a["termino"])
+                if not (ini <= fd <= ter):
+                    continue
+                hh_esp_dia += a["hh_dia"]
+                area = a["area"]
+                if area not in por_area:
+                    por_area[area] = {"esperado": 0, "ejecutado": 0}
+                por_area[area]["esperado"] += a["hh_dia"]
 
-        # HH EJECUTADAS: solo de fechas dentro del trisemanal actual
-        if fecha_str in fechas_s1:
+        # HH EJECUTADAS: solo de fechas registradas dentro del trisemanal actual
+        if fecha_str in fechas_s1 and fecha_str in registro:
             reg_dia = registro.get(fecha_str, {})
             for corr_str, act_reg in reg_dia.items():
                 if corr_str.startswith("_") or not isinstance(act_reg, dict):
-                    continue  # Saltar claves internas como _adelantos
+                    continue
                 cant_ej = act_reg.get("cant_ejecutada", 0)
                 rend    = act_reg.get("rendimiento", 0)
                 hh_ej   = round(cant_ej * rend, 2)
@@ -393,7 +394,7 @@ def calcular_acumulado(estado, hasta_fecha_str=None):
                     por_area[area] = {"esperado": 0, "ejecutado": 0}
                 por_area[area]["ejecutado"] += hh_ej
 
-            # Sumar HH de actividades adelantadas
+            # Sumar HH de actividades adelantadas del día
             adelantos = reg_dia.get("_adelantos", [])
             if isinstance(adelantos, list):
                 for adel in adelantos:
