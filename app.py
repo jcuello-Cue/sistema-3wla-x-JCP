@@ -421,10 +421,18 @@ def calcular_acumulado(estado, hasta_fecha_str=None):
         ini_r = date.fromisoformat(a["inicio"])
         ter_r = date.fromisoformat(a["termino"])
         hh_esp_r = sum(a["hh_dia"] for fd in fechas_dates if fd <= hoy and ini_r <= fd <= ter_r)
-        hh_ej_r  = sum(
-            (registro.get(fd.isoformat(),{}).get(str(a["corr"]),{}).get("cant_ejecutada",0) or 0) * a["rendimiento"]
-            for fd in fechas_dates if fd <= hoy
-        )
+        hh_ej_r  = 0.0
+        for fd in fechas_dates:
+            if fd > hoy: continue
+            reg_fd = registro.get(fd.isoformat(), {})
+            act_r = reg_fd.get(str(a["corr"]))
+            if act_r and isinstance(act_r, dict):
+                hh_ej_r += (act_r.get("cant_ejecutada", 0) or 0) * a["rendimiento"]
+            adelantos_r = reg_fd.get("_adelantos", [])
+            if isinstance(adelantos_r, list):
+                for adel_r in adelantos_r:
+                    if isinstance(adel_r, dict) and adel_r.get("corr") == a["corr"]:
+                        hh_ej_r += adel_r.get("hh_ejecutadas", 0)
         deficit_r = round(hh_esp_r - hh_ej_r, 2)
         if deficit_r > 0.5:
             resp_r = "Sin asignar"
@@ -718,12 +726,22 @@ def panel_acumulado(estado, fecha_str, tab_key="a"):
                 a_base["hh_dia"] for fs in fechas_s1_dates
                 if fs <= hoy and ini_a <= fs <= ter_a
             )
-            # HH ejecutadas en todos los días registrados
-            hh_ej_act = sum(
-                registro.get(fs.isoformat(), {}).get(str(a_base["corr"]), {}).get("cant_ejecutada", 0)
-                * a_base["rendimiento"]
-                for fs in fechas_s1_dates if fs <= hoy
-            )
+            # HH ejecutadas: registro normal + adelantos
+            hh_ej_act = 0.0
+            for fs in fechas_s1_dates:
+                if fs > hoy:
+                    continue
+                reg_fs = registro.get(fs.isoformat(), {})
+                # Registro normal
+                act_reg_n = reg_fs.get(str(a_base["corr"]))
+                if act_reg_n and isinstance(act_reg_n, dict):
+                    hh_ej_act += act_reg_n.get("cant_ejecutada", 0) * a_base["rendimiento"]
+                # Adelantos
+                adelantos_fs = reg_fs.get("_adelantos", [])
+                if isinstance(adelantos_fs, list):
+                    for adel in adelantos_fs:
+                        if isinstance(adel, dict) and adel.get("corr") == a_base["corr"]:
+                            hh_ej_act += adel.get("hh_ejecutadas", 0)
             deficit_neto = round(hh_esp_act - hh_ej_act, 2)
 
             if deficit_neto > 0.5:
