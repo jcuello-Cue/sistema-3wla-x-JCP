@@ -2580,21 +2580,6 @@
         "causa": "No planificado en POD, pendiente entibación",
         "responsable": "Fe Grande"
       },
-      "255": {
-        "corr": 255,
-        "nombre": "Armadura Fundación F2",
-        "area": "TRAMO 2",
-        "unidad": "kg",
-        "rendimiento": 0.0639,
-        "cant_dia_base": 666.666667,
-        "cant_esperada": 600.615,
-        "cant_ejecutada": 600.615,
-        "hh_esperadas": 38.38,
-        "hh_ejecutadas": 38.38,
-        "categoria": "Solo pendiente",
-        "causa": "",
-        "responsable": ""
-      },
       "265": {
         "corr": 265,
         "nombre": "Instalación cama de arena para durmientes (6 un)",
@@ -2669,21 +2654,6 @@
         "categoria": "Planificada + pendiente",
         "causa": "No planificado en POD, recursos asignados a Línea 28",
         "responsable": "CODELCO"
-      },
-      "297": {
-        "corr": 297,
-        "nombre": "Traslado de Camisa de Protección Cruce de Camino Diámetro 60\" e=12,7 mm",
-        "area": "TRAMO 3",
-        "unidad": "ml",
-        "rendimiento": 6.8981,
-        "cant_dia_base": 8.0,
-        "cant_esperada": 8.0,
-        "cant_ejecutada": 8.0,
-        "hh_esperadas": 55.18,
-        "hh_ejecutadas": 55.18,
-        "categoria": "Solo pendiente",
-        "causa": "",
-        "responsable": ""
       },
       "299": {
         "corr": 299,
@@ -2773,21 +2743,6 @@
         "hh_ejecutadas": 0.0,
         "categoria": "Solo pendiente",
         "causa": "No programado en POD, retraso en habilitación de termofusionadora",
-        "responsable": "Fe Grande"
-      },
-      "365": {
-        "corr": 365,
-        "nombre": "Uniones tuberías HDPE: tubo (1000mm)-Codo 45° (2 un)",
-        "area": "TRAMO 4",
-        "unidad": "un",
-        "rendimiento": 118.4983,
-        "cant_dia_base": 1.0,
-        "cant_esperada": 1.0,
-        "cant_ejecutada": 0.0,
-        "hh_esperadas": 118.5,
-        "hh_ejecutadas": 0.0,
-        "categoria": "Solo pendiente",
-        "causa": "No programado en POD",
         "responsable": "Fe Grande"
       },
       "394": {
