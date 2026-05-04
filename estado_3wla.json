@@ -2391,12 +2391,12 @@
         "rendimiento": 118.4983,
         "cant_dia_base": 1.0,
         "cant_esperada": 2.0,
-        "cant_ejecutada": 2.0,
+        "cant_ejecutada": 1.0,
         "hh_esperadas": 237.0,
-        "hh_ejecutadas": 237.0,
+        "hh_ejecutadas": 118.5,
         "categoria": "Planificada + pendiente",
         "causa": "",
-        "responsable": ""
+        "responsable": "Fe Grande"
       },
       "442": {
         "corr": 442,
