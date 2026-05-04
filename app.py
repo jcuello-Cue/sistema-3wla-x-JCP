@@ -364,8 +364,8 @@ def calcular_acumulado(estado, hasta_fecha_str=None):
         hh_ej_dia  = 0.0
         hh_esp_dia = 0.0
 
-        # HH ESPERADAS: solo para días que tienen registro guardado
-        if fecha_str in registro:
+        # HH ESPERADAS: días con registro + el día actual seleccionado
+        if fecha_str in registro or fd == hoy:
             for a in tri["actividades"]:
                 if not a["inicio"] or not a["termino"]:
                     continue
@@ -379,8 +379,8 @@ def calcular_acumulado(estado, hasta_fecha_str=None):
                     por_area[area] = {"esperado": 0, "ejecutado": 0}
                 por_area[area]["esperado"] += a["hh_dia"]
 
-        # HH EJECUTADAS: solo de fechas registradas dentro del trisemanal actual
-        if fecha_str in fechas_s1 and fecha_str in registro:
+        # HH EJECUTADAS: fechas registradas + día actual seleccionado
+        if fecha_str in fechas_s1 and (fecha_str in registro or fd == hoy):
             reg_dia = registro.get(fecha_str, {})
             for corr_str, act_reg in reg_dia.items():
                 if corr_str.startswith("_") or not isinstance(act_reg, dict):
@@ -1539,7 +1539,7 @@ def main():
             st.text_area("", value=st.session_state["email_inicio"],
                          height=380, key="ta_inicio", label_visibility="collapsed")
 
-        panel_acumulado(estado, date.today().isoformat(), tab_key="inicio")
+        panel_acumulado(estado, fecha_str, tab_key="inicio")
 
     # ══════════════════════════════════════════
     # TAB 2 — FIN DEL DÍA
@@ -1839,7 +1839,7 @@ def main():
             st.text_area("", value=st.session_state["email_cierre"],
                          height=420, key="ta_cierre", label_visibility="collapsed")
 
-        panel_acumulado(estado, date.today().isoformat(), tab_key="fin")
+        panel_acumulado(estado, fecha_str, tab_key="fin")
 
 if __name__ == "__main__":
     main()
