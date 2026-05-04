@@ -1198,21 +1198,6 @@
         "causa": "No se alcanza meta planificada para el día. El comentario levantado por terreno es el siguiente: La actividad se encontraba en proceso de continuación de prearmado. Sin embargo, fue detenida por Evelyn Leviante, debido a que se solicitó esperar la respuesta de ingeniería ante una incongruencia detectada en planos. De forma momentánea, se realizó levantamiento de enfierradura. Posteriormente, a las 14:30 horas, durante la jornada de la tarde, se entregó la indicación de continuar con el armado de F2; no obstante, la tarea no pudo avanzar debido a la falta del pedestal en terreno, el cual se encontraba en IIFF.",
         "responsable": "CODELCO"
       },
-      "264": {
-        "corr": 264,
-        "nombre": "Excavación manual x Durmientes DP-04 (3 un) - UDR",
-        "area": "TRAMO 2",
-        "unidad": "gl",
-        "rendimiento": 220,
-        "cant_dia_base": 0.25,
-        "cant_esperada": 0.25,
-        "cant_ejecutada": 0.25,
-        "hh_esperadas": 55.0,
-        "hh_ejecutadas": 55.0,
-        "categoria": "Planificada del día",
-        "causa": "",
-        "responsable": ""
-      },
       "284": {
         "corr": 284,
         "nombre": "Demolición de asfalto y losa de hormigón",
@@ -1227,21 +1212,6 @@
         "categoria": "Planificada + pendiente",
         "causa": "No se alcanza a cumplir meta del día ni lo pendiente según lo planificado en trisemanal. Las observaciones del día son las siguientes: Se realiza charla para ingreso al sector Chancado. A las 11:30 horas, el personal llega a terreno e inicia la preparación de la documentación requerida. A las 12:30 horas, la documentación se encontraba en regla. No obstante, a las 14:00 horas la actividad aún no había iniciado, debido a que se priorizó la demolición de carpeta de hormigón. Finalmente, a las 16:55 horas se dio inicio a la excavación, registrándose un inicio tardío asociado a la reubicación de material proveniente de la excavación del día.",
         "responsable": "Fe Grande"
-      },
-      "288": {
-        "corr": 288,
-        "nombre": "Excavación Suelo Común (S.C.)",
-        "area": "TRAMO 3",
-        "unidad": "m3",
-        "rendimiento": 0.4834,
-        "cant_dia_base": 1.428571,
-        "cant_esperada": 1.4286,
-        "cant_ejecutada": 1.4286,
-        "hh_esperadas": 0.69,
-        "hh_ejecutadas": 0.69,
-        "categoria": "Planificada del día",
-        "causa": "",
-        "responsable": ""
       },
       "296": {
         "corr": 296,
