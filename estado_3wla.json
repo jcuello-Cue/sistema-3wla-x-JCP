@@ -3107,21 +3107,6 @@
         "causa": "Se prioriza L28",
         "responsable": "Fe Grande"
       },
-      "299": {
-        "corr": 299,
-        "nombre": "Montaje de Camisa de Protección Cruce de Camino Diámetro 60\" e=12,7 mm",
-        "area": "TRAMO 3",
-        "unidad": "ml",
-        "rendimiento": 41.3886,
-        "cant_dia_base": 8.0,
-        "cant_esperada": 8.0,
-        "cant_ejecutada": 8.0,
-        "hh_esperadas": 331.11,
-        "hh_ejecutadas": 331.11,
-        "categoria": "Solo pendiente",
-        "causa": "",
-        "responsable": ""
-      },
       "300": {
         "corr": 300,
         "nombre": "Unión de camisas (Vitaulic)",
@@ -3220,9 +3205,9 @@
         "rendimiento": 30.7814,
         "cant_dia_base": 1.0,
         "cant_esperada": 2.0,
-        "cant_ejecutada": 1.0,
+        "cant_ejecutada": 0.0,
         "hh_esperadas": 61.56,
-        "hh_ejecutadas": 30.78,
+        "hh_ejecutadas": 0.0,
         "categoria": "Planificada + pendiente",
         "causa": "",
         "responsable": "Fe Grande"
@@ -3235,9 +3220,9 @@
         "rendimiento": 138.5162,
         "cant_dia_base": 1.0,
         "cant_esperada": 2.0,
-        "cant_ejecutada": 1.0,
+        "cant_ejecutada": 0.0,
         "hh_esperadas": 277.03,
-        "hh_ejecutadas": 138.52,
+        "hh_ejecutadas": 0.0,
         "categoria": "Planificada + pendiente",
         "causa": "",
         "responsable": "Fe Grande"
@@ -3250,27 +3235,12 @@
         "rendimiento": 107.7348,
         "cant_dia_base": 1.0,
         "cant_esperada": 2.0,
-        "cant_ejecutada": 1.0,
+        "cant_ejecutada": 0.0,
         "hh_esperadas": 215.47,
-        "hh_ejecutadas": 107.73,
+        "hh_ejecutadas": 0.0,
         "categoria": "Planificada + pendiente",
         "causa": "",
         "responsable": "Fe Grande"
-      },
-      "442": {
-        "corr": 442,
-        "nombre": "Excavación suelo común: CR-3 - CH. PRIM",
-        "area": "TRAMO 4",
-        "unidad": "m3",
-        "rendimiento": 0.4834,
-        "cant_dia_base": 30.0,
-        "cant_esperada": 129.5,
-        "cant_ejecutada": 129.5,
-        "hh_esperadas": 62.6,
-        "hh_ejecutadas": 62.6,
-        "categoria": "Solo pendiente",
-        "causa": "",
-        "responsable": ""
       },
       "443": {
         "corr": 443,
@@ -3280,9 +3250,9 @@
         "rendimiento": 1.6222,
         "cant_dia_base": 2.0,
         "cant_esperada": 8.0002,
-        "cant_ejecutada": 4.0,
+        "cant_ejecutada": 2.0,
         "hh_esperadas": 12.98,
-        "hh_ejecutadas": 6.49,
+        "hh_ejecutadas": 3.24,
         "categoria": "Planificada + pendiente",
         "causa": "",
         "responsable": "Fe Grande"
@@ -3295,9 +3265,9 @@
         "rendimiento": 17.304,
         "cant_dia_base": 2.0,
         "cant_esperada": 10.0,
-        "cant_ejecutada": 4.0,
+        "cant_ejecutada": 2.0,
         "hh_esperadas": 173.04,
-        "hh_ejecutadas": 69.22,
+        "hh_ejecutadas": 34.61,
         "categoria": "Planificada + pendiente",
         "causa": "",
         "responsable": "Fe Grande"
@@ -3310,12 +3280,12 @@
         "rendimiento": 175.74,
         "cant_dia_base": 0.142857,
         "cant_esperada": 0.3,
-        "cant_ejecutada": 0.3,
+        "cant_ejecutada": 0.2,
         "hh_esperadas": 52.72,
-        "hh_ejecutadas": 52.72,
+        "hh_ejecutadas": 35.15,
         "categoria": "Planificada + pendiente",
         "causa": "",
-        "responsable": ""
+        "responsable": "Fe Grande"
       },
       "465": {
         "corr": 465,
@@ -3325,13 +3295,28 @@
         "rendimiento": 161,
         "cant_dia_base": 0.142857,
         "cant_esperada": 1.0,
-        "cant_ejecutada": 1.0,
+        "cant_ejecutada": 0.4,
         "hh_esperadas": 161.0,
-        "hh_ejecutadas": 161.0,
+        "hh_ejecutadas": 64.4,
         "categoria": "Planificada + pendiente",
         "causa": "",
-        "responsable": ""
-      }
+        "responsable": "Fe Grande"
+      },
+      "_adelantos": [
+        {
+          "corr": 299,
+          "nombre": "Montaje de Camisa de Protección Cruce de Camino Diámetro 60\" e=12,7 mm",
+          "area": "TRAMO 3",
+          "unidad": "ml",
+          "rendimiento": 41.3886,
+          "cant_dia": 8.0,
+          "fecha_planificada": "30/04",
+          "inicio": "2026-04-30",
+          "termino": "2026-04-30",
+          "cant_ejecutada": 8.0,
+          "hh_ejecutadas": 331.11
+        }
+      ]
     }
   },
   "historico": [
