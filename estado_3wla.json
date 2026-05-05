@@ -3242,21 +3242,6 @@
         "causa": "",
         "responsable": "Fe Grande"
       },
-      "442": {
-        "corr": 442,
-        "nombre": "Excavación suelo común: CR-3 - CH. PRIM",
-        "area": "TRAMO 4",
-        "unidad": "m3",
-        "rendimiento": 0.4834,
-        "cant_dia_base": 30.0,
-        "cant_esperada": 129.5,
-        "cant_ejecutada": 129.5,
-        "hh_esperadas": 62.6,
-        "hh_ejecutadas": 62.6,
-        "categoria": "Solo pendiente",
-        "causa": "",
-        "responsable": ""
-      },
       "443": {
         "corr": 443,
         "nombre": "Traslado de durmientes DP-05",
