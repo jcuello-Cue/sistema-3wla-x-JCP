@@ -3025,12 +3025,12 @@
         "rendimiento": 0.5219,
         "cant_dia_base": 9.5,
         "cant_esperada": 23.5017,
-        "cant_ejecutada": 23.5017,
+        "cant_ejecutada": 0.0,
         "hh_esperadas": 12.27,
-        "hh_ejecutadas": 12.27,
+        "hh_ejecutadas": 0.0,
         "categoria": "Planificada + pendiente",
         "causa": "",
-        "responsable": ""
+        "responsable": "Fe Grande"
       },
       "265": {
         "corr": 265,
@@ -3241,6 +3241,21 @@
         "categoria": "Planificada + pendiente",
         "causa": "",
         "responsable": "Fe Grande"
+      },
+      "442": {
+        "corr": 442,
+        "nombre": "Excavación suelo común: CR-3 - CH. PRIM",
+        "area": "TRAMO 4",
+        "unidad": "m3",
+        "rendimiento": 0.4834,
+        "cant_dia_base": 30.0,
+        "cant_esperada": 129.5,
+        "cant_ejecutada": 129.5,
+        "hh_esperadas": 62.6,
+        "hh_ejecutadas": 62.6,
+        "categoria": "Solo pendiente",
+        "causa": "",
+        "responsable": ""
       },
       "443": {
         "corr": 443,
