@@ -1,18 +1,18 @@
 {
   "trisemanal": {
     "num_trisemanal": "—",
-    "fecha_inicio_s1": "2026-04-28",
-    "fecha_fin_s1": "2026-05-04",
+    "fecha_inicio_s1": "2026-05-05",
+    "fecha_fin_s1": "2026-05-11",
     "fechas_s1": [
-      "2026-04-28",
-      "2026-04-29",
-      "2026-04-30",
-      "2026-05-01",
-      "2026-05-02",
-      "2026-05-03",
-      "2026-05-04"
+      "2026-05-05",
+      "2026-05-06",
+      "2026-05-07",
+      "2026-05-08",
+      "2026-05-09",
+      "2026-05-10",
+      "2026-05-11"
     ],
-    "hh_totales_s1": 5174.93,
+    "hh_totales_s1": 0,
     "hh_diarias_s1": [],
     "actividades": [
       {
@@ -38,13 +38,13 @@
           6
         ],
         "fechas_s1": [
-          "2026-04-28",
-          "2026-04-29",
-          "2026-04-30",
-          "2026-05-01",
-          "2026-05-02",
-          "2026-05-03",
-          "2026-05-04"
+          "2026-05-05",
+          "2026-05-06",
+          "2026-05-07",
+          "2026-05-08",
+          "2026-05-09",
+          "2026-05-10",
+          "2026-05-11"
         ]
       },
       {
@@ -70,473 +70,399 @@
           6
         ],
         "fechas_s1": [
-          "2026-04-28",
-          "2026-04-29",
-          "2026-04-30",
-          "2026-05-01",
-          "2026-05-02",
-          "2026-05-03",
-          "2026-05-04"
+          "2026-05-05",
+          "2026-05-06",
+          "2026-05-07",
+          "2026-05-08",
+          "2026-05-09",
+          "2026-05-10",
+          "2026-05-11"
         ]
       },
       {
-        "corr": 203,
-        "area": "TRAMO 2",
-        "nombre": "Traslado Tubería HDPE BODEGA - PTO TRABAJO",
-        "unidad": "un",
-        "rendimiento": 25.4777,
-        "cant_s1": 5,
-        "n_dias_s1": 5,
-        "cant_dia": 1.0,
-        "hh_dia": 25.4777,
-        "hh_s1": 127.39,
-        "inicio": "2026-04-30",
-        "termino": "2026-05-04",
-        "dias_activos": [
-          2,
-          3,
-          4,
-          5,
-          6
-        ],
-        "fechas_s1": [
-          "2026-04-28",
-          "2026-04-29",
-          "2026-04-30",
-          "2026-05-01",
-          "2026-05-02",
-          "2026-05-03",
-          "2026-05-04"
-        ]
-      },
-      {
-        "corr": 207,
-        "area": "TRAMO 2",
-        "nombre": "Desfile de tuberías (5 un) - CR C4 a Curva del espejo",
-        "unidad": "un",
-        "rendimiento": 30.7814,
-        "cant_s1": 5,
-        "n_dias_s1": 5,
-        "cant_dia": 1.0,
-        "hh_dia": 30.7814,
-        "hh_s1": 153.91,
-        "inicio": "2026-04-30",
-        "termino": "2026-05-04",
-        "dias_activos": [
-          2,
-          3,
-          4,
-          5,
-          6
-        ],
-        "fechas_s1": [
-          "2026-04-28",
-          "2026-04-29",
-          "2026-04-30",
-          "2026-05-01",
-          "2026-05-02",
-          "2026-05-03",
-          "2026-05-04"
-        ]
-      },
-      {
-        "corr": 208,
-        "area": "TRAMO 2",
-        "nombre": "Unión de tuberías tubo - Tubo (5 un) - CR C4 a Curva del espejo",
-        "unidad": "un",
-        "rendimiento": 138.5162,
-        "cant_s1": 5,
-        "n_dias_s1": 5,
-        "cant_dia": 1.0,
-        "hh_dia": 138.5162,
-        "hh_s1": 692.58,
-        "inicio": "2026-04-30",
-        "termino": "2026-05-04",
-        "dias_activos": [
-          2,
-          3,
-          4,
-          5,
-          6
-        ],
-        "fechas_s1": [
-          "2026-04-28",
-          "2026-04-29",
-          "2026-04-30",
-          "2026-05-01",
-          "2026-05-02",
-          "2026-05-03",
-          "2026-05-04"
-        ]
-      },
-      {
-        "corr": 209,
-        "area": "TRAMO 2",
-        "nombre": "Posicionamiento de tuberías (5 un) -CR C4 a Curva del espejo",
-        "unidad": "un",
-        "rendimiento": 107.7348,
-        "cant_s1": 5,
-        "n_dias_s1": 5,
-        "cant_dia": 1.0,
-        "hh_dia": 107.7348,
-        "hh_s1": 538.67,
-        "inicio": "2026-04-30",
-        "termino": "2026-05-04",
-        "dias_activos": [
-          2,
-          3,
-          4,
-          5,
-          6
-        ],
-        "fechas_s1": [
-          "2026-04-28",
-          "2026-04-29",
-          "2026-04-30",
-          "2026-05-01",
-          "2026-05-02",
-          "2026-05-03",
-          "2026-05-04"
-        ]
-      },
-      {
-        "corr": 222,
-        "area": "TRAMO 2",
-        "nombre": "Derivación Chancador Secundario",
-        "unidad": "m",
-        "rendimiento": 11.7259,
-        "cant_s1": 2.655903,
-        "n_dias_s1": 1,
-        "cant_dia": 2.655903,
-        "hh_dia": 31.1429,
-        "hh_s1": 31.14,
-        "inicio": "2026-05-04",
-        "termino": "2026-05-10",
-        "dias_activos": [
-          6
-        ],
-        "fechas_s1": [
-          "2026-04-28",
-          "2026-04-29",
-          "2026-04-30",
-          "2026-05-01",
-          "2026-05-02",
-          "2026-05-03",
-          "2026-05-04"
-        ]
-      },
-      {
-        "corr": 253,
-        "area": "TRAMO 2",
-        "nombre": "Excavación suelo común - Fundación F2",
+        "corr": 224,
+        "area": "TRAMO 1",
+        "nombre": "Excavación suelo común -  6 x Durmientes DP-01",
         "unidad": "m3",
         "rendimiento": 0.5219,
-        "cant_s1": 28.5,
+        "cant_s1": 2.88,
         "n_dias_s1": 3,
-        "cant_dia": 9.5,
-        "hh_dia": 4.9585,
-        "hh_s1": 14.88,
-        "inicio": "2026-05-02",
-        "termino": "2026-05-04",
+        "cant_dia": 0.96,
+        "hh_dia": 0.5011,
+        "hh_s1": 1.5,
+        "inicio": "2026-05-06",
+        "termino": "2026-05-08",
+        "dias_activos": [
+          1,
+          2,
+          3
+        ],
+        "fechas_s1": [
+          "2026-05-05",
+          "2026-05-06",
+          "2026-05-07",
+          "2026-05-08",
+          "2026-05-09",
+          "2026-05-10",
+          "2026-05-11"
+        ]
+      },
+      {
+        "corr": 225,
+        "area": "TRAMO 1",
+        "nombre": "Traslado de material a Botadero - 6 x Durmientes DP-01",
+        "unidad": "m3",
+        "rendimiento": 0.156,
+        "cant_s1": 2.88,
+        "n_dias_s1": 2,
+        "cant_dia": 1.44,
+        "hh_dia": 0.2246,
+        "hh_s1": 0.45,
+        "inicio": "2026-05-07",
+        "termino": "2026-05-08",
+        "dias_activos": [
+          2,
+          3
+        ],
+        "fechas_s1": [
+          "2026-05-05",
+          "2026-05-06",
+          "2026-05-07",
+          "2026-05-08",
+          "2026-05-09",
+          "2026-05-10",
+          "2026-05-11"
+        ]
+      },
+      {
+        "corr": 226,
+        "area": "TRAMO 1",
+        "nombre": "Instalación cama de arena para durmientes - 06 x Durmientes DP-01",
+        "unidad": "m3",
+        "rendimiento": 1.1538,
+        "cant_s1": 0.096,
+        "n_dias_s1": 1,
+        "cant_dia": 0.096,
+        "hh_dia": 0.1108,
+        "hh_s1": 0.11,
+        "inicio": "2026-05-08",
+        "termino": "2026-05-08",
+        "dias_activos": [
+          3
+        ],
+        "fechas_s1": [
+          "2026-05-05",
+          "2026-05-06",
+          "2026-05-07",
+          "2026-05-08",
+          "2026-05-09",
+          "2026-05-10",
+          "2026-05-11"
+        ]
+      },
+      {
+        "corr": 227,
+        "area": "TRAMO 1",
+        "nombre": "Traslado de durmientes - 06 x Durmientes DP-01",
+        "unidad": "un",
+        "rendimiento": 1.6222,
+        "cant_s1": 6,
+        "n_dias_s1": 2,
+        "cant_dia": 3.0,
+        "hh_dia": 4.8667,
+        "hh_s1": 9.73,
+        "inicio": "2026-05-09",
+        "termino": "2026-05-10",
+        "dias_activos": [
+          4,
+          5
+        ],
+        "fechas_s1": [
+          "2026-05-05",
+          "2026-05-06",
+          "2026-05-07",
+          "2026-05-08",
+          "2026-05-09",
+          "2026-05-10",
+          "2026-05-11"
+        ]
+      },
+      {
+        "corr": 228,
+        "area": "TRAMO 1",
+        "nombre": "Instalación de durmientes - 06 x Durmientes DP-01",
+        "unidad": "un",
+        "rendimiento": 17.304,
+        "cant_s1": 6,
+        "n_dias_s1": 2,
+        "cant_dia": 3.0,
+        "hh_dia": 51.912,
+        "hh_s1": 103.82,
+        "inicio": "2026-05-09",
+        "termino": "2026-05-10",
+        "dias_activos": [
+          4,
+          5
+        ],
+        "fechas_s1": [
+          "2026-05-05",
+          "2026-05-06",
+          "2026-05-07",
+          "2026-05-08",
+          "2026-05-09",
+          "2026-05-10",
+          "2026-05-11"
+        ]
+      },
+      {
+        "corr": 229,
+        "area": "TRAMO 1",
+        "nombre": "Instalación de perfiles metálicos x 06 - Durmientes DP-01",
+        "unidad": "un",
+        "rendimiento": 1.0815,
+        "cant_s1": 6,
+        "n_dias_s1": 1,
+        "cant_dia": 6.0,
+        "hh_dia": 6.489,
+        "hh_s1": 6.49,
+        "inicio": "2026-05-10",
+        "termino": "2026-05-10",
+        "dias_activos": [
+          5
+        ],
+        "fechas_s1": [
+          "2026-05-05",
+          "2026-05-06",
+          "2026-05-07",
+          "2026-05-08",
+          "2026-05-09",
+          "2026-05-10",
+          "2026-05-11"
+        ]
+      },
+      {
+        "corr": 232,
+        "area": "TRAMO 2",
+        "nombre": "Derivación Chancador Secundario (prearmado)",
+        "unidad": "m",
+        "rendimiento": 5.2767,
+        "cant_s1": 15.12,
+        "n_dias_s1": 3,
+        "cant_dia": 5.04,
+        "hh_dia": 26.5943,
+        "hh_s1": 79.78,
+        "inicio": "2026-05-09",
+        "termino": "2026-05-11",
         "dias_activos": [
           4,
           5,
           6
         ],
         "fechas_s1": [
-          "2026-04-28",
-          "2026-04-29",
-          "2026-04-30",
-          "2026-05-01",
-          "2026-05-02",
-          "2026-05-03",
-          "2026-05-04"
+          "2026-05-05",
+          "2026-05-06",
+          "2026-05-07",
+          "2026-05-08",
+          "2026-05-09",
+          "2026-05-10",
+          "2026-05-11"
         ]
       },
       {
-        "corr": 255,
+        "corr": 233,
         "area": "TRAMO 2",
-        "nombre": "Armadura Fundación F2",
+        "nombre": "Soportes tubería derivación Ch. Sec. (nivel durm. DP-04)",
         "unidad": "kg",
-        "rendimiento": 0.0639,
-        "cant_s1": 2000,
-        "n_dias_s1": 3,
-        "cant_dia": 666.666667,
-        "hh_dia": 42.6131,
-        "hh_s1": 127.84,
-        "inicio": "2026-04-28",
-        "termino": "2026-04-30",
+        "rendimiento": 0.4256,
+        "cant_s1": 69.2,
+        "n_dias_s1": 4,
+        "cant_dia": 17.3,
+        "hh_dia": 7.3629,
+        "hh_s1": 29.45,
+        "inicio": "2026-05-08",
+        "termino": "2026-05-11",
         "dias_activos": [
-          0,
-          1,
-          2
+          3,
+          4,
+          5,
+          6
         ],
         "fechas_s1": [
-          "2026-04-28",
-          "2026-04-29",
-          "2026-04-30",
-          "2026-05-01",
-          "2026-05-02",
-          "2026-05-03",
-          "2026-05-04"
+          "2026-05-05",
+          "2026-05-06",
+          "2026-05-07",
+          "2026-05-08",
+          "2026-05-09",
+          "2026-05-10",
+          "2026-05-11"
         ]
       },
       {
         "corr": 264,
         "area": "TRAMO 2",
-        "nombre": "Excavación manual x Durmientes DP-04 (3 un) - UDR",
-        "unidad": "gl",
-        "rendimiento": 220,
-        "cant_s1": 1,
-        "n_dias_s1": 4,
-        "cant_dia": 0.25,
-        "hh_dia": 55.0,
-        "hh_s1": 220,
-        "inicio": "2026-04-28",
-        "termino": "2026-05-01",
-        "dias_activos": [
-          0,
-          1,
-          2,
-          3
-        ],
-        "fechas_s1": [
-          "2026-04-28",
-          "2026-04-29",
-          "2026-04-30",
-          "2026-05-01",
-          "2026-05-02",
-          "2026-05-03",
-          "2026-05-04"
-        ]
-      },
-      {
-        "corr": 265,
-        "area": "TRAMO 2",
-        "nombre": "Instalación cama de arena para durmientes (6 un)",
+        "nombre": "Excavación suelo común - Fundación F2",
         "unidad": "m3",
-        "rendimiento": 1.1538,
-        "cant_s1": 0.6,
-        "n_dias_s1": 1,
-        "cant_dia": 0.6,
-        "hh_dia": 0.6923,
-        "hh_s1": 0.69,
-        "inicio": "2026-05-01",
-        "termino": "2026-05-01",
+        "rendimiento": 0.5219,
+        "cant_s1": 20,
+        "n_dias_s1": 3,
+        "cant_dia": 6.666667,
+        "hh_dia": 3.4796,
+        "hh_s1": 10.44,
+        "inicio": "2026-05-08",
+        "termino": "2026-05-10",
         "dias_activos": [
-          3
+          3,
+          4,
+          5
         ],
         "fechas_s1": [
-          "2026-04-28",
-          "2026-04-29",
-          "2026-04-30",
-          "2026-05-01",
-          "2026-05-02",
-          "2026-05-03",
-          "2026-05-04"
+          "2026-05-05",
+          "2026-05-06",
+          "2026-05-07",
+          "2026-05-08",
+          "2026-05-09",
+          "2026-05-10",
+          "2026-05-11"
         ]
       },
       {
         "corr": 266,
         "area": "TRAMO 2",
-        "nombre": "Traslado de durmientes - 6 x Durmientes DP-04",
-        "unidad": "un",
-        "rendimiento": 1.6222,
-        "cant_s1": 6,
-        "n_dias_s1": 3,
-        "cant_dia": 2.0,
-        "hh_dia": 3.2445,
-        "hh_s1": 9.73,
-        "inicio": "2026-05-01",
-        "termino": "2026-05-03",
-        "dias_activos": [
-          3,
-          4,
-          5
-        ],
-        "fechas_s1": [
-          "2026-04-28",
-          "2026-04-29",
-          "2026-04-30",
-          "2026-05-01",
-          "2026-05-02",
-          "2026-05-03",
-          "2026-05-04"
-        ]
-      },
-      {
-        "corr": 267,
-        "area": "TRAMO 2",
-        "nombre": "Instalación de durmientes - 6 x Durmientes DP-04",
-        "unidad": "un",
-        "rendimiento": 17.304,
-        "cant_s1": 6,
-        "n_dias_s1": 3,
-        "cant_dia": 2.0,
-        "hh_dia": 34.608,
-        "hh_s1": 103.82,
-        "inicio": "2026-05-01",
-        "termino": "2026-05-03",
-        "dias_activos": [
-          3,
-          4,
-          5
-        ],
-        "fechas_s1": [
-          "2026-04-28",
-          "2026-04-29",
-          "2026-04-30",
-          "2026-05-01",
-          "2026-05-02",
-          "2026-05-03",
-          "2026-05-04"
-        ]
-      },
-      {
-        "corr": 284,
-        "area": "TRAMO 3",
-        "nombre": "Demolición de asfalto y losa de hormigón",
+        "nombre": "Emplantillado G10 - Fundación F2",
         "unidad": "m3",
-        "rendimiento": 1.5676,
-        "cant_s1": 55.0,
-        "n_dias_s1": 7,
-        "cant_dia": 7.857143,
-        "hh_dia": 12.3169,
-        "hh_s1": 86.22,
-        "inicio": "2026-04-28",
-        "termino": "2026-05-04",
+        "rendimiento": 7.938,
+        "cant_s1": 1.5,
+        "n_dias_s1": 1,
+        "cant_dia": 1.5,
+        "hh_dia": 11.907,
+        "hh_s1": 11.91,
+        "inicio": "2026-05-11",
+        "termino": "2026-05-11",
         "dias_activos": [
-          0,
-          1,
-          2,
-          3,
-          4,
-          5,
           6
         ],
         "fechas_s1": [
-          "2026-04-28",
-          "2026-04-29",
-          "2026-04-30",
-          "2026-05-01",
-          "2026-05-02",
-          "2026-05-03",
-          "2026-05-04"
+          "2026-05-05",
+          "2026-05-06",
+          "2026-05-07",
+          "2026-05-08",
+          "2026-05-09",
+          "2026-05-10",
+          "2026-05-11"
+        ]
+      },
+      {
+        "corr": 277,
+        "area": "TRAMO 2",
+        "nombre": "Excavación manual x Durmientes DP-04 (1 un) - UDR",
+        "unidad": "gl",
+        "rendimiento": 110,
+        "cant_s1": 1,
+        "n_dias_s1": 2,
+        "cant_dia": 0.5,
+        "hh_dia": 55.0,
+        "hh_s1": 110,
+        "inicio": "2026-05-06",
+        "termino": "2026-05-07",
+        "dias_activos": [
+          1,
+          2
+        ],
+        "fechas_s1": [
+          "2026-05-05",
+          "2026-05-06",
+          "2026-05-07",
+          "2026-05-08",
+          "2026-05-09",
+          "2026-05-10",
+          "2026-05-11"
         ]
       },
       {
         "corr": 288,
-        "area": "TRAMO 3",
-        "nombre": "Excavación Suelo Común (S.C.)",
-        "unidad": "m3",
-        "rendimiento": 0.4834,
-        "cant_s1": 10,
-        "n_dias_s1": 7,
-        "cant_dia": 1.428571,
-        "hh_dia": 0.6906,
-        "hh_s1": 4.83,
-        "inicio": "2026-04-28",
-        "termino": "2026-05-04",
+        "area": "TRAMO 2",
+        "nombre": "Detección con georradar para fundaciones F1",
+        "unidad": "gl",
+        "rendimiento": 0.1,
+        "cant_s1": 1,
+        "n_dias_s1": 1,
+        "cant_dia": 1.0,
+        "hh_dia": 0.1,
+        "hh_s1": 0.1,
+        "inicio": "2026-05-09",
+        "termino": "2026-05-09",
         "dias_activos": [
-          0,
-          1,
-          2,
+          4
+        ],
+        "fechas_s1": [
+          "2026-05-05",
+          "2026-05-06",
+          "2026-05-07",
+          "2026-05-08",
+          "2026-05-09",
+          "2026-05-10",
+          "2026-05-11"
+        ]
+      },
+      {
+        "corr": 289,
+        "area": "TRAMO 2",
+        "nombre": "Excavación suelo común - Fundación prefab. F1 (3 un.)",
+        "unidad": "m3",
+        "rendimiento": 0.5219,
+        "cant_s1": 2.97,
+        "n_dias_s1": 3,
+        "cant_dia": 0.99,
+        "hh_dia": 0.5167,
+        "hh_s1": 1.55,
+        "inicio": "2026-05-09",
+        "termino": "2026-05-11",
+        "dias_activos": [
+          4,
+          5,
+          6
+        ],
+        "fechas_s1": [
+          "2026-05-05",
+          "2026-05-06",
+          "2026-05-07",
+          "2026-05-08",
+          "2026-05-09",
+          "2026-05-10",
+          "2026-05-11"
+        ]
+      },
+      {
+        "corr": 298,
+        "area": "TRAMO 3",
+        "nombre": "Demolición de asfalto y losa de hormigón  - UDR",
+        "unidad": "m3",
+        "rendimiento": 1.5676,
+        "cant_s1": 5.142857,
+        "n_dias_s1": 4,
+        "cant_dia": 1.285714,
+        "hh_dia": 2.0155,
+        "hh_s1": 8.06,
+        "inicio": "2026-05-08",
+        "termino": "2026-05-14",
+        "dias_activos": [
           3,
           4,
           5,
           6
         ],
         "fechas_s1": [
-          "2026-04-28",
-          "2026-04-29",
-          "2026-04-30",
-          "2026-05-01",
-          "2026-05-02",
-          "2026-05-03",
-          "2026-05-04"
+          "2026-05-05",
+          "2026-05-06",
+          "2026-05-07",
+          "2026-05-08",
+          "2026-05-09",
+          "2026-05-10",
+          "2026-05-11"
         ]
       },
       {
-        "corr": 296,
-        "area": "TRAMO 3",
-        "nombre": "Excavación en zanja (línea 28)",
-        "unidad": "m3",
-        "rendimiento": 0.5219,
-        "cant_s1": 40,
-        "n_dias_s1": 2,
-        "cant_dia": 20.0,
-        "hh_dia": 10.4389,
-        "hh_s1": 20.88,
-        "inicio": "2026-04-28",
-        "termino": "2026-04-29",
-        "dias_activos": [
-          0,
-          1
-        ],
-        "fechas_s1": [
-          "2026-04-28",
-          "2026-04-29",
-          "2026-04-30",
-          "2026-05-01",
-          "2026-05-02",
-          "2026-05-03",
-          "2026-05-04"
-        ]
-      },
-      {
-        "corr": 297,
-        "area": "TRAMO 3",
-        "nombre": "Traslado de Camisa de Protección Cruce de Camino Diámetro 60\" e=12,7 mm",
-        "unidad": "ml",
-        "rendimiento": 6.8981,
-        "cant_s1": 8,
-        "n_dias_s1": 1,
-        "cant_dia": 8.0,
-        "hh_dia": 55.1848,
-        "hh_s1": 55.18,
-        "inicio": "2026-04-30",
-        "termino": "2026-04-30",
-        "dias_activos": [
-          2
-        ],
-        "fechas_s1": [
-          "2026-04-28",
-          "2026-04-29",
-          "2026-04-30",
-          "2026-05-01",
-          "2026-05-02",
-          "2026-05-03",
-          "2026-05-04"
-        ]
-      },
-      {
-        "corr": 299,
-        "area": "TRAMO 3",
-        "nombre": "Montaje de Camisa de Protección Cruce de Camino Diámetro 60\" e=12,7 mm",
-        "unidad": "ml",
-        "rendimiento": 41.3886,
-        "cant_s1": 8,
-        "n_dias_s1": 1,
-        "cant_dia": 8.0,
-        "hh_dia": 331.1088,
-        "hh_s1": 331.11,
-        "inicio": "2026-04-30",
-        "termino": "2026-04-30",
-        "dias_activos": [
-          2
-        ],
-        "fechas_s1": [
-          "2026-04-28",
-          "2026-04-29",
-          "2026-04-30",
-          "2026-05-01",
-          "2026-05-02",
-          "2026-05-03",
-          "2026-05-04"
-        ]
-      },
-      {
-        "corr": 300,
+        "corr": 315,
         "area": "TRAMO 3",
         "nombre": "Unión de camisas (Vitaulic)",
         "unidad": "ml",
@@ -546,49 +472,23 @@
         "cant_dia": 8.0,
         "hh_dia": 220.7392,
         "hh_s1": 220.74,
-        "inicio": "2026-04-30",
-        "termino": "2026-04-30",
+        "inicio": "2026-05-05",
+        "termino": "2026-05-05",
         "dias_activos": [
-          2
+          0
         ],
         "fechas_s1": [
-          "2026-04-28",
-          "2026-04-29",
-          "2026-04-30",
-          "2026-05-01",
-          "2026-05-02",
-          "2026-05-03",
-          "2026-05-04"
+          "2026-05-05",
+          "2026-05-06",
+          "2026-05-07",
+          "2026-05-08",
+          "2026-05-09",
+          "2026-05-10",
+          "2026-05-11"
         ]
       },
       {
-        "corr": 301,
-        "area": "TRAMO 3",
-        "nombre": "Suministro e Instalación Relleno Compactado (Material Seleccionado)",
-        "unidad": "m3",
-        "rendimiento": 1.401,
-        "cant_s1": 12,
-        "n_dias_s1": 1,
-        "cant_dia": 12.0,
-        "hh_dia": 16.8114,
-        "hh_s1": 16.81,
-        "inicio": "2026-05-01",
-        "termino": "2026-05-01",
-        "dias_activos": [
-          3
-        ],
-        "fechas_s1": [
-          "2026-04-28",
-          "2026-04-29",
-          "2026-04-30",
-          "2026-05-01",
-          "2026-05-02",
-          "2026-05-03",
-          "2026-05-04"
-        ]
-      },
-      {
-        "corr": 302,
+        "corr": 316,
         "area": "TRAMO 3",
         "nombre": "Suministro e Instalación Relleno Común",
         "unidad": "m3",
@@ -596,343 +496,435 @@
         "cant_s1": 12,
         "n_dias_s1": 1,
         "cant_dia": 12.0,
-        "hh_dia": 16.8115,
+        "hh_dia": 16.8114,
         "hh_s1": 16.81,
-        "inicio": "2026-05-01",
-        "termino": "2026-05-01",
+        "inicio": "2026-05-05",
+        "termino": "2026-05-05",
         "dias_activos": [
-          3
+          0
         ],
         "fechas_s1": [
-          "2026-04-28",
-          "2026-04-29",
-          "2026-04-30",
-          "2026-05-01",
-          "2026-05-02",
-          "2026-05-03",
-          "2026-05-04"
+          "2026-05-05",
+          "2026-05-06",
+          "2026-05-07",
+          "2026-05-08",
+          "2026-05-09",
+          "2026-05-10",
+          "2026-05-11"
         ]
       },
       {
-        "corr": 304,
+        "corr": 317,
         "area": "TRAMO 3",
-        "nombre": "Excavación en zanja (línea 29)",
+        "nombre": "Suministro e Instalación Relleno Compactado (Material Seleccionado)",
         "unidad": "m3",
-        "rendimiento": 0.5219,
-        "cant_s1": 57.664,
-        "n_dias_s1": 2,
-        "cant_dia": 28.832,
-        "hh_dia": 15.0487,
-        "hh_s1": 30.1,
-        "inicio": "2026-05-03",
-        "termino": "2026-05-04",
+        "rendimiento": 1.401,
+        "cant_s1": 12,
+        "n_dias_s1": 1,
+        "cant_dia": 12.0,
+        "hh_dia": 16.8115,
+        "hh_s1": 16.81,
+        "inicio": "2026-05-06",
+        "termino": "2026-05-06",
         "dias_activos": [
+          1
+        ],
+        "fechas_s1": [
+          "2026-05-05",
+          "2026-05-06",
+          "2026-05-07",
+          "2026-05-08",
+          "2026-05-09",
+          "2026-05-10",
+          "2026-05-11"
+        ]
+      },
+      {
+        "corr": 329,
+        "area": "TRAMO 3",
+        "nombre": "Excavación en zanja para instalación de trincheras",
+        "unidad": "m3",
+        "rendimiento": 0.4834,
+        "cant_s1": 102,
+        "n_dias_s1": 4,
+        "cant_dia": 25.5,
+        "hh_dia": 12.3267,
+        "hh_s1": 49.31,
+        "inicio": "2026-05-08",
+        "termino": "2026-05-11",
+        "dias_activos": [
+          3,
+          4,
           5,
           6
         ],
         "fechas_s1": [
-          "2026-04-28",
-          "2026-04-29",
-          "2026-04-30",
-          "2026-05-01",
-          "2026-05-02",
-          "2026-05-03",
-          "2026-05-04"
+          "2026-05-05",
+          "2026-05-06",
+          "2026-05-07",
+          "2026-05-08",
+          "2026-05-09",
+          "2026-05-10",
+          "2026-05-11"
         ]
       },
       {
-        "corr": 363,
-        "area": "TRAMO 4",
-        "nombre": "Uniones tuberías HDPE: tubo (1000mm)-Codo 90° (2 un)",
+        "corr": 337,
+        "area": "TRAMO 3",
+        "nombre": "Trabajos Electricos e Instrumentación - canalización",
+        "unidad": "ml",
+        "rendimiento": 1.7403,
+        "cant_s1": 8,
+        "n_dias_s1": 1,
+        "cant_dia": 8.0,
+        "hh_dia": 13.9224,
+        "hh_s1": 13.92,
+        "inicio": "2026-05-05",
+        "termino": "2026-05-05",
+        "dias_activos": [
+          0
+        ],
+        "fechas_s1": [
+          "2026-05-05",
+          "2026-05-06",
+          "2026-05-07",
+          "2026-05-08",
+          "2026-05-09",
+          "2026-05-10",
+          "2026-05-11"
+        ]
+      },
+      {
+        "corr": 341,
+        "area": "TRAMO 3",
+        "nombre": "Traslado Tubería HDPE BODEGA - PTO TRABAJO (6 un)",
         "unidad": "un",
-        "rendimiento": 124.8495,
-        "cant_s1": 2,
-        "n_dias_s1": 2,
+        "rendimiento": 25.4777,
+        "cant_s1": 6,
+        "n_dias_s1": 3,
+        "cant_dia": 2.0,
+        "hh_dia": 50.9554,
+        "hh_s1": 152.87,
+        "inicio": "2026-05-08",
+        "termino": "2026-05-10",
+        "dias_activos": [
+          3,
+          4,
+          5
+        ],
+        "fechas_s1": [
+          "2026-05-05",
+          "2026-05-06",
+          "2026-05-07",
+          "2026-05-08",
+          "2026-05-09",
+          "2026-05-10",
+          "2026-05-11"
+        ]
+      },
+      {
+        "corr": 342,
+        "area": "TRAMO 3",
+        "nombre": "Unión de tubo - Tubo (4 un)",
+        "unidad": "un",
+        "rendimiento": 138.5162,
+        "cant_s1": 3,
+        "n_dias_s1": 3,
         "cant_dia": 1.0,
-        "hh_dia": 124.8495,
-        "hh_s1": 249.7,
-        "inicio": "2026-04-29",
-        "termino": "2026-04-30",
+        "hh_dia": 138.5162,
+        "hh_s1": 415.55,
+        "inicio": "2026-05-09",
+        "termino": "2026-05-12",
+        "dias_activos": [
+          4,
+          5,
+          6
+        ],
+        "fechas_s1": [
+          "2026-05-05",
+          "2026-05-06",
+          "2026-05-07",
+          "2026-05-08",
+          "2026-05-09",
+          "2026-05-10",
+          "2026-05-11"
+        ]
+      },
+      {
+        "corr": 369,
+        "area": "TRAMO 4",
+        "nombre": "Trabajos de limpieza y construcción de plataforma sector Tie In (KM 49) - UDR",
+        "unidad": "gl",
+        "rendimiento": 0.1,
+        "cant_s1": 1,
+        "n_dias_s1": 4,
+        "cant_dia": 0.25,
+        "hh_dia": 0.025,
+        "hh_s1": 0.1,
+        "inicio": "2026-05-06",
+        "termino": "2026-05-09",
+        "dias_activos": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "fechas_s1": [
+          "2026-05-05",
+          "2026-05-06",
+          "2026-05-07",
+          "2026-05-08",
+          "2026-05-09",
+          "2026-05-10",
+          "2026-05-11"
+        ]
+      },
+      {
+        "corr": 370,
+        "area": "TRAMO 4",
+        "nombre": "Traslado de estructura liviana - Pasarela KM 49.5",
+        "unidad": "kg",
+        "rendimiento": 0.0383,
+        "cant_s1": 610,
+        "n_dias_s1": 4,
+        "cant_dia": 152.5,
+        "hh_dia": 5.8377,
+        "hh_s1": 23.35,
+        "inicio": "2026-05-08",
+        "termino": "2026-05-11",
+        "dias_activos": [
+          3,
+          4,
+          5,
+          6
+        ],
+        "fechas_s1": [
+          "2026-05-05",
+          "2026-05-06",
+          "2026-05-07",
+          "2026-05-08",
+          "2026-05-09",
+          "2026-05-10",
+          "2026-05-11"
+        ]
+      },
+      {
+        "corr": 371,
+        "area": "TRAMO 4",
+        "nombre": "Traslado de estructura mediana - Pasarela KM 49.5",
+        "unidad": "kg",
+        "rendimiento": 0.0263,
+        "cant_s1": 2044,
+        "n_dias_s1": 4,
+        "cant_dia": 511.0,
+        "hh_dia": 13.4401,
+        "hh_s1": 53.76,
+        "inicio": "2026-05-08",
+        "termino": "2026-05-11",
+        "dias_activos": [
+          3,
+          4,
+          5,
+          6
+        ],
+        "fechas_s1": [
+          "2026-05-05",
+          "2026-05-06",
+          "2026-05-07",
+          "2026-05-08",
+          "2026-05-09",
+          "2026-05-10",
+          "2026-05-11"
+        ]
+      },
+      {
+        "corr": 372,
+        "area": "TRAMO 4",
+        "nombre": "Traslado de estructura, baranda - Pasarela KM 49.5",
+        "unidad": "kg",
+        "rendimiento": 0.0578,
+        "cant_s1": 1260,
+        "n_dias_s1": 4,
+        "cant_dia": 315.0,
+        "hh_dia": 18.2133,
+        "hh_s1": 72.85,
+        "inicio": "2026-05-08",
+        "termino": "2026-05-11",
+        "dias_activos": [
+          3,
+          4,
+          5,
+          6
+        ],
+        "fechas_s1": [
+          "2026-05-05",
+          "2026-05-06",
+          "2026-05-07",
+          "2026-05-08",
+          "2026-05-09",
+          "2026-05-10",
+          "2026-05-11"
+        ]
+      },
+      {
+        "corr": 374,
+        "area": "TRAMO 4",
+        "nombre": "Excavación suelo Común",
+        "unidad": "m3",
+        "rendimiento": 0.5219,
+        "cant_s1": 50.0,
+        "n_dias_s1": 6,
+        "cant_dia": 8.333333,
+        "hh_dia": 4.3495,
+        "hh_s1": 26.1,
+        "inicio": "2026-05-06",
+        "termino": "2026-05-11",
+        "dias_activos": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "fechas_s1": [
+          "2026-05-05",
+          "2026-05-06",
+          "2026-05-07",
+          "2026-05-08",
+          "2026-05-09",
+          "2026-05-10",
+          "2026-05-11"
+        ]
+      },
+      {
+        "corr": 378,
+        "area": "TRAMO 4",
+        "nombre": "Solución por aparición de roca en sello de excavación (Entre CR2 y CR1) - UDR",
+        "unidad": "gl",
+        "rendimiento": 44,
+        "cant_s1": 1,
+        "n_dias_s1": 2,
+        "cant_dia": 0.5,
+        "hh_dia": 22.0,
+        "hh_s1": 44,
+        "inicio": "2026-05-06",
+        "termino": "2026-05-07",
         "dias_activos": [
           1,
           2
         ],
         "fechas_s1": [
-          "2026-04-28",
-          "2026-04-29",
-          "2026-04-30",
-          "2026-05-01",
-          "2026-05-02",
-          "2026-05-03",
-          "2026-05-04"
+          "2026-05-05",
+          "2026-05-06",
+          "2026-05-07",
+          "2026-05-08",
+          "2026-05-09",
+          "2026-05-10",
+          "2026-05-11"
         ]
       },
       {
-        "corr": 364,
+        "corr": 422,
         "area": "TRAMO 4",
-        "nombre": "Uniones tuberías HDPE: tubo - tubo (1 un)",
-        "unidad": "un",
-        "rendimiento": 138.5162,
-        "cant_s1": 1,
-        "n_dias_s1": 1,
-        "cant_dia": 1.0,
-        "hh_dia": 138.5162,
-        "hh_s1": 138.52,
-        "inicio": "2026-05-01",
-        "termino": "2026-05-01",
-        "dias_activos": [
-          3
-        ],
-        "fechas_s1": [
-          "2026-04-28",
-          "2026-04-29",
-          "2026-04-30",
-          "2026-05-01",
-          "2026-05-02",
-          "2026-05-03",
-          "2026-05-04"
-        ]
-      },
-      {
-        "corr": 365,
-        "area": "TRAMO 4",
-        "nombre": "Uniones tuberías HDPE: tubo (1000mm)-Codo 45° (2 un)",
-        "unidad": "un",
-        "rendimiento": 118.4983,
-        "cant_s1": 2,
-        "n_dias_s1": 2,
-        "cant_dia": 1.0,
-        "hh_dia": 118.4983,
-        "hh_s1": 237.0,
-        "inicio": "2026-05-01",
-        "termino": "2026-05-02",
-        "dias_activos": [
-          3,
-          4
-        ],
-        "fechas_s1": [
-          "2026-04-28",
-          "2026-04-29",
-          "2026-04-30",
-          "2026-05-01",
-          "2026-05-02",
-          "2026-05-03",
-          "2026-05-04"
-        ]
-      },
-      {
-        "corr": 394,
-        "area": "TRAMO 4",
-        "nombre": "Traslado Tubería HDPE BODEGA - PTO TRABAJO (2un)",
+        "nombre": "Traslado Tubería HDPE BODEGA - PTO TRABAJO",
         "unidad": "un",
         "rendimiento": 25.4777,
-        "cant_s1": 2,
-        "n_dias_s1": 2,
+        "cant_s1": 4,
+        "n_dias_s1": 4,
         "cant_dia": 1.0,
         "hh_dia": 25.4777,
-        "hh_s1": 50.96,
-        "inicio": "2026-05-03",
-        "termino": "2026-05-04",
+        "hh_s1": 101.91,
+        "inicio": "2026-05-06",
+        "termino": "2026-05-09",
         "dias_activos": [
-          5,
-          6
-        ],
-        "fechas_s1": [
-          "2026-04-28",
-          "2026-04-29",
-          "2026-04-30",
-          "2026-05-01",
-          "2026-05-02",
-          "2026-05-03",
-          "2026-05-04"
-        ]
-      },
-      {
-        "corr": 395,
-        "area": "TRAMO 4",
-        "nombre": "Desfile de tuberías - CR C3 a CR C2 (2un)",
-        "unidad": "un",
-        "rendimiento": 30.7814,
-        "cant_s1": 2,
-        "n_dias_s1": 2,
-        "cant_dia": 1.0,
-        "hh_dia": 30.7814,
-        "hh_s1": 61.56,
-        "inicio": "2026-05-03",
-        "termino": "2026-05-04",
-        "dias_activos": [
-          5,
-          6
-        ],
-        "fechas_s1": [
-          "2026-04-28",
-          "2026-04-29",
-          "2026-04-30",
-          "2026-05-01",
-          "2026-05-02",
-          "2026-05-03",
-          "2026-05-04"
-        ]
-      },
-      {
-        "corr": 396,
-        "area": "TRAMO 4",
-        "nombre": "Unión de tuberías tubo - Tubo - CR C3 a CR C2 (2un)",
-        "unidad": "un",
-        "rendimiento": 138.5162,
-        "cant_s1": 2,
-        "n_dias_s1": 2,
-        "cant_dia": 1.0,
-        "hh_dia": 138.5162,
-        "hh_s1": 277.03,
-        "inicio": "2026-05-03",
-        "termino": "2026-05-04",
-        "dias_activos": [
-          5,
-          6
-        ],
-        "fechas_s1": [
-          "2026-04-28",
-          "2026-04-29",
-          "2026-04-30",
-          "2026-05-01",
-          "2026-05-02",
-          "2026-05-03",
-          "2026-05-04"
-        ]
-      },
-      {
-        "corr": 397,
-        "area": "TRAMO 4",
-        "nombre": "Posicionamiento de tuberías CR C3 a CR C2 (2un)",
-        "unidad": "un",
-        "rendimiento": 107.7348,
-        "cant_s1": 2,
-        "n_dias_s1": 2,
-        "cant_dia": 1.0,
-        "hh_dia": 107.7348,
-        "hh_s1": 215.47,
-        "inicio": "2026-05-03",
-        "termino": "2026-05-04",
-        "dias_activos": [
-          5,
-          6
-        ],
-        "fechas_s1": [
-          "2026-04-28",
-          "2026-04-29",
-          "2026-04-30",
-          "2026-05-01",
-          "2026-05-02",
-          "2026-05-03",
-          "2026-05-04"
-        ]
-      },
-      {
-        "corr": 442,
-        "area": "TRAMO 4",
-        "nombre": "Excavación suelo común: CR-3 - CH. PRIM",
-        "unidad": "m3",
-        "rendimiento": 0.4834,
-        "cant_s1": 150,
-        "n_dias_s1": 5,
-        "cant_dia": 30.0,
-        "hh_dia": 14.502,
-        "hh_s1": 72.51,
-        "inicio": "2026-04-28",
-        "termino": "2026-05-02",
-        "dias_activos": [
-          0,
           1,
           2,
           3,
           4
         ],
         "fechas_s1": [
-          "2026-04-28",
-          "2026-04-29",
-          "2026-04-30",
-          "2026-05-01",
-          "2026-05-02",
-          "2026-05-03",
-          "2026-05-04"
+          "2026-05-05",
+          "2026-05-06",
+          "2026-05-07",
+          "2026-05-08",
+          "2026-05-09",
+          "2026-05-10",
+          "2026-05-11"
         ]
       },
       {
-        "corr": 443,
+        "corr": 423,
         "area": "TRAMO 4",
-        "nombre": "Traslado de durmientes DP-05",
+        "nombre": "Unión de tuberías tubo - Tubo (4 un)",
         "unidad": "un",
-        "rendimiento": 1.6222,
-        "cant_s1": 10,
-        "n_dias_s1": 5,
-        "cant_dia": 2.0,
-        "hh_dia": 3.2445,
-        "hh_s1": 16.22,
-        "inicio": "2026-04-30",
-        "termino": "2026-05-04",
+        "rendimiento": 138.5162,
+        "cant_s1": 4,
+        "n_dias_s1": 4,
+        "cant_dia": 1.0,
+        "hh_dia": 138.5162,
+        "hh_s1": 554.06,
+        "inicio": "2026-05-06",
+        "termino": "2026-05-09",
         "dias_activos": [
+          1,
           2,
           3,
-          4,
-          5,
-          6
+          4
         ],
         "fechas_s1": [
-          "2026-04-28",
-          "2026-04-29",
-          "2026-04-30",
-          "2026-05-01",
-          "2026-05-02",
-          "2026-05-03",
-          "2026-05-04"
+          "2026-05-05",
+          "2026-05-06",
+          "2026-05-07",
+          "2026-05-08",
+          "2026-05-09",
+          "2026-05-10",
+          "2026-05-11"
         ]
       },
       {
-        "corr": 444,
+        "corr": 424,
         "area": "TRAMO 4",
-        "nombre": "Montaje durmientes DP-05",
+        "nombre": "Posicionamiento de tuberías (4 un)",
         "unidad": "un",
-        "rendimiento": 17.304,
-        "cant_s1": 10,
-        "n_dias_s1": 5,
-        "cant_dia": 2.0,
-        "hh_dia": 34.608,
-        "hh_s1": 173.04,
-        "inicio": "2026-04-30",
-        "termino": "2026-05-04",
+        "rendimiento": 107.7348,
+        "cant_s1": 4,
+        "n_dias_s1": 4,
+        "cant_dia": 1.0,
+        "hh_dia": 107.7348,
+        "hh_s1": 430.94,
+        "inicio": "2026-05-06",
+        "termino": "2026-05-09",
         "dias_activos": [
+          1,
           2,
           3,
-          4,
-          5,
-          6
+          4
         ],
         "fechas_s1": [
-          "2026-04-28",
-          "2026-04-29",
-          "2026-04-30",
-          "2026-05-01",
-          "2026-05-02",
-          "2026-05-03",
-          "2026-05-04"
+          "2026-05-05",
+          "2026-05-06",
+          "2026-05-07",
+          "2026-05-08",
+          "2026-05-09",
+          "2026-05-10",
+          "2026-05-11"
         ]
       },
       {
         "corr": 464,
         "area": "TRAMO 4",
-        "nombre": "Desmantelamiento de Machón",
+        "nombre": "Excavación manual de durmientes DP-05 (UDR)",
         "unidad": "gl",
-        "rendimiento": 175.74,
-        "cant_s1": 1.0,
-        "n_dias_s1": 7,
-        "cant_dia": 0.142857,
-        "hh_dia": 25.1057,
-        "hh_s1": 175.74,
-        "inicio": "2026-04-28",
-        "termino": "2026-05-04",
+        "rendimiento": 324,
+        "cant_s1": 1,
+        "n_dias_s1": 6,
+        "cant_dia": 0.166667,
+        "hh_dia": 54.0,
+        "hh_s1": 324,
+        "inicio": "2026-05-06",
+        "termino": "2026-05-11",
         "dias_activos": [
-          0,
           1,
           2,
           3,
@@ -941,45 +933,71 @@
           6
         ],
         "fechas_s1": [
-          "2026-04-28",
-          "2026-04-29",
-          "2026-04-30",
-          "2026-05-01",
-          "2026-05-02",
-          "2026-05-03",
-          "2026-05-04"
+          "2026-05-05",
+          "2026-05-06",
+          "2026-05-07",
+          "2026-05-08",
+          "2026-05-09",
+          "2026-05-10",
+          "2026-05-11"
         ]
       },
       {
         "corr": 465,
         "area": "TRAMO 4",
-        "nombre": "Solución por aparición de roca en sello de excavación (Entre CR2 y CR1)",
-        "unidad": "gl",
-        "rendimiento": 161,
-        "cant_s1": 1,
-        "n_dias_s1": 7,
-        "cant_dia": 0.142857,
-        "hh_dia": 23.0,
-        "hh_s1": 161,
-        "inicio": "2026-04-28",
-        "termino": "2026-05-04",
+        "nombre": "Traslado de durmientes DP-05",
+        "unidad": "un",
+        "rendimiento": 3.2445,
+        "cant_s1": 20,
+        "n_dias_s1": 4,
+        "cant_dia": 5.0,
+        "hh_dia": 16.2225,
+        "hh_s1": 64.89,
+        "inicio": "2026-05-08",
+        "termino": "2026-05-11",
         "dias_activos": [
-          0,
-          1,
-          2,
           3,
           4,
           5,
           6
         ],
         "fechas_s1": [
-          "2026-04-28",
-          "2026-04-29",
-          "2026-04-30",
-          "2026-05-01",
-          "2026-05-02",
-          "2026-05-03",
-          "2026-05-04"
+          "2026-05-05",
+          "2026-05-06",
+          "2026-05-07",
+          "2026-05-08",
+          "2026-05-09",
+          "2026-05-10",
+          "2026-05-11"
+        ]
+      },
+      {
+        "corr": 466,
+        "area": "TRAMO 4",
+        "nombre": "Montaje durmientes DP-05",
+        "unidad": "un",
+        "rendimiento": 17.304,
+        "cant_s1": 20,
+        "n_dias_s1": 4,
+        "cant_dia": 5.0,
+        "hh_dia": 86.52,
+        "hh_s1": 346.08,
+        "inicio": "2026-05-08",
+        "termino": "2026-05-11",
+        "dias_activos": [
+          3,
+          4,
+          5,
+          6
+        ],
+        "fechas_s1": [
+          "2026-05-05",
+          "2026-05-06",
+          "2026-05-07",
+          "2026-05-08",
+          "2026-05-09",
+          "2026-05-10",
+          "2026-05-11"
         ]
       }
     ]
@@ -6611,6 +6629,5 @@
         }
       ]
     }
-  ],
-  "meta_programa": 4269.0
+  ]
 }
