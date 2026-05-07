@@ -1138,8 +1138,8 @@
         "hh_esperadas": 55.0,
         "hh_ejecutadas": 0.0,
         "categoria": "Planificada del día",
-        "causa": "",
-        "responsable": "Fe Grande"
+        "causa": "Condición Climática, bajada anticipada de personal. ",
+        "responsable": "CODELCO"
       },
       "317": {
         "corr": 317,
@@ -1153,8 +1153,8 @@
         "hh_esperadas": 16.81,
         "hh_ejecutadas": 0.0,
         "categoria": "Planificada del día",
-        "causa": "",
-        "responsable": "Fe Grande"
+        "causa": "Condición Climática, bajada anticipada de personal. ",
+        "responsable": "CODELCO"
       },
       "337": {
         "corr": 337,
@@ -1168,8 +1168,8 @@
         "hh_esperadas": 13.92,
         "hh_ejecutadas": 0.0,
         "categoria": "Solo pendiente",
-        "causa": "",
-        "responsable": "Fe Grande"
+        "causa": "Condición Climática, bajada anticipada de personal. ",
+        "responsable": "CODELCO"
       },
       "369": {
         "corr": 369,
@@ -1198,8 +1198,8 @@
         "hh_esperadas": 4.35,
         "hh_ejecutadas": 0.0,
         "categoria": "Planificada del día",
-        "causa": "",
-        "responsable": "Fe Grande"
+        "causa": "Condición Climática, bajada anticipada de personal. ",
+        "responsable": "CODELCO"
       },
       "378": {
         "corr": 378,
@@ -1213,8 +1213,8 @@
         "hh_esperadas": 22.0,
         "hh_ejecutadas": 0.0,
         "categoria": "Planificada del día",
-        "causa": "",
-        "responsable": "Fe Grande"
+        "causa": "Condición Climática, bajada anticipada de personal. ",
+        "responsable": "CODELCO"
       },
       "422": {
         "corr": 422,
@@ -1228,8 +1228,8 @@
         "hh_esperadas": 25.48,
         "hh_ejecutadas": 0.0,
         "categoria": "Planificada del día",
-        "causa": "",
-        "responsable": "Fe Grande"
+        "causa": "Condición Climática, bajada anticipada de personal. ",
+        "responsable": "CODELCO"
       },
       "423": {
         "corr": 423,
@@ -1243,8 +1243,8 @@
         "hh_esperadas": 138.52,
         "hh_ejecutadas": 0.0,
         "categoria": "Planificada del día",
-        "causa": "",
-        "responsable": "Fe Grande"
+        "causa": "Condición Climática, bajada anticipada de personal. ",
+        "responsable": "CODELCO"
       },
       "424": {
         "corr": 424,
@@ -1258,8 +1258,8 @@
         "hh_esperadas": 107.73,
         "hh_ejecutadas": 0.0,
         "categoria": "Planificada del día",
-        "causa": "",
-        "responsable": "Fe Grande"
+        "causa": "Condición Climática, bajada anticipada de personal. ",
+        "responsable": "CODELCO"
       },
       "464": {
         "corr": 464,
@@ -1273,8 +1273,8 @@
         "hh_esperadas": 54.01,
         "hh_ejecutadas": 0.0,
         "categoria": "Planificada del día",
-        "causa": "",
-        "responsable": "Fe Grande"
+        "causa": "Condición Climática, bajada anticipada de personal. ",
+        "responsable": "CODELCO"
       }
     }
   },
