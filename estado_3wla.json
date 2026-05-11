@@ -2651,21 +2651,6 @@
         "causa": "",
         "responsable": ""
       },
-      "225": {
-        "corr": 225,
-        "nombre": "Traslado de material a Botadero - 6 x Durmientes DP-01",
-        "area": "TRAMO 1",
-        "unidad": "m3",
-        "rendimiento": 0.156,
-        "cant_dia_base": 1.44,
-        "cant_esperada": 2.8795,
-        "cant_ejecutada": 0.0,
-        "hh_esperadas": 0.45,
-        "hh_ejecutadas": 0.0,
-        "categoria": "Solo pendiente",
-        "causa": "",
-        "responsable": "Fe Grande"
-      },
       "227": {
         "corr": 227,
         "nombre": "Traslado de durmientes - 06 x Durmientes DP-01",
@@ -2678,8 +2663,8 @@
         "hh_esperadas": 6.49,
         "hh_ejecutadas": 3.24,
         "categoria": "Solo pendiente",
-        "causa": "",
-        "responsable": "Fe Grande"
+        "causa": "No se trasladan por interferencias de línea de aguas servidas existente (200 mm)",
+        "responsable": "CODELCO"
       },
       "228": {
         "corr": 228,
@@ -2693,23 +2678,8 @@
         "hh_esperadas": 69.22,
         "hh_ejecutadas": 34.61,
         "categoria": "Solo pendiente",
-        "causa": "",
+        "causa": "No se instalan por interferencias de línea de aguas servidas existente (200 mm)",
         "responsable": "Fe Grande"
-      },
-      "229": {
-        "corr": 229,
-        "nombre": "Instalación de perfiles metálicos x 06 - Durmientes DP-01",
-        "area": "TRAMO 1",
-        "unidad": "un",
-        "rendimiento": 1.0815,
-        "cant_dia_base": 6.0,
-        "cant_esperada": 6.0,
-        "cant_ejecutada": 6.0,
-        "hh_esperadas": 6.49,
-        "hh_ejecutadas": 6.49,
-        "categoria": "Solo pendiente",
-        "causa": "",
-        "responsable": ""
       },
       "232": {
         "corr": 232,
@@ -2718,11 +2688,11 @@
         "unidad": "m",
         "rendimiento": 5.2767,
         "cant_dia_base": 5.04,
-        "cant_esperada": 5.04,
+        "cant_esperada": 10.0799,
         "cant_ejecutada": 0.0,
-        "hh_esperadas": 26.59,
+        "hh_esperadas": 53.19,
         "hh_ejecutadas": 0.0,
-        "categoria": "Planificada del día",
+        "categoria": "Planificada + pendiente",
         "causa": "Actividad no planificada para el día, ",
         "responsable": "Fe Grande"
       },
@@ -2738,7 +2708,7 @@
         "hh_esperadas": 29.45,
         "hh_ejecutadas": 0.0,
         "categoria": "Planificada + pendiente",
-        "causa": "Actividad no planificada para el día, ",
+        "causa": "Actividad no planificada para el día y fundaciones no estan en siu posición final. ",
         "responsable": "Fe Grande"
       },
       "266": {
@@ -2753,7 +2723,7 @@
         "hh_esperadas": 11.91,
         "hh_ejecutadas": 0.0,
         "categoria": "Planificada del día",
-        "causa": "Inconveniente de talud. ",
+        "causa": "Evento desprendimiento de material en talud de F2. La empresa no respeta secuencia constructiva recomendada por especialista geotécnico.",
         "responsable": "Fe Grande"
       },
       "277": {
@@ -2768,7 +2738,7 @@
         "hh_esperadas": 110.0,
         "hh_ejecutadas": 0.0,
         "categoria": "Solo pendiente",
-        "causa": "",
+        "causa": "Actividad no planificada en POD (Durante toda la semana por falta de personal)",
         "responsable": "Fe Grande"
       },
       "289": {
@@ -2794,9 +2764,9 @@
         "rendimiento": 1.5676,
         "cant_dia_base": 1.285714,
         "cant_esperada": 1.2857,
-        "cant_ejecutada": 1.2857,
+        "cant_ejecutada": 2.0,
         "hh_esperadas": 2.02,
-        "hh_ejecutadas": 2.02,
+        "hh_ejecutadas": 3.14,
         "categoria": "Planificada del día",
         "causa": "",
         "responsable": ""
@@ -2824,11 +2794,11 @@
         "rendimiento": 25.4777,
         "cant_dia_base": 2.0,
         "cant_esperada": 4.0,
-        "cant_ejecutada": 1.0,
+        "cant_ejecutada": 2.0,
         "hh_esperadas": 101.91,
-        "hh_ejecutadas": 25.48,
+        "hh_ejecutadas": 50.96,
         "categoria": "Solo pendiente",
-        "causa": "",
+        "causa": "Faltan dos traslados según lo planificado en 3WLA. No se trasladan mas por falta de espacio para acopio. ",
         "responsable": "Fe Grande"
       },
       "342": {
@@ -2858,7 +2828,7 @@
         "hh_esperadas": 9.83,
         "hh_ejecutadas": 0.0,
         "categoria": "Planificada + pendiente",
-        "causa": "",
+        "causa": "Actividad no planificada",
         "responsable": "Fe Grande"
       },
       "371": {
@@ -2873,7 +2843,7 @@
         "hh_esperadas": 26.88,
         "hh_ejecutadas": 0.0,
         "categoria": "Planificada + pendiente",
-        "causa": "",
+        "causa": "Actividad no planificada",
         "responsable": "Fe Grande"
       },
       "372": {
@@ -2888,7 +2858,7 @@
         "hh_esperadas": 52.15,
         "hh_ejecutadas": 0.0,
         "categoria": "Planificada + pendiente",
-        "causa": "",
+        "causa": "Actividad no planificada",
         "responsable": "Fe Grande"
       },
       "374": {
@@ -2903,20 +2873,20 @@
         "hh_esperadas": 20.88,
         "hh_ejecutadas": 0.0,
         "categoria": "Planificada + pendiente",
-        "causa": "",
+        "causa": "Actividad no planificada",
         "responsable": "Fe Grande"
       },
-      "422": {
-        "corr": 422,
-        "nombre": "Traslado Tubería HDPE BODEGA - PTO TRABAJO",
+      "378": {
+        "corr": 378,
+        "nombre": "Solución por aparición de roca en sello de excavación (Entre CR2 y CR1) - UDR",
         "area": "TRAMO 4",
-        "unidad": "un",
-        "rendimiento": 25.4777,
-        "cant_dia_base": 1.0,
-        "cant_esperada": 4.0,
-        "cant_ejecutada": 4.0,
-        "hh_esperadas": 101.91,
-        "hh_ejecutadas": 101.91,
+        "unidad": "gl",
+        "rendimiento": 44,
+        "cant_dia_base": 0.5,
+        "cant_esperada": 0.7,
+        "cant_ejecutada": 0.7,
+        "hh_esperadas": 30.8,
+        "hh_ejecutadas": 30.8,
         "categoria": "Solo pendiente",
         "causa": "",
         "responsable": ""
@@ -2933,7 +2903,7 @@
         "hh_esperadas": 415.55,
         "hh_ejecutadas": 138.52,
         "categoria": "Solo pendiente",
-        "causa": "",
+        "causa": "No se alcanza la cantidad esperada del trisemanal. (2 de 4)",
         "responsable": "Fe Grande"
       },
       "424": {
@@ -2948,7 +2918,7 @@
         "hh_esperadas": 323.2,
         "hh_ejecutadas": 107.73,
         "categoria": "Solo pendiente",
-        "causa": "",
+        "causa": "No se alcanza la cantidad esperada del trisemanal. (2 de 4)",
         "responsable": "Fe Grande"
       },
       "464": {
@@ -2963,7 +2933,7 @@
         "hh_esperadas": 283.5,
         "hh_ejecutadas": 16.2,
         "categoria": "Planificada + pendiente",
-        "causa": "",
+        "causa": "No se alcanza cantidad esperada planificada en el 3WLA. ",
         "responsable": "Fe Grande"
       },
       "465": {
@@ -2978,7 +2948,7 @@
         "hh_esperadas": 48.67,
         "hh_ejecutadas": 6.49,
         "categoria": "Planificada + pendiente",
-        "causa": "",
+        "causa": "No se alcanza cantidad esperada planificada en el 3WLA. ",
         "responsable": "Fe Grande"
       },
       "466": {
@@ -2993,7 +2963,7 @@
         "hh_esperadas": 259.56,
         "hh_ejecutadas": 34.61,
         "categoria": "Planificada + pendiente",
-        "causa": "",
+        "causa": "No se alcanza cantidad esperada planificada en el 3WLA. ",
         "responsable": "Fe Grande"
       }
     }
