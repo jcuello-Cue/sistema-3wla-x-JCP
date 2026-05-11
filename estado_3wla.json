@@ -1894,7 +1894,7 @@
         "hh_esperadas": 0.45,
         "hh_ejecutadas": 0.0,
         "categoria": "Solo pendiente",
-        "causa": "",
+        "causa": "Se prioriza fundación F2 Y F1 por la falta de personal civil (5 personas). ",
         "responsable": "Fe Grande"
       },
       "227": {
@@ -1909,7 +1909,7 @@
         "hh_esperadas": 4.87,
         "hh_ejecutadas": 0.0,
         "categoria": "Planificada del día",
-        "causa": "",
+        "causa": "No se planifica para el día. ",
         "responsable": "Fe Grande"
       },
       "228": {
@@ -1924,7 +1924,7 @@
         "hh_esperadas": 51.91,
         "hh_ejecutadas": 0.0,
         "categoria": "Planificada del día",
-        "causa": "",
+        "causa": "No se planifica para el día. ",
         "responsable": "Fe Grande"
       },
       "232": {
@@ -1954,7 +1954,7 @@
         "hh_esperadas": 14.73,
         "hh_ejecutadas": 0.0,
         "categoria": "Planificada + pendiente",
-        "causa": "",
+        "causa": "Fundacionnes dp04 aún no están en su posición final. ",
         "responsable": "Fe Grande"
       },
       "264": {
@@ -1984,7 +1984,7 @@
         "hh_esperadas": 110.0,
         "hh_ejecutadas": 0.0,
         "categoria": "Solo pendiente",
-        "causa": "Actividad no planificada",
+        "causa": "Actividad no planificada Se priorizan las otras excavaciones y ademas no se contaba con new jersey de hormigón. ",
         "responsable": "Fe Grande"
       },
       "288": {
@@ -2059,7 +2059,7 @@
         "hh_esperadas": 50.96,
         "hh_ejecutadas": 0.0,
         "categoria": "Planificada del día",
-        "causa": "Actividad no planificada",
+        "causa": "Actividad no planificada. No hay espacio para acopiar cañerias en TT8 (Sumadas a las tras",
         "responsable": "Fe Grande"
       },
       "342": {
@@ -2151,6 +2151,21 @@
         "categoria": "Planificada + pendiente",
         "causa": "Actividad no planificada",
         "responsable": "Fe Grande"
+      },
+      "378": {
+        "corr": 378,
+        "nombre": "Solución por aparición de roca en sello de excavación (Entre CR2 y CR1) - UDR",
+        "area": "TRAMO 4",
+        "unidad": "gl",
+        "rendimiento": 44,
+        "cant_dia_base": 0.5,
+        "cant_esperada": 0.7,
+        "cant_ejecutada": 0.7,
+        "hh_esperadas": 30.8,
+        "hh_ejecutadas": 30.8,
+        "categoria": "Solo pendiente",
+        "causa": "",
+        "responsable": ""
       },
       "422": {
         "corr": 422,
