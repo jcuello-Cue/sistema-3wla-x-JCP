@@ -1353,36 +1353,6 @@
         "causa": "No se planifica ejecución de DP-04.",
         "responsable": "Fe Grande"
       },
-      "317": {
-        "corr": 317,
-        "nombre": "Suministro e Instalación Relleno Compactado (Material Seleccionado)",
-        "area": "TRAMO 3",
-        "unidad": "m3",
-        "rendimiento": 1.401,
-        "cant_dia_base": 12.0,
-        "cant_esperada": 11.9996,
-        "cant_ejecutada": 11.9996,
-        "hh_esperadas": 16.81,
-        "hh_ejecutadas": 16.81,
-        "categoria": "Solo pendiente",
-        "causa": "",
-        "responsable": ""
-      },
-      "337": {
-        "corr": 337,
-        "nombre": "Trabajos Electricos e Instrumentación - canalización",
-        "area": "TRAMO 3",
-        "unidad": "ml",
-        "rendimiento": 1.7403,
-        "cant_dia_base": 8.0,
-        "cant_esperada": 8.0,
-        "cant_ejecutada": 8.0,
-        "hh_esperadas": 13.92,
-        "hh_ejecutadas": 13.92,
-        "categoria": "Solo pendiente",
-        "causa": "",
-        "responsable": ""
-      },
       "369": {
         "corr": 369,
         "nombre": "Trabajos de limpieza y construcción de plataforma sector Tie In (KM 49) - UDR",
@@ -1485,7 +1455,7 @@
         "hh_esperadas": 107.99,
         "hh_ejecutadas": 0.0,
         "categoria": "Planificada + pendiente",
-        "causa": "El reporte indica que la actividad no inicia por falta de regularización de procedimiento, camioneta y semáforo para corte regulado",
+        "causa": "A las 09:50 horas, la actividad aún no se encontraba iniciada, debido a que el personal de Fe Grande no había llegado a la postura en CRC3. Posteriormente, a las 10:10 horas, el personal de Fe Grande arriba al sector. El supervisor informa que se mantienen dos semáforos no operativos posterior al evento climático, condición que podría impactar la implementación de cortes regulados y generar retrasos en las actividades programadas.  A las 11:50 horas, la tarea continúa sin inicio, debido a que aún no se regulariza en terreno el procedimiento con las modificaciones solicitadas previo al inicio de los trabajos en talud. Adicionalmente, no se dispone de una camioneta ni de un semáforo para la implementación del corte regulado en CRC3. Fe Grande informa que no cuenta con disponibilidad de camionetas ni semáforos para ejecutar el corte de carretera, ya que dichos recursos se encuentran ocupados en cortes asociados al Tramo 2 y al sector Km 48, para actividades de picado de roca.",
         "responsable": "Fe Grande"
       },
       "_adelantos": [
