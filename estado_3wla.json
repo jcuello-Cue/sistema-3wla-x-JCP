@@ -1335,7 +1335,7 @@
         "hh_esperadas": 0.22,
         "hh_ejecutadas": 0.0,
         "categoria": "Planificada del día",
-        "causa": "No se planifica traslado a botadero asociado a DP-01.",
+        "causa": "No se planifica traslado a botadero asociado a DP-01. Tolva en TT8",
         "responsable": "Fe Grande"
       },
       "277": {
@@ -1350,8 +1350,38 @@
         "hh_esperadas": 110.0,
         "hh_ejecutadas": 0.0,
         "categoria": "Planificada + pendiente",
-        "causa": "No se planifica ejecución de DP-04.",
+        "causa": "No se planifica ejecución de DP-04. New jersey cuadrilla de civiles. ",
         "responsable": "Fe Grande"
+      },
+      "317": {
+        "corr": 317,
+        "nombre": "Suministro e Instalación Relleno Compactado (Material Seleccionado)",
+        "area": "TRAMO 3",
+        "unidad": "m3",
+        "rendimiento": 1.401,
+        "cant_dia_base": 12.0,
+        "cant_esperada": 11.9996,
+        "cant_ejecutada": 11.9996,
+        "hh_esperadas": 16.81,
+        "hh_ejecutadas": 16.81,
+        "categoria": "Solo pendiente",
+        "causa": "",
+        "responsable": ""
+      },
+      "337": {
+        "corr": 337,
+        "nombre": "Trabajos Electricos e Instrumentación - canalización",
+        "area": "TRAMO 3",
+        "unidad": "ml",
+        "rendimiento": 1.7403,
+        "cant_dia_base": 8.0,
+        "cant_esperada": 8.0,
+        "cant_ejecutada": 8.0,
+        "hh_esperadas": 13.92,
+        "hh_ejecutadas": 13.92,
+        "categoria": "Solo pendiente",
+        "causa": "",
+        "responsable": ""
       },
       "369": {
         "corr": 369,
@@ -1365,7 +1395,7 @@
         "hh_esperadas": 0.05,
         "hh_ejecutadas": 0.0,
         "categoria": "Planificada + pendiente",
-        "causa": "No aparece habilitación/plataforma KM49,5 este día.",
+        "causa": "No aparece habilitación/plataforma KM49,5 este día. ",
         "responsable": "Fe Grande"
       },
       "374": {
@@ -1380,7 +1410,7 @@
         "hh_esperadas": 8.7,
         "hh_ejecutadas": 0.0,
         "categoria": "Planificada + pendiente",
-        "causa": "No se registra excavación de suelo común en el tramo 4",
+        "causa": "No se registra excavación de suelo común en el tramo 4. Problemas para acceder al sector pot contingencia climática (Personal sin EPP adecuados)",
         "responsable": "Fe Grande"
       },
       "378": {
@@ -1395,7 +1425,7 @@
         "hh_esperadas": 44.0,
         "hh_ejecutadas": 0.0,
         "categoria": "Planificada + pendiente",
-        "causa": "Actividad no planificada ",
+        "causa": "Actividad no planificada. Problemas para acceder al sector pot contingencia climática (Personal sin EPP adecuados)",
         "responsable": "Fe Grande"
       },
       "422": {
@@ -1410,7 +1440,7 @@
         "hh_esperadas": 50.96,
         "hh_ejecutadas": 0.0,
         "categoria": "Planificada + pendiente",
-        "causa": "Actividad no planificada. ",
+        "causa": "Actividad no planificada. Cañerias ya presentes en el sector y tampoco cuentan con espacio adecuado para dejar el suministro. ",
         "responsable": "Fe Grande"
       },
       "423": {
@@ -1425,7 +1455,7 @@
         "hh_esperadas": 277.03,
         "hh_ejecutadas": 0.0,
         "categoria": "Planificada + pendiente",
-        "causa": "Actividad no planificada.",
+        "causa": "No se genera plataforma adecuada para resguardar la termofusora ante contingencia climática (termofusora se entierra en el barro). ",
         "responsable": "Fe Grande"
       },
       "424": {
@@ -1440,7 +1470,7 @@
         "hh_esperadas": 215.47,
         "hh_ejecutadas": 0.0,
         "categoria": "Planificada + pendiente",
-        "causa": "Actividad no planificada.",
+        "causa": "Actividad sucesora de unión de cañerias. ",
         "responsable": "Fe Grande"
       },
       "464": {
