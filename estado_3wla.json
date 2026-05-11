@@ -2274,6 +2274,21 @@
         "causa": "",
         "responsable": ""
       },
+      "225": {
+        "corr": 225,
+        "nombre": "Traslado de material a Botadero - 6 x Durmientes DP-01",
+        "area": "TRAMO 1",
+        "unidad": "m3",
+        "rendimiento": 0.156,
+        "cant_dia_base": 1.44,
+        "cant_esperada": 2.8795,
+        "cant_ejecutada": 2.8795,
+        "hh_esperadas": 0.45,
+        "hh_ejecutadas": 0.45,
+        "categoria": "Solo pendiente",
+        "causa": "",
+        "responsable": ""
+      },
       "227": {
         "corr": 227,
         "nombre": "Traslado de durmientes - 06 x Durmientes DP-01",
@@ -2282,9 +2297,9 @@
         "rendimiento": 1.6222,
         "cant_dia_base": 3.0,
         "cant_esperada": 6.0001,
-        "cant_ejecutada": 4.0,
+        "cant_ejecutada": 2.0,
         "hh_esperadas": 9.73,
-        "hh_ejecutadas": 6.49,
+        "hh_ejecutadas": 3.24,
         "categoria": "Planificada + pendiente",
         "causa": "No se alcanza cantidad esperada",
         "responsable": "Fe Grande"
@@ -2297,9 +2312,9 @@
         "rendimiento": 17.304,
         "cant_dia_base": 3.0,
         "cant_esperada": 6.0,
-        "cant_ejecutada": 0.0,
+        "cant_ejecutada": 2.0,
         "hh_esperadas": 103.82,
-        "hh_ejecutadas": 0.0,
+        "hh_ejecutadas": 34.61,
         "categoria": "Planificada + pendiente",
         "causa": "Actividad no planificada por actividad predecesora no realizada",
         "responsable": "Fe Grande"
@@ -2513,21 +2528,6 @@
         "categoria": "Planificada + pendiente",
         "causa": "Actividad no planificada para el día. ",
         "responsable": "Fe Grande"
-      },
-      "378": {
-        "corr": 378,
-        "nombre": "Solución por aparición de roca en sello de excavación (Entre CR2 y CR1) - UDR",
-        "area": "TRAMO 4",
-        "unidad": "gl",
-        "rendimiento": 44,
-        "cant_dia_base": 0.5,
-        "cant_esperada": 0.7,
-        "cant_ejecutada": 0.7,
-        "hh_esperadas": 30.8,
-        "hh_ejecutadas": 30.8,
-        "categoria": "Solo pendiente",
-        "causa": "",
-        "responsable": ""
       },
       "422": {
         "corr": 422,
