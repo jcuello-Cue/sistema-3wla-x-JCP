@@ -1562,7 +1562,7 @@
         "hh_esperadas": 0.45,
         "hh_ejecutadas": 0.0,
         "categoria": "Planificada + pendiente",
-        "causa": "No se planifica ninguna actividad relacionada a la carga, traslado y descarga de material en botadero. ",
+        "causa": "No se planifica ninguna actividad relacionada a la carga, traslado y descarga de material en botadero. Camión tolva se destina a caneche para buscar arena y trae estabilizado (llegando a las 16,00 postura). ",
         "responsable": "Fe Grande"
       },
       "226": {
@@ -1592,7 +1592,7 @@
         "hh_esperadas": 7.36,
         "hh_ejecutadas": 0.0,
         "categoria": "Planificada del día",
-        "causa": "No apareceplanificado la actividad asociada a soportes de tubería derivación. También es importante señalar que es sucesora de la instalación de las fundaciones DP04. ",
+        "causa": "No aparece planificado la actividad asociada a soportes de tubería derivación. También es importante señalar que es sucesora de la instalación de las fundaciones DP04 de las cuales ninguna esta montada en su posición final. ",
         "responsable": "Fe Grande"
       },
       "264": {
@@ -1622,7 +1622,7 @@
         "hh_esperadas": 110.0,
         "hh_ejecutadas": 0.0,
         "categoria": "Solo pendiente",
-        "causa": "Actividad no planificada para el día. ",
+        "causa": "Actividad no planificada para el día. Se prioriza F1A y DP01. Además, no se contaba con New Jersey de hormigón. ",
         "responsable": "Fe Grande"
       },
       "298": {
@@ -1757,7 +1757,7 @@
         "hh_esperadas": 44.0,
         "hh_ejecutadas": 13.2,
         "categoria": "Solo pendiente",
-        "causa": "Actividad no planificada para el día- ",
+        "causa": "Se realiza menos cantidad respecto a lo planificado pendiente de los días anteriores. ",
         "responsable": "Fe Grande"
       },
       "422": {
@@ -1772,7 +1772,7 @@
         "hh_esperadas": 76.43,
         "hh_ejecutadas": 0.0,
         "categoria": "Planificada + pendiente",
-        "causa": "Actividad no planificada para el día- ",
+        "causa": "Actividad no planificada para el día. No hay espacio para acopio. ",
         "responsable": "Fe Grande"
       },
       "423": {
@@ -1787,7 +1787,7 @@
         "hh_esperadas": 415.55,
         "hh_ejecutadas": 0.0,
         "categoria": "Planificada + pendiente",
-        "causa": "Actividad no planificada para el día- ",
+        "causa": "Actividad no planificada para el día. Se destinan recursos para solucionar estabilidad de plataforma de termofusora. ",
         "responsable": "Fe Grande"
       },
       "424": {
@@ -1802,7 +1802,7 @@
         "hh_esperadas": 323.2,
         "hh_ejecutadas": 0.0,
         "categoria": "Planificada + pendiente",
-        "causa": "Actividad no planificada para el día- ",
+        "causa": "Actividad no planificada para el día. Se destinan recursos para solucionar estabilidad de plataforma de termofusora. ",
         "responsable": "Fe Grande"
       },
       "464": {
