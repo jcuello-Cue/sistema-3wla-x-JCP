@@ -2274,21 +2274,6 @@
         "causa": "",
         "responsable": ""
       },
-      "225": {
-        "corr": 225,
-        "nombre": "Traslado de material a Botadero - 6 x Durmientes DP-01",
-        "area": "TRAMO 1",
-        "unidad": "m3",
-        "rendimiento": 0.156,
-        "cant_dia_base": 1.44,
-        "cant_esperada": 2.8795,
-        "cant_ejecutada": 2.8795,
-        "hh_esperadas": 0.45,
-        "hh_ejecutadas": 0.45,
-        "categoria": "Solo pendiente",
-        "causa": "",
-        "responsable": ""
-      },
       "227": {
         "corr": 227,
         "nombre": "Traslado de durmientes - 06 x Durmientes DP-01",
@@ -2301,7 +2286,7 @@
         "hh_esperadas": 9.73,
         "hh_ejecutadas": 6.49,
         "categoria": "Planificada + pendiente",
-        "causa": "",
+        "causa": "No se alcanza cantidad esperada",
         "responsable": "Fe Grande"
       },
       "228": {
@@ -2316,7 +2301,7 @@
         "hh_esperadas": 103.82,
         "hh_ejecutadas": 0.0,
         "categoria": "Planificada + pendiente",
-        "causa": "",
+        "causa": "Actividad no planificada por actividad predecesora no realizada",
         "responsable": "Fe Grande"
       },
       "229": {
@@ -2331,7 +2316,7 @@
         "hh_esperadas": 6.49,
         "hh_ejecutadas": 0.0,
         "categoria": "Planificada del día",
-        "causa": "",
+        "causa": "Actividad no planificada por actividad predecesora no realizada",
         "responsable": "Fe Grande"
       },
       "232": {
@@ -2361,7 +2346,7 @@
         "hh_esperadas": 22.09,
         "hh_ejecutadas": 0.0,
         "categoria": "Planificada + pendiente",
-        "causa": "",
+        "causa": "Actividad no planificada por actividad predecesora no realizada",
         "responsable": "Fe Grande"
       },
       "264": {
@@ -2391,7 +2376,7 @@
         "hh_esperadas": 110.0,
         "hh_ejecutadas": 0.0,
         "categoria": "Solo pendiente",
-        "causa": "",
+        "causa": "Actividad no planificada por falta de durmiente al costado de la carretera para evitar interacción hombre-maquina. ",
         "responsable": "Fe Grande"
       },
       "289": {
@@ -2406,7 +2391,7 @@
         "hh_esperadas": 0.52,
         "hh_ejecutadas": 0.0,
         "categoria": "Planificada del día",
-        "causa": "",
+        "causa": "Actividad no planificada para el día",
         "responsable": "Fe Grande"
       },
       "298": {
@@ -2451,7 +2436,7 @@
         "hh_esperadas": 101.91,
         "hh_ejecutadas": 0.0,
         "categoria": "Planificada + pendiente",
-        "causa": "",
+        "causa": "Actividad no planificada para el día",
         "responsable": "Fe Grande"
       },
       "342": {
@@ -2481,7 +2466,7 @@
         "hh_esperadas": 9.86,
         "hh_ejecutadas": 5.86,
         "categoria": "Planificada + pendiente",
-        "causa": "",
+        "causa": "Si bien se traslada material, no se alcanza la cantidad planificada por trisemanal",
         "responsable": "Fe Grande"
       },
       "371": {
@@ -2496,7 +2481,7 @@
         "hh_esperadas": 26.88,
         "hh_ejecutadas": 13.44,
         "categoria": "Planificada + pendiente",
-        "causa": "",
+        "causa": "Si bien se traslada material, no se alcanza la cantidad planificada por trisemanal",
         "responsable": "Fe Grande"
       },
       "372": {
@@ -2511,7 +2496,7 @@
         "hh_esperadas": 54.63,
         "hh_ejecutadas": 20.69,
         "categoria": "Planificada + pendiente",
-        "causa": "",
+        "causa": "Si bien se traslada material, no se alcanza la cantidad planificada por trisemanal",
         "responsable": "Fe Grande"
       },
       "374": {
@@ -2526,8 +2511,23 @@
         "hh_esperadas": 16.53,
         "hh_ejecutadas": 0.0,
         "categoria": "Planificada + pendiente",
-        "causa": "",
+        "causa": "Actividad no planificada para el día. ",
         "responsable": "Fe Grande"
+      },
+      "378": {
+        "corr": 378,
+        "nombre": "Solución por aparición de roca en sello de excavación (Entre CR2 y CR1) - UDR",
+        "area": "TRAMO 4",
+        "unidad": "gl",
+        "rendimiento": 44,
+        "cant_dia_base": 0.5,
+        "cant_esperada": 0.7,
+        "cant_ejecutada": 0.7,
+        "hh_esperadas": 30.8,
+        "hh_ejecutadas": 30.8,
+        "categoria": "Solo pendiente",
+        "causa": "",
+        "responsable": ""
       },
       "422": {
         "corr": 422,
@@ -2541,7 +2541,7 @@
         "hh_esperadas": 101.91,
         "hh_ejecutadas": 0.0,
         "categoria": "Solo pendiente",
-        "causa": "",
+        "causa": "No se planifica trabajos de traslado. ",
         "responsable": "Fe Grande"
       },
       "423": {
@@ -2556,7 +2556,7 @@
         "hh_esperadas": 554.06,
         "hh_ejecutadas": 138.52,
         "categoria": "Solo pendiente",
-        "causa": "",
+        "causa": "Se realiza menor cantidad a lo polanificado para el día. ",
         "responsable": "Fe Grande"
       },
       "424": {
@@ -2571,7 +2571,7 @@
         "hh_esperadas": 430.94,
         "hh_ejecutadas": 107.73,
         "categoria": "Solo pendiente",
-        "causa": "",
+        "causa": "Se realiza menor cantidad a lo polanificado para el día. ",
         "responsable": "Fe Grande"
       },
       "464": {
@@ -2586,7 +2586,7 @@
         "hh_esperadas": 245.69,
         "hh_ejecutadas": 16.2,
         "categoria": "Planificada + pendiente",
-        "causa": "",
+        "causa": "Se realiza menor cantidad a lo polanificado para el día. ",
         "responsable": "Fe Grande"
       },
       "465": {
@@ -2601,7 +2601,7 @@
         "hh_esperadas": 38.93,
         "hh_ejecutadas": 6.49,
         "categoria": "Planificada + pendiente",
-        "causa": "",
+        "causa": "Se realiza menor cantidad a lo polanificado para el día. ",
         "responsable": "Fe Grande"
       },
       "466": {
@@ -2616,7 +2616,7 @@
         "hh_esperadas": 207.65,
         "hh_ejecutadas": 34.61,
         "categoria": "Planificada + pendiente",
-        "causa": "",
+        "causa": "Se realiza menor cantidad a lo polanificado para el día. ",
         "responsable": "Fe Grande"
       }
     }
