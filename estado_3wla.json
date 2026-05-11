@@ -1562,7 +1562,7 @@
         "hh_esperadas": 0.45,
         "hh_ejecutadas": 0.0,
         "categoria": "Planificada + pendiente",
-        "causa": "",
+        "causa": "No se planifica ninguna actividad relacionada a la carga, traslado y descarga de material en botadero. ",
         "responsable": "Fe Grande"
       },
       "226": {
@@ -1592,7 +1592,7 @@
         "hh_esperadas": 7.36,
         "hh_ejecutadas": 0.0,
         "categoria": "Planificada del día",
-        "causa": "",
+        "causa": "No apareceplanificado la actividad asociada a soportes de tubería derivación. También es importante señalar que es sucesora de la instalación de las fundaciones DP04. ",
         "responsable": "Fe Grande"
       },
       "264": {
@@ -1622,7 +1622,7 @@
         "hh_esperadas": 110.0,
         "hh_ejecutadas": 0.0,
         "categoria": "Solo pendiente",
-        "causa": "",
+        "causa": "Actividad no planificada para el día. ",
         "responsable": "Fe Grande"
       },
       "298": {
@@ -1697,7 +1697,7 @@
         "hh_esperadas": 5.84,
         "hh_ejecutadas": 0.0,
         "categoria": "Planificada del día",
-        "causa": "",
+        "causa": "No se planifica traslado de estructuras de pasarela para km 49,5. ",
         "responsable": "Fe Grande"
       },
       "371": {
@@ -1712,7 +1712,7 @@
         "hh_esperadas": 13.44,
         "hh_ejecutadas": 0.0,
         "categoria": "Planificada del día",
-        "causa": "",
+        "causa": "No se planifica traslado de estructuras de pasarela para km 49,5. ",
         "responsable": "Fe Grande"
       },
       "372": {
@@ -1727,7 +1727,7 @@
         "hh_esperadas": 18.21,
         "hh_ejecutadas": 0.0,
         "categoria": "Planificada del día",
-        "causa": "",
+        "causa": "No se planifica traslado de estructuras de pasarela para km 49,5. ",
         "responsable": "Fe Grande"
       },
       "374": {
@@ -1742,7 +1742,7 @@
         "hh_esperadas": 13.05,
         "hh_ejecutadas": 2.09,
         "categoria": "Planificada + pendiente",
-        "causa": "",
+        "causa": "Actividad no planificada para el día- ",
         "responsable": "Fe Grande"
       },
       "378": {
@@ -1757,7 +1757,7 @@
         "hh_esperadas": 44.0,
         "hh_ejecutadas": 13.2,
         "categoria": "Solo pendiente",
-        "causa": "",
+        "causa": "Actividad no planificada para el día- ",
         "responsable": "Fe Grande"
       },
       "422": {
@@ -1772,7 +1772,7 @@
         "hh_esperadas": 76.43,
         "hh_ejecutadas": 0.0,
         "categoria": "Planificada + pendiente",
-        "causa": "",
+        "causa": "Actividad no planificada para el día- ",
         "responsable": "Fe Grande"
       },
       "423": {
@@ -1787,7 +1787,7 @@
         "hh_esperadas": 415.55,
         "hh_ejecutadas": 0.0,
         "categoria": "Planificada + pendiente",
-        "causa": "",
+        "causa": "Actividad no planificada para el día- ",
         "responsable": "Fe Grande"
       },
       "424": {
@@ -1802,7 +1802,7 @@
         "hh_esperadas": 323.2,
         "hh_ejecutadas": 0.0,
         "categoria": "Planificada + pendiente",
-        "causa": "",
+        "causa": "Actividad no planificada para el día- ",
         "responsable": "Fe Grande"
       },
       "464": {
@@ -1817,7 +1817,7 @@
         "hh_esperadas": 162.0,
         "hh_ejecutadas": 8.1,
         "categoria": "Planificada + pendiente",
-        "causa": "",
+        "causa": "Excavación estimada o esperada para el día era de 5 durmientes, solo se hizo el de 1. ",
         "responsable": "Fe Grande"
       },
       "465": {
@@ -1832,7 +1832,7 @@
         "hh_esperadas": 16.22,
         "hh_ejecutadas": 3.24,
         "categoria": "Planificada del día",
-        "causa": "",
+        "causa": "Se realiza 1 de 5 planificados para el día. ",
         "responsable": "Fe Grande"
       },
       "466": {
@@ -1847,7 +1847,7 @@
         "hh_esperadas": 86.52,
         "hh_ejecutadas": 17.3,
         "categoria": "Planificada del día",
-        "causa": "",
+        "causa": "Se realiza 1 de 5 planificados para el día. ",
         "responsable": "Fe Grande"
       }
     },
