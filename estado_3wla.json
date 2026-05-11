@@ -1935,12 +1935,12 @@
         "rendimiento": 5.2767,
         "cant_dia_base": 5.04,
         "cant_esperada": 5.04,
-        "cant_ejecutada": 5.04,
+        "cant_ejecutada": 0.0,
         "hh_esperadas": 26.59,
-        "hh_ejecutadas": 26.59,
+        "hh_ejecutadas": 0.0,
         "categoria": "Planificada del día",
         "causa": "",
-        "responsable": ""
+        "responsable": "Fe Grande"
       },
       "233": {
         "corr": 233,
@@ -2151,6 +2151,21 @@
         "categoria": "Planificada + pendiente",
         "causa": "Actividad no planificada",
         "responsable": "Fe Grande"
+      },
+      "378": {
+        "corr": 378,
+        "nombre": "Solución por aparición de roca en sello de excavación (Entre CR2 y CR1) - UDR",
+        "area": "TRAMO 4",
+        "unidad": "gl",
+        "rendimiento": 44,
+        "cant_dia_base": 0.5,
+        "cant_esperada": 0.7,
+        "cant_ejecutada": 0.7,
+        "hh_esperadas": 30.8,
+        "hh_ejecutadas": 30.8,
+        "categoria": "Solo pendiente",
+        "causa": "",
+        "responsable": ""
       },
       "422": {
         "corr": 422,
