@@ -2696,21 +2696,6 @@
         "causa": "No se instalan por interferencias de línea de aguas servidas existente (200 mm)",
         "responsable": "Fe Grande"
       },
-      "229": {
-        "corr": 229,
-        "nombre": "Instalación de perfiles metálicos x 06 - Durmientes DP-01",
-        "area": "TRAMO 1",
-        "unidad": "un",
-        "rendimiento": 1.0815,
-        "cant_dia_base": 6.0,
-        "cant_esperada": 2.0,
-        "cant_ejecutada": 2.0,
-        "hh_esperadas": 2.16,
-        "hh_ejecutadas": 2.16,
-        "categoria": "Solo pendiente",
-        "causa": "",
-        "responsable": ""
-      },
       "232": {
         "corr": 232,
         "nombre": "Derivación Chancador Secundario (prearmado)",
@@ -2718,9 +2703,9 @@
         "unidad": "m",
         "rendimiento": 5.2767,
         "cant_dia_base": 5.04,
-        "cant_esperada": 10.0799,
+        "cant_esperada": 15.1199,
         "cant_ejecutada": 0.0,
-        "hh_esperadas": 53.19,
+        "hh_esperadas": 79.78,
         "hh_ejecutadas": 0.0,
         "categoria": "Planificada + pendiente",
         "causa": "Actividad no planificada para el día, ",
@@ -2839,12 +2824,12 @@
         "rendimiento": 138.5162,
         "cant_dia_base": 1.0,
         "cant_esperada": 1.0,
-        "cant_ejecutada": 1.0,
+        "cant_ejecutada": 0.0,
         "hh_esperadas": 138.52,
-        "hh_ejecutadas": 138.52,
+        "hh_ejecutadas": 0.0,
         "categoria": "Planificada del día",
-        "causa": "",
-        "responsable": ""
+        "causa": "Mala planificación",
+        "responsable": "Fe Grande"
       },
       "370": {
         "corr": 370,
@@ -2905,21 +2890,6 @@
         "categoria": "Planificada + pendiente",
         "causa": "Actividad no planificada",
         "responsable": "Fe Grande"
-      },
-      "422": {
-        "corr": 422,
-        "nombre": "Traslado Tubería HDPE BODEGA - PTO TRABAJO",
-        "area": "TRAMO 4",
-        "unidad": "un",
-        "rendimiento": 25.4777,
-        "cant_dia_base": 1.0,
-        "cant_esperada": 4.0,
-        "cant_ejecutada": 4.0,
-        "hh_esperadas": 101.91,
-        "hh_ejecutadas": 101.91,
-        "categoria": "Solo pendiente",
-        "causa": "",
-        "responsable": ""
       },
       "423": {
         "corr": 423,
