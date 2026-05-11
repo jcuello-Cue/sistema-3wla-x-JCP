@@ -2059,7 +2059,7 @@
         "hh_esperadas": 50.96,
         "hh_ejecutadas": 0.0,
         "categoria": "Planificada del día",
-        "causa": "Actividad no planificada. No hay espacio para acopiar cañerias en TT8 (Sumadas a las tras",
+        "causa": "Actividad no planificada. No hay espacio para acopiar cañerias en TT8 ",
         "responsable": "Fe Grande"
       },
       "342": {
@@ -2104,7 +2104,7 @@
         "hh_esperadas": 11.68,
         "hh_ejecutadas": 7.66,
         "categoria": "Planificada + pendiente",
-        "causa": "Actividad no planificada",
+        "causa": "Se ejecuta menos cantidad de lo planificado. ",
         "responsable": "Fe Grande"
       },
       "371": {
@@ -2119,7 +2119,7 @@
         "hh_esperadas": 26.88,
         "hh_ejecutadas": 13.44,
         "categoria": "Planificada + pendiente",
-        "causa": "Actividad no planificada",
+        "causa": "Se ejecuta menos cantidad de lo planificado. ",
         "responsable": "Fe Grande"
       },
       "372": {
@@ -2134,7 +2134,7 @@
         "hh_esperadas": 36.42,
         "hh_ejecutadas": 0.0,
         "categoria": "Planificada + pendiente",
-        "causa": "Actividad no planificada",
+        "causa": "Se ejecuta menos cantidad de lo planificado. ",
         "responsable": "Fe Grande"
       },
       "374": {
@@ -2152,21 +2152,6 @@
         "causa": "Actividad no planificada",
         "responsable": "Fe Grande"
       },
-      "378": {
-        "corr": 378,
-        "nombre": "Solución por aparición de roca en sello de excavación (Entre CR2 y CR1) - UDR",
-        "area": "TRAMO 4",
-        "unidad": "gl",
-        "rendimiento": 44,
-        "cant_dia_base": 0.5,
-        "cant_esperada": 0.7,
-        "cant_ejecutada": 0.7,
-        "hh_esperadas": 30.8,
-        "hh_ejecutadas": 30.8,
-        "categoria": "Solo pendiente",
-        "causa": "",
-        "responsable": ""
-      },
       "422": {
         "corr": 422,
         "nombre": "Traslado Tubería HDPE BODEGA - PTO TRABAJO",
@@ -2179,7 +2164,7 @@
         "hh_esperadas": 101.91,
         "hh_ejecutadas": 0.0,
         "categoria": "Planificada + pendiente",
-        "causa": "Actividad no planificada",
+        "causa": "Actividad no planificada falta de acopio en el sector. ",
         "responsable": "Fe Grande"
       },
       "423": {
