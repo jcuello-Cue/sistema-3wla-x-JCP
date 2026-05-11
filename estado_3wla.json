@@ -1984,7 +1984,7 @@
         "hh_esperadas": 110.0,
         "hh_ejecutadas": 0.0,
         "categoria": "Solo pendiente",
-        "causa": "",
+        "causa": "Actividad no planificada",
         "responsable": "Fe Grande"
       },
       "288": {
@@ -2059,7 +2059,7 @@
         "hh_esperadas": 50.96,
         "hh_ejecutadas": 0.0,
         "categoria": "Planificada del día",
-        "causa": "",
+        "causa": "Actividad no planificada",
         "responsable": "Fe Grande"
       },
       "342": {
@@ -2104,7 +2104,7 @@
         "hh_esperadas": 11.68,
         "hh_ejecutadas": 7.66,
         "categoria": "Planificada + pendiente",
-        "causa": "",
+        "causa": "Actividad no planificada",
         "responsable": "Fe Grande"
       },
       "371": {
@@ -2119,7 +2119,7 @@
         "hh_esperadas": 26.88,
         "hh_ejecutadas": 13.44,
         "categoria": "Planificada + pendiente",
-        "causa": "",
+        "causa": "Actividad no planificada",
         "responsable": "Fe Grande"
       },
       "372": {
@@ -2134,7 +2134,7 @@
         "hh_esperadas": 36.42,
         "hh_ejecutadas": 0.0,
         "categoria": "Planificada + pendiente",
-        "causa": "",
+        "causa": "Actividad no planificada",
         "responsable": "Fe Grande"
       },
       "374": {
@@ -2149,23 +2149,8 @@
         "hh_esperadas": 15.31,
         "hh_ejecutadas": 3.13,
         "categoria": "Planificada + pendiente",
-        "causa": "",
+        "causa": "Actividad no planificada",
         "responsable": "Fe Grande"
-      },
-      "378": {
-        "corr": 378,
-        "nombre": "Solución por aparición de roca en sello de excavación (Entre CR2 y CR1) - UDR",
-        "area": "TRAMO 4",
-        "unidad": "gl",
-        "rendimiento": 44,
-        "cant_dia_base": 0.5,
-        "cant_esperada": 0.7,
-        "cant_ejecutada": 0.7,
-        "hh_esperadas": 30.8,
-        "hh_ejecutadas": 30.8,
-        "categoria": "Solo pendiente",
-        "causa": "",
-        "responsable": ""
       },
       "422": {
         "corr": 422,
@@ -2179,7 +2164,7 @@
         "hh_esperadas": 101.91,
         "hh_ejecutadas": 0.0,
         "categoria": "Planificada + pendiente",
-        "causa": "",
+        "causa": "Actividad no planificada",
         "responsable": "Fe Grande"
       },
       "423": {
@@ -2194,8 +2179,8 @@
         "hh_esperadas": 554.06,
         "hh_ejecutadas": 0.0,
         "categoria": "Planificada + pendiente",
-        "causa": "",
-        "responsable": "Fe Grande"
+        "causa": "En CR C2, la termofusión no se realiza por condición saturada de plataforma, debiendo mejorarse la superficie antes de posicionar la termofusionadora.",
+        "responsable": "CODELCO"
       },
       "424": {
         "corr": 424,
@@ -2209,8 +2194,8 @@
         "hh_esperadas": 430.94,
         "hh_ejecutadas": 0.0,
         "categoria": "Planificada + pendiente",
-        "causa": "",
-        "responsable": "Fe Grande"
+        "causa": "En CR C2, la termofusión no se realiza por condición saturada de plataforma, debiendo mejorarse la superficie antes de posicionar la termofusionadora.",
+        "responsable": "CODELCO"
       },
       "464": {
         "corr": 464,
@@ -2219,12 +2204,12 @@
         "unidad": "gl",
         "rendimiento": 324,
         "cant_dia_base": 0.166667,
-        "cant_esperada": 0.6167,
+        "cant_esperada": 0.6417,
         "cant_ejecutada": 0.05,
-        "hh_esperadas": 199.81,
+        "hh_esperadas": 207.91,
         "hh_ejecutadas": 16.2,
         "categoria": "Planificada + pendiente",
-        "causa": "",
+        "causa": "Se realiza menor cantidad a la planificada por trisemanal. ",
         "responsable": "Fe Grande"
       },
       "465": {
@@ -2234,12 +2219,12 @@
         "unidad": "un",
         "rendimiento": 3.2445,
         "cant_dia_base": 5.0,
-        "cant_esperada": 8.0,
+        "cant_esperada": 9.0,
         "cant_ejecutada": 2.0,
-        "hh_esperadas": 25.96,
+        "hh_esperadas": 29.2,
         "hh_ejecutadas": 6.49,
         "categoria": "Planificada + pendiente",
-        "causa": "",
+        "causa": "Se realiza menor cantidad a la planificada por trisemanal. ",
         "responsable": "Fe Grande"
       },
       "466": {
@@ -2249,12 +2234,12 @@
         "unidad": "un",
         "rendimiento": 17.304,
         "cant_dia_base": 5.0,
-        "cant_esperada": 8.0,
+        "cant_esperada": 9.0,
         "cant_ejecutada": 2.0,
-        "hh_esperadas": 138.43,
+        "hh_esperadas": 155.74,
         "hh_ejecutadas": 34.61,
         "categoria": "Planificada + pendiente",
-        "causa": "",
+        "causa": "Se realiza menor cantidad a la planificada por trisemanal. ",
         "responsable": "Fe Grande"
       }
     },
