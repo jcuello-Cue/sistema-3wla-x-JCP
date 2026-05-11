@@ -2055,12 +2055,12 @@
         "rendimiento": 25.4777,
         "cant_dia_base": 2.0,
         "cant_esperada": 2.0,
-        "cant_ejecutada": 2.0,
+        "cant_ejecutada": 0.0,
         "hh_esperadas": 50.96,
-        "hh_ejecutadas": 50.96,
+        "hh_ejecutadas": 0.0,
         "categoria": "Planificada del día",
         "causa": "",
-        "responsable": ""
+        "responsable": "Fe Grande"
       },
       "342": {
         "corr": 342,
@@ -2100,12 +2100,12 @@
         "rendimiento": 0.0383,
         "cant_dia_base": 152.5,
         "cant_esperada": 304.9204,
-        "cant_ejecutada": 304.9204,
+        "cant_ejecutada": 200.0,
         "hh_esperadas": 11.68,
-        "hh_ejecutadas": 11.68,
+        "hh_ejecutadas": 7.66,
         "categoria": "Planificada + pendiente",
         "causa": "",
-        "responsable": ""
+        "responsable": "Fe Grande"
       },
       "371": {
         "corr": 371,
@@ -2115,12 +2115,12 @@
         "rendimiento": 0.0263,
         "cant_dia_base": 511.0,
         "cant_esperada": 1022.0304,
-        "cant_ejecutada": 1022.0304,
+        "cant_ejecutada": 511.0,
         "hh_esperadas": 26.88,
-        "hh_ejecutadas": 26.88,
+        "hh_ejecutadas": 13.44,
         "categoria": "Planificada + pendiente",
         "causa": "",
-        "responsable": ""
+        "responsable": "Fe Grande"
       },
       "372": {
         "corr": 372,
@@ -2130,12 +2130,12 @@
         "rendimiento": 0.0578,
         "cant_dia_base": 315.0,
         "cant_esperada": 630.109,
-        "cant_ejecutada": 630.109,
+        "cant_ejecutada": 0.0,
         "hh_esperadas": 36.42,
-        "hh_ejecutadas": 36.42,
+        "hh_ejecutadas": 0.0,
         "categoria": "Planificada + pendiente",
         "causa": "",
-        "responsable": ""
+        "responsable": "Fe Grande"
       },
       "374": {
         "corr": 374,
@@ -2145,27 +2145,12 @@
         "rendimiento": 0.5219,
         "cant_dia_base": 8.333333,
         "cant_esperada": 29.3352,
-        "cant_ejecutada": 29.3352,
+        "cant_ejecutada": 6.0,
         "hh_esperadas": 15.31,
-        "hh_ejecutadas": 15.31,
+        "hh_ejecutadas": 3.13,
         "categoria": "Planificada + pendiente",
         "causa": "",
-        "responsable": ""
-      },
-      "378": {
-        "corr": 378,
-        "nombre": "Solución por aparición de roca en sello de excavación (Entre CR2 y CR1) - UDR",
-        "area": "TRAMO 4",
-        "unidad": "gl",
-        "rendimiento": 44,
-        "cant_dia_base": 0.5,
-        "cant_esperada": 0.7,
-        "cant_ejecutada": 0.7,
-        "hh_esperadas": 30.8,
-        "hh_ejecutadas": 30.8,
-        "categoria": "Solo pendiente",
-        "causa": "",
-        "responsable": ""
+        "responsable": "Fe Grande"
       },
       "422": {
         "corr": 422,
@@ -2175,12 +2160,12 @@
         "rendimiento": 25.4777,
         "cant_dia_base": 1.0,
         "cant_esperada": 4.0,
-        "cant_ejecutada": 4.0,
+        "cant_ejecutada": 0.0,
         "hh_esperadas": 101.91,
-        "hh_ejecutadas": 101.91,
+        "hh_ejecutadas": 0.0,
         "categoria": "Planificada + pendiente",
         "causa": "",
-        "responsable": ""
+        "responsable": "Fe Grande"
       },
       "423": {
         "corr": 423,
@@ -2190,12 +2175,12 @@
         "rendimiento": 138.5162,
         "cant_dia_base": 1.0,
         "cant_esperada": 4.0,
-        "cant_ejecutada": 4.0,
+        "cant_ejecutada": 0.0,
         "hh_esperadas": 554.06,
-        "hh_ejecutadas": 554.06,
+        "hh_ejecutadas": 0.0,
         "categoria": "Planificada + pendiente",
         "causa": "",
-        "responsable": ""
+        "responsable": "Fe Grande"
       },
       "424": {
         "corr": 424,
@@ -2205,12 +2190,12 @@
         "rendimiento": 107.7348,
         "cant_dia_base": 1.0,
         "cant_esperada": 4.0,
-        "cant_ejecutada": 4.0,
+        "cant_ejecutada": 0.0,
         "hh_esperadas": 430.94,
-        "hh_ejecutadas": 430.94,
+        "hh_ejecutadas": 0.0,
         "categoria": "Planificada + pendiente",
         "causa": "",
-        "responsable": ""
+        "responsable": "Fe Grande"
       },
       "464": {
         "corr": 464,
@@ -2220,12 +2205,12 @@
         "rendimiento": 324,
         "cant_dia_base": 0.166667,
         "cant_esperada": 0.6167,
-        "cant_ejecutada": 0.6167,
+        "cant_ejecutada": 0.05,
         "hh_esperadas": 199.81,
-        "hh_ejecutadas": 199.81,
+        "hh_ejecutadas": 16.2,
         "categoria": "Planificada + pendiente",
         "causa": "",
-        "responsable": ""
+        "responsable": "Fe Grande"
       },
       "465": {
         "corr": 465,
@@ -2235,12 +2220,12 @@
         "rendimiento": 3.2445,
         "cant_dia_base": 5.0,
         "cant_esperada": 8.0,
-        "cant_ejecutada": 8.0,
+        "cant_ejecutada": 2.0,
         "hh_esperadas": 25.96,
-        "hh_ejecutadas": 25.96,
+        "hh_ejecutadas": 6.49,
         "categoria": "Planificada + pendiente",
         "causa": "",
-        "responsable": ""
+        "responsable": "Fe Grande"
       },
       "466": {
         "corr": 466,
@@ -2250,12 +2235,12 @@
         "rendimiento": 17.304,
         "cant_dia_base": 5.0,
         "cant_esperada": 8.0,
-        "cant_ejecutada": 8.0,
+        "cant_ejecutada": 2.0,
         "hh_esperadas": 138.43,
-        "hh_ejecutadas": 138.43,
+        "hh_ejecutadas": 34.61,
         "categoria": "Planificada + pendiente",
         "causa": "",
-        "responsable": ""
+        "responsable": "Fe Grande"
       }
     }
   },
