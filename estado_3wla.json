@@ -2152,6 +2152,21 @@
         "causa": "",
         "responsable": "Fe Grande"
       },
+      "378": {
+        "corr": 378,
+        "nombre": "Solución por aparición de roca en sello de excavación (Entre CR2 y CR1) - UDR",
+        "area": "TRAMO 4",
+        "unidad": "gl",
+        "rendimiento": 44,
+        "cant_dia_base": 0.5,
+        "cant_esperada": 0.7,
+        "cant_ejecutada": 0.7,
+        "hh_esperadas": 30.8,
+        "hh_ejecutadas": 30.8,
+        "categoria": "Solo pendiente",
+        "causa": "",
+        "responsable": ""
+      },
       "422": {
         "corr": 422,
         "nombre": "Traslado Tubería HDPE BODEGA - PTO TRABAJO",
