@@ -1353,36 +1353,6 @@
         "causa": "No se planifica ejecución de DP-04. New jersey cuadrilla de civiles. ",
         "responsable": "Fe Grande"
       },
-      "317": {
-        "corr": 317,
-        "nombre": "Suministro e Instalación Relleno Compactado (Material Seleccionado)",
-        "area": "TRAMO 3",
-        "unidad": "m3",
-        "rendimiento": 1.401,
-        "cant_dia_base": 12.0,
-        "cant_esperada": 11.9996,
-        "cant_ejecutada": 11.9996,
-        "hh_esperadas": 16.81,
-        "hh_ejecutadas": 16.81,
-        "categoria": "Solo pendiente",
-        "causa": "",
-        "responsable": ""
-      },
-      "337": {
-        "corr": 337,
-        "nombre": "Trabajos Electricos e Instrumentación - canalización",
-        "area": "TRAMO 3",
-        "unidad": "ml",
-        "rendimiento": 1.7403,
-        "cant_dia_base": 8.0,
-        "cant_esperada": 8.0,
-        "cant_ejecutada": 8.0,
-        "hh_esperadas": 13.92,
-        "hh_ejecutadas": 13.92,
-        "categoria": "Solo pendiente",
-        "causa": "",
-        "responsable": ""
-      },
       "369": {
         "corr": 369,
         "nombre": "Trabajos de limpieza y construcción de plataforma sector Tie In (KM 49) - UDR",
