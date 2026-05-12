@@ -81,7 +81,7 @@
       },
       {
         "corr": 224,
-        "area": "TRAMO 1",
+        "area": "TRAMO 2",
         "nombre": "Excavación suelo común -  6 x Durmientes DP-01",
         "unidad": "m3",
         "rendimiento": 0.5219,
@@ -109,7 +109,7 @@
       },
       {
         "corr": 225,
-        "area": "TRAMO 1",
+        "area": "TRAMO 2",
         "nombre": "Traslado de material a Botadero - 6 x Durmientes DP-01",
         "unidad": "m3",
         "rendimiento": 0.156,
@@ -136,7 +136,7 @@
       },
       {
         "corr": 226,
-        "area": "TRAMO 1",
+        "area": "TRAMO 2",
         "nombre": "Instalación cama de arena para durmientes - 06 x Durmientes DP-01",
         "unidad": "m3",
         "rendimiento": 1.1538,
@@ -162,7 +162,7 @@
       },
       {
         "corr": 227,
-        "area": "TRAMO 1",
+        "area": "TRAMO 2",
         "nombre": "Traslado de durmientes - 06 x Durmientes DP-01",
         "unidad": "un",
         "rendimiento": 1.6222,
@@ -189,7 +189,7 @@
       },
       {
         "corr": 228,
-        "area": "TRAMO 1",
+        "area": "TRAMO 2",
         "nombre": "Instalación de durmientes - 06 x Durmientes DP-01",
         "unidad": "un",
         "rendimiento": 17.304,
@@ -216,7 +216,7 @@
       },
       {
         "corr": 229,
-        "area": "TRAMO 1",
+        "area": "TRAMO 2",
         "nombre": "Instalación de perfiles metálicos x 06 - Durmientes DP-01",
         "unidad": "un",
         "rendimiento": 1.0815,
@@ -1114,7 +1114,7 @@
       "224": {
         "corr": 224,
         "nombre": "Excavación suelo común -  6 x Durmientes DP-01",
-        "area": "TRAMO 1",
+        "area": "TRAMO 2",
         "unidad": "m3",
         "rendimiento": 0.5219,
         "cant_dia_base": 0.96,
@@ -1311,7 +1311,7 @@
       "224": {
         "corr": 224,
         "nombre": "Excavación suelo común -  6 x Durmientes DP-01",
-        "area": "TRAMO 1",
+        "area": "TRAMO 2",
         "unidad": "m3",
         "rendimiento": 0.5219,
         "cant_dia_base": 0.96,
@@ -1326,7 +1326,7 @@
       "225": {
         "corr": 225,
         "nombre": "Traslado de material a Botadero - 6 x Durmientes DP-01",
-        "area": "TRAMO 1",
+        "area": "TRAMO 2",
         "unidad": "m3",
         "rendimiento": 0.156,
         "cant_dia_base": 1.44,
@@ -1538,7 +1538,7 @@
       "224": {
         "corr": 224,
         "nombre": "Excavación suelo común -  6 x Durmientes DP-01",
-        "area": "TRAMO 1",
+        "area": "TRAMO 2",
         "unidad": "m3",
         "rendimiento": 0.5219,
         "cant_dia_base": 0.96,
@@ -1553,7 +1553,7 @@
       "225": {
         "corr": 225,
         "nombre": "Traslado de material a Botadero - 6 x Durmientes DP-01",
-        "area": "TRAMO 1",
+        "area": "TRAMO 2",
         "unidad": "m3",
         "rendimiento": 0.156,
         "cant_dia_base": 1.44,
@@ -1568,7 +1568,7 @@
       "226": {
         "corr": 226,
         "nombre": "Instalación cama de arena para durmientes - 06 x Durmientes DP-01",
-        "area": "TRAMO 1",
+        "area": "TRAMO 2",
         "unidad": "m3",
         "rendimiento": 1.1538,
         "cant_dia_base": 0.096,
@@ -1885,7 +1885,7 @@
       "225": {
         "corr": 225,
         "nombre": "Traslado de material a Botadero - 6 x Durmientes DP-01",
-        "area": "TRAMO 1",
+        "area": "TRAMO 2",
         "unidad": "m3",
         "rendimiento": 0.156,
         "cant_dia_base": 1.44,
@@ -1900,7 +1900,7 @@
       "227": {
         "corr": 227,
         "nombre": "Traslado de durmientes - 06 x Durmientes DP-01",
-        "area": "TRAMO 1",
+        "area": "TRAMO 2",
         "unidad": "un",
         "rendimiento": 1.6222,
         "cant_dia_base": 3.0,
@@ -1915,7 +1915,7 @@
       "228": {
         "corr": 228,
         "nombre": "Instalación de durmientes - 06 x Durmientes DP-01",
-        "area": "TRAMO 1",
+        "area": "TRAMO 2",
         "unidad": "un",
         "rendimiento": 17.304,
         "cant_dia_base": 3.0,
@@ -2292,7 +2292,7 @@
       "225": {
         "corr": 225,
         "nombre": "Traslado de material a Botadero - 6 x Durmientes DP-01",
-        "area": "TRAMO 1",
+        "area": "TRAMO 2",
         "unidad": "m3",
         "rendimiento": 0.156,
         "cant_dia_base": 1.44,
@@ -2307,7 +2307,7 @@
       "227": {
         "corr": 227,
         "nombre": "Traslado de durmientes - 06 x Durmientes DP-01",
-        "area": "TRAMO 1",
+        "area": "TRAMO 2",
         "unidad": "un",
         "rendimiento": 1.6222,
         "cant_dia_base": 3.0,
@@ -2322,7 +2322,7 @@
       "228": {
         "corr": 228,
         "nombre": "Instalación de durmientes - 06 x Durmientes DP-01",
-        "area": "TRAMO 1",
+        "area": "TRAMO 2",
         "unidad": "un",
         "rendimiento": 17.304,
         "cant_dia_base": 3.0,
@@ -2337,7 +2337,7 @@
       "229": {
         "corr": 229,
         "nombre": "Instalación de perfiles metálicos x 06 - Durmientes DP-01",
-        "area": "TRAMO 1",
+        "area": "TRAMO 2",
         "unidad": "un",
         "rendimiento": 1.0815,
         "cant_dia_base": 6.0,
@@ -2669,7 +2669,7 @@
       "227": {
         "corr": 227,
         "nombre": "Traslado de durmientes - 06 x Durmientes DP-01",
-        "area": "TRAMO 1",
+        "area": "TRAMO 2",
         "unidad": "un",
         "rendimiento": 1.6222,
         "cant_dia_base": 3.0,
@@ -2684,7 +2684,7 @@
       "228": {
         "corr": 228,
         "nombre": "Instalación de durmientes - 06 x Durmientes DP-01",
-        "area": "TRAMO 1",
+        "area": "TRAMO 2",
         "unidad": "un",
         "rendimiento": 17.304,
         "cant_dia_base": 3.0,
