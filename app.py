@@ -90,6 +90,8 @@ def leer_trisemanal(filepath):
     hh_diarias_s1 = []  # totales por día según fila HH TOTALES
     actividades = []
 
+    area_encabezado = None  # Último tramo/área visto en encabezado
+
     for row in ws.iter_rows(min_row=8, max_row=500, values_only=True):
         corr    = row[1]
         area    = row[11]
@@ -101,6 +103,26 @@ def leer_trisemanal(filepath):
         dur     = row[22]
         inicio  = row[20]
         termino = row[21]
+
+        # Detectar filas de encabezado de tramo (ej: "TRAMO 2 COLÓN ALTO...")
+        # Aplica aunque la fila tenga un corr numérico (son filas resumen)
+        if nombre:
+            nombre_str = str(nombre).strip().upper()
+            # Es encabezado si el nombre comienza con TRAMO, IIFF, VENTEO
+            # y además no tiene rendimiento (es fila de agrupación, no actividad)
+            es_encabezado = (
+                nombre_str.startswith("TRAMO ") or
+                nombre_str.startswith("IIFF") or
+                nombre_str.startswith("VENTEO")
+            ) and not isinstance(rend, (int, float))
+            if es_encabezado:
+                partes = nombre_str.split()
+                if len(partes) >= 2 and partes[0] == "TRAMO":
+                    area_encabezado = f"TRAMO {partes[1]}"
+                elif nombre_str.startswith("IIFF"):
+                    area_encabezado = "IIFF"
+                elif nombre_str.startswith("VENTEO"):
+                    area_encabezado = "VENTEO"
 
         if nombre and str(nombre).strip() == "HH TOTALES":
             hh_totales_s1 = hh_s1 if isinstance(hh_s1, (int, float)) else None
@@ -137,8 +159,20 @@ def leer_trisemanal(filepath):
         cant_dia  = round(cant_s1_v / n_dias_s1, 6) if n_dias_s1 > 0 else 0
         hh_dia    = round(hh_s1 / n_dias_s1, 4) if n_dias_s1 > 0 else 0
 
-        area_clean = str(area).strip() if area else "General"
-        area_clean = area_clean.replace("Tramo ", "TRAMO ").upper() if area else "GENERAL"
+        # Usar área de la columna, pero si hay encabezado de tramo más reciente, preferirlo
+        area_col = str(area).strip().upper().replace("TRAMO ", "TRAMO ").strip() if area else ""
+        area_col = area_col.replace("Tramo ", "TRAMO ") if area else ""
+        if area:
+            area_col = str(area).strip()
+            area_col = area_col.replace("Tramo ", "TRAMO ").upper()
+        
+        # Si el encabezado es diferente al área de la columna, usar el encabezado
+        if area_encabezado and area_col and area_encabezado != area_col:
+            area_clean = area_encabezado
+        elif area_encabezado and not area_col:
+            area_clean = area_encabezado
+        else:
+            area_clean = area_col if area_col else (area_encabezado or "GENERAL")
 
         actividades.append({
             "corr":        int(corr),
