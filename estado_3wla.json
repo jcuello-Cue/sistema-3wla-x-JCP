@@ -768,7 +768,55 @@
       }
     ]
   },
-  "registro": {},
+  "registro": {
+    "2026-05-12": {
+      "41": {
+        "corr": 41,
+        "nombre": "Manejo de sitio (housekeeping)",
+        "area": "IIFF",
+        "unidad": "gl",
+        "rendimiento": 1295.3271,
+        "cant_dia_base": 0.047619,
+        "cant_esperada": 0.0476,
+        "cant_ejecutada": 0.0476,
+        "hh_esperadas": 61.66,
+        "hh_ejecutadas": 61.66,
+        "categoria": "Planificada del día",
+        "causa": "",
+        "responsable": ""
+      },
+      "43": {
+        "corr": 43,
+        "nombre": "Instalaciones y Controles de Acceso Vial",
+        "area": "IIFF",
+        "unidad": "gl",
+        "rendimiento": 333.2229,
+        "cant_dia_base": 0.047619,
+        "cant_esperada": 0.0476,
+        "cant_ejecutada": 0.0476,
+        "hh_esperadas": 15.86,
+        "hh_ejecutadas": 15.86,
+        "categoria": "Planificada del día",
+        "causa": "",
+        "responsable": ""
+      },
+      "341": {
+        "corr": 341,
+        "nombre": "Excavación en zanja para instalación de trincheras",
+        "area": "TRAMO 3",
+        "unidad": "m3",
+        "rendimiento": 0.4834,
+        "cant_dia_base": 35.714286,
+        "cant_esperada": 35.7143,
+        "cant_ejecutada": 15.0,
+        "hh_esperadas": 17.26,
+        "hh_ejecutadas": 7.25,
+        "categoria": "Planificada del día",
+        "causa": "No se completa actividad por inicio tardío tanto am como pm. A las 12:20 horas, personal de Maestranza realiza la entrega de las líneas. Posteriormente, a las 12:38 horas, se genera el bloqueo mecánico, quedando pendiente el formato de bloqueo eléctrico para dar continuidad al proceso. A las 13:30 horas, personal de Fe Grande aún no realiza ingreso al área, debido a que el supervisor se encontraba gestionando el formato de bloqueo eléctrico. Luego, a las 13:40 horas, personal de Maestranza solicita levantar el bloqueo para efectuar movimiento de carros. A las 15:15 horas, Maestranza entrega nuevamente el área, iniciando personal de Fe Grande la preparación documental a las 15:30 horas. La actividad de excavación comienza a las 16:15 horas, realizándose además la carga de camión tolva. A las 17:20 horas, la excavadora queda en condición de stand-by a la espera de la llegada del camión tolva. Finalmente, a las 18:10 horas, la actividad finaliza sin observaciones.",
+        "responsable": "Fe Grande"
+      }
+    }
+  },
   "historico": [
     {
       "num_trisemanal": "20",
