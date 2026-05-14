@@ -951,48 +951,7 @@
         "categoria": "Planificada del día",
         "causa": "",
         "responsable": ""
-      },
-      "_adelantos": [
-        {
-          "corr": 445,
-          "nombre": "Traslado Tubería HDPE BODEGA - PTO TRABAJO",
-          "area": "TRAMO CR",
-          "unidad": "un",
-          "rendimiento": 25.4777,
-          "cant_dia": 1.0,
-          "fecha_planificada": "14/05",
-          "inicio": "2026-05-14",
-          "termino": "2026-05-16",
-          "cant_ejecutada": 2.0,
-          "hh_ejecutadas": 50.96
-        },
-        {
-          "corr": 446,
-          "nombre": "Unión de tuberías tubo - Tubo (4 un)",
-          "area": "TRAMO CR",
-          "unidad": "un",
-          "rendimiento": 138.5162,
-          "cant_dia": 1.0,
-          "fecha_planificada": "14/05",
-          "inicio": "2026-05-14",
-          "termino": "2026-05-17",
-          "cant_ejecutada": 1.0,
-          "hh_ejecutadas": 138.52
-        },
-        {
-          "corr": 447,
-          "nombre": "Posicionamiento de tuberías (3 un)",
-          "area": "TRAMO CR",
-          "unidad": "un",
-          "rendimiento": 107.7348,
-          "cant_dia": 1.0,
-          "fecha_planificada": "14/05",
-          "inicio": "2026-05-14",
-          "termino": "2026-05-16",
-          "cant_ejecutada": 1.0,
-          "hh_ejecutadas": 107.73
-        }
-      ]
+      }
     }
   },
   "historico": [
