@@ -1399,7 +1399,7 @@
         "hh_esperadas": 32.35,
         "hh_ejecutadas": 0.0,
         "categoria": "Planificada del día",
-        "causa": "",
+        "causa": "No cuentan con equipo (por demanda de otras actividades) para ir a buscar estructura a Eteo.",
         "responsable": "Fe Grande"
       },
       "396": {
@@ -1410,12 +1410,12 @@
         "rendimiento": 0.5219,
         "cant_dia_base": 20.0,
         "cant_esperada": 40.0017,
-        "cant_ejecutada": 40.0017,
+        "cant_ejecutada": 0.0,
         "hh_esperadas": 20.88,
-        "hh_ejecutadas": 20.88,
+        "hh_ejecutadas": 0.0,
         "categoria": "Planificada + pendiente",
-        "causa": "",
-        "responsable": ""
+        "causa": "tarea impactada por falta de permiso de excavación",
+        "responsable": "Fe Grande"
       },
       "445": {
         "corr": 445,
@@ -1425,12 +1425,12 @@
         "rendimiento": 25.4777,
         "cant_dia_base": 1.0,
         "cant_esperada": 2.0,
-        "cant_ejecutada": 2.0,
+        "cant_ejecutada": 0.0,
         "hh_esperadas": 50.96,
-        "hh_ejecutadas": 50.96,
+        "hh_ejecutadas": 0.0,
         "categoria": "Planificada + pendiente",
-        "causa": "",
-        "responsable": ""
+        "causa": "No se ejecuta el traslado de cañerias.",
+        "responsable": "Fe Grande"
       },
       "446": {
         "corr": 446,
@@ -1440,12 +1440,12 @@
         "rendimiento": 138.5162,
         "cant_dia_base": 1.0,
         "cant_esperada": 2.0,
-        "cant_ejecutada": 2.0,
+        "cant_ejecutada": 0.0,
         "hh_esperadas": 277.03,
-        "hh_ejecutadas": 277.03,
+        "hh_ejecutadas": 0.0,
         "categoria": "Planificada + pendiente",
-        "causa": "",
-        "responsable": ""
+        "causa": "Falla en termofusora, flexible hidráulico defectuoso. ",
+        "responsable": "Fe Grande"
       },
       "447": {
         "corr": 447,
@@ -1455,12 +1455,12 @@
         "rendimiento": 107.7348,
         "cant_dia_base": 1.0,
         "cant_esperada": 2.0,
-        "cant_ejecutada": 2.0,
+        "cant_ejecutada": 0.0,
         "hh_esperadas": 215.47,
-        "hh_ejecutadas": 215.47,
+        "hh_ejecutadas": 0.0,
         "categoria": "Planificada + pendiente",
-        "causa": "",
-        "responsable": ""
+        "causa": "Falla en termofusora, flexible hidráulico defectuoso. ",
+        "responsable": "Fe Grande"
       },
       "490": {
         "corr": 490,
@@ -1485,9 +1485,9 @@
         "rendimiento": 3.2445,
         "cant_dia_base": 3.0,
         "cant_esperada": 3.0,
-        "cant_ejecutada": 3.0,
+        "cant_ejecutada": 4.0,
         "hh_esperadas": 9.73,
-        "hh_ejecutadas": 9.73,
+        "hh_ejecutadas": 12.98,
         "categoria": "Planificada del día",
         "causa": "",
         "responsable": ""
@@ -1500,9 +1500,9 @@
         "rendimiento": 17.304,
         "cant_dia_base": 3.75,
         "cant_esperada": 3.75,
-        "cant_ejecutada": 3.75,
+        "cant_ejecutada": 4.0,
         "hh_esperadas": 64.89,
-        "hh_ejecutadas": 64.89,
+        "hh_ejecutadas": 69.22,
         "categoria": "Planificada del día",
         "causa": "",
         "responsable": ""
