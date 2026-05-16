@@ -1369,7 +1369,7 @@
         "hh_esperadas": 692.58,
         "hh_ejecutadas": 138.52,
         "categoria": "Planificada + pendiente",
-        "causa": "Pendiente la unión de 4 tuberías de la semana. ",
+        "causa": "Pendiente la unión de 4 tuberías de la semana. (se realiza una unión entre turno día y noche). ",
         "responsable": "Fe Grande"
       },
       "357": {
@@ -1384,7 +1384,7 @@
         "hh_esperadas": 215.47,
         "hh_ejecutadas": 0.0,
         "categoria": "Planificada del día",
-        "causa": "Solo se realiza una unión en el día",
+        "causa": "Solo se realiza una unión en el día, imposibilitando la ejecución de esta actividad. ",
         "responsable": "Fe Grande"
       },
       "374": {
