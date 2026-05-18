@@ -1821,7 +1821,7 @@
         "hh_esperadas": 76.43,
         "hh_ejecutadas": 0.0,
         "categoria": "Solo pendiente",
-        "causa": "",
+        "causa": "Se le da prioridad al corte de cañería para obtener probeta (verificación calidad) ya que soldador no está certificado en termofusora Trailer 1000. ",
         "responsable": "Fe Grande"
       },
       "446": {
@@ -1836,7 +1836,7 @@
         "hh_esperadas": 415.55,
         "hh_ejecutadas": 0.0,
         "categoria": "Planificada + pendiente",
-        "causa": "",
+        "causa": "Se le da prioridad al corte de cañería para obtener probeta (verificación calidad) ya que soldador no está certificado en termofusora Trailer 1000.",
         "responsable": "Fe Grande"
       },
       "447": {
