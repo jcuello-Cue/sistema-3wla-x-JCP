@@ -1712,9 +1712,9 @@
         "rendimiento": 107.7348,
         "cant_dia_base": 2.0,
         "cant_esperada": 6.0,
-        "cant_ejecutada": 2.0,
+        "cant_ejecutada": 0.0,
         "hh_esperadas": 646.41,
-        "hh_ejecutadas": 215.47,
+        "hh_ejecutadas": 0.0,
         "categoria": "Planificada + pendiente",
         "causa": "Retraso en descargas debido a falta acreditación operador rampla",
         "responsable": "Fe Grande"
