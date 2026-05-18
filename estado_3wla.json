@@ -1686,7 +1686,7 @@
         "hh_esperadas": 131.64,
         "hh_ejecutadas": 0.0,
         "categoria": "Planificada + pendiente",
-        "causa": "Retraso en descargas debido a falta acreditación operador rampla",
+        "causa": "0",
         "responsable": "Fe Grande"
       },
       "356": {
@@ -1697,9 +1697,9 @@
         "rendimiento": 138.5162,
         "cant_dia_base": 1.666667,
         "cant_esperada": 6.8333,
-        "cant_ejecutada": 0.0,
+        "cant_ejecutada": 2.0,
         "hh_esperadas": 946.52,
-        "hh_ejecutadas": 0.0,
+        "hh_ejecutadas": 277.03,
         "categoria": "Planificada + pendiente",
         "causa": "Retraso en descargas debido a falta acreditación operador rampla",
         "responsable": "Fe Grande"
@@ -1712,9 +1712,9 @@
         "rendimiento": 107.7348,
         "cant_dia_base": 2.0,
         "cant_esperada": 6.0,
-        "cant_ejecutada": 0.0,
+        "cant_ejecutada": 2.0,
         "hh_esperadas": 646.41,
-        "hh_ejecutadas": 0.0,
+        "hh_ejecutadas": 215.47,
         "categoria": "Planificada + pendiente",
         "causa": "Retraso en descargas debido a falta acreditación operador rampla",
         "responsable": "Fe Grande"
@@ -1802,12 +1802,12 @@
         "rendimiento": 0.5219,
         "cant_dia_base": 20.0,
         "cant_esperada": 60.0052,
-        "cant_ejecutada": 0.0,
+        "cant_ejecutada": 80.0,
         "hh_esperadas": 31.32,
-        "hh_ejecutadas": 0.0,
+        "hh_ejecutadas": 41.75,
         "categoria": "Planificada + pendiente",
-        "causa": "Se realiza, no se recupera lo del trisemanal",
-        "responsable": "Fe Grande"
+        "causa": "",
+        "responsable": ""
       },
       "445": {
         "corr": 445,
