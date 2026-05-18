@@ -1517,12 +1517,12 @@
         "rendimiento": 1295.3271,
         "cant_dia_base": 0.047619,
         "cant_esperada": 0.0476,
-        "cant_ejecutada": 0.0,
+        "cant_ejecutada": 0.0476,
         "hh_esperadas": 61.66,
-        "hh_ejecutadas": 0.0,
+        "hh_ejecutadas": 61.66,
         "categoria": "Planificada del día",
         "causa": "",
-        "responsable": "Fe Grande"
+        "responsable": ""
       },
       "43": {
         "corr": 43,
@@ -1532,12 +1532,12 @@
         "rendimiento": 333.2229,
         "cant_dia_base": 0.047619,
         "cant_esperada": 0.0476,
-        "cant_ejecutada": 0.0,
+        "cant_ejecutada": 0.0476,
         "hh_esperadas": 15.86,
-        "hh_ejecutadas": 0.0,
+        "hh_ejecutadas": 15.86,
         "categoria": "Planificada del día",
         "causa": "",
-        "responsable": "Fe Grande"
+        "responsable": ""
       },
       "238": {
         "corr": 238,
@@ -1551,7 +1551,7 @@
         "hh_esperadas": 66.49,
         "hh_ejecutadas": 0.0,
         "categoria": "Planificada + pendiente",
-        "causa": "No planificada en POD",
+        "causa": "Actividad no planificada en POD. Codelco ya entregó todos los suministros en cuanto a la derivación. Fe Grande aún no planifica trabajos previos como son el dimensionado de pernos ni traslado de materiales a punto de armado. ",
         "responsable": "Fe Grande"
       },
       "271": {
@@ -1567,7 +1567,7 @@
         "hh_ejecutadas": 0.0,
         "categoria": "Solo pendiente",
         "causa": "Pendiente definición de ingeniería",
-        "responsable": "CODELCO"
+        "responsable": "Fe Grande"
       },
       "273": {
         "corr": 273,
@@ -1582,7 +1582,7 @@
         "hh_ejecutadas": 0.0,
         "categoria": "Solo pendiente",
         "causa": "Pendiente actividad predecesora \"retiro material proveniente derrumbe\"",
-        "responsable": "CODELCO"
+        "responsable": "Fe Grande"
       },
       "274": {
         "corr": 274,
@@ -1637,11 +1637,11 @@
         "rendimiento": 1.401,
         "cant_dia_base": 39.219028,
         "cant_esperada": 39.219,
-        "cant_ejecutada": 0.0,
+        "cant_ejecutada": 10.0,
         "hh_esperadas": 54.95,
-        "hh_ejecutadas": 0.0,
+        "hh_ejecutadas": 14.01,
         "categoria": "Planificada del día",
-        "causa": "Retraso en uniones termofusionadas por trabajos de traslado de cañerías, debido a falta acreditación operador rampla",
+        "causa": "Actividad realizada en el dia. Queda pendiente lo de la semana. ",
         "responsable": "Fe Grande"
       },
       "341": {
@@ -1652,9 +1652,9 @@
         "rendimiento": 0.4834,
         "cant_dia_base": 35.714286,
         "cant_esperada": 35.7143,
-        "cant_ejecutada": 0.0,
+        "cant_ejecutada": 10.0,
         "hh_esperadas": 17.26,
-        "hh_ejecutadas": 0.0,
+        "hh_ejecutadas": 4.83,
         "categoria": "Planificada del día",
         "causa": "",
         "responsable": "Fe Grande"
