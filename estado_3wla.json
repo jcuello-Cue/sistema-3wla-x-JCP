@@ -1821,7 +1821,7 @@
         "hh_esperadas": 76.43,
         "hh_ejecutadas": 0.0,
         "categoria": "Solo pendiente",
-        "causa": "No planificada en POD",
+        "causa": "",
         "responsable": "Fe Grande"
       },
       "446": {
@@ -1836,7 +1836,7 @@
         "hh_esperadas": 415.55,
         "hh_ejecutadas": 0.0,
         "categoria": "Planificada + pendiente",
-        "causa": "Se logra meta del POD, aún se mantiene retraso según trisemanal",
+        "causa": "",
         "responsable": "Fe Grande"
       },
       "447": {
@@ -1862,12 +1862,12 @@
         "rendimiento": 264,
         "cant_dia_base": 0.166667,
         "cant_esperada": 0.1667,
-        "cant_ejecutada": 0.0,
+        "cant_ejecutada": 0.1667,
         "hh_esperadas": 44.01,
-        "hh_ejecutadas": 0.0,
+        "hh_ejecutadas": 44.01,
         "categoria": "Planificada del día",
         "causa": "",
-        "responsable": "Fe Grande"
+        "responsable": ""
       },
       "491": {
         "corr": 491,
@@ -1877,12 +1877,12 @@
         "rendimiento": 3.2445,
         "cant_dia_base": 3.0,
         "cant_esperada": 3.0,
-        "cant_ejecutada": 0.0,
+        "cant_ejecutada": 6.0,
         "hh_esperadas": 9.73,
-        "hh_ejecutadas": 0.0,
+        "hh_ejecutadas": 19.47,
         "categoria": "Planificada del día",
-        "causa": "Falta de Suministro",
-        "responsable": "CODELCO"
+        "causa": "",
+        "responsable": ""
       },
       "492": {
         "corr": 492,
@@ -1892,12 +1892,12 @@
         "rendimiento": 17.304,
         "cant_dia_base": 3.75,
         "cant_esperada": 5.25,
-        "cant_ejecutada": 0.0,
+        "cant_ejecutada": 6.0,
         "hh_esperadas": 90.85,
-        "hh_ejecutadas": 0.0,
+        "hh_ejecutadas": 103.82,
         "categoria": "Planificada + pendiente",
-        "causa": "Falta de suministro",
-        "responsable": "CODELCO"
+        "causa": "",
+        "responsable": ""
       }
     },
     "2026-05-16": {
