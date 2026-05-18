@@ -1622,12 +1622,12 @@
         "rendimiento": 330,
         "cant_dia_base": 0.2,
         "cant_esperada": 0.2,
-        "cant_ejecutada": 0.0,
+        "cant_ejecutada": 0.2,
         "hh_esperadas": 66.0,
-        "hh_ejecutadas": 0.0,
+        "hh_ejecutadas": 66.0,
         "categoria": "Planificada del día",
-        "causa": "Pendiente implementación pantallas de seguridad. regularizado a medio día",
-        "responsable": "Fe Grande"
+        "causa": "",
+        "responsable": ""
       },
       "340": {
         "corr": 340,
@@ -1652,9 +1652,9 @@
         "rendimiento": 0.4834,
         "cant_dia_base": 35.714286,
         "cant_esperada": 35.7143,
-        "cant_ejecutada": 10.0,
+        "cant_ejecutada": 20.0,
         "hh_esperadas": 17.26,
-        "hh_ejecutadas": 4.83,
+        "hh_ejecutadas": 9.67,
         "categoria": "Planificada del día",
         "causa": "",
         "responsable": "Fe Grande"
@@ -1682,9 +1682,9 @@
         "rendimiento": 25.4777,
         "cant_dia_base": 1.833333,
         "cant_esperada": 5.1667,
-        "cant_ejecutada": 0.0,
+        "cant_ejecutada": 1.0,
         "hh_esperadas": 131.64,
-        "hh_ejecutadas": 0.0,
+        "hh_ejecutadas": 25.48,
         "categoria": "Planificada + pendiente",
         "causa": "0",
         "responsable": "Fe Grande"
