@@ -1637,9 +1637,9 @@
         "rendimiento": 1.401,
         "cant_dia_base": 39.219028,
         "cant_esperada": 39.219,
-        "cant_ejecutada": 10.0,
+        "cant_ejecutada": 20.0,
         "hh_esperadas": 54.95,
-        "hh_ejecutadas": 14.01,
+        "hh_ejecutadas": 28.02,
         "categoria": "Planificada del día",
         "causa": "Actividad realizada en el dia. Queda pendiente lo de la semana. ",
         "responsable": "Fe Grande"
