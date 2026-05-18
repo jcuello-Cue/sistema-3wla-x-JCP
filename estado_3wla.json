@@ -2096,6 +2096,21 @@
         "causa": "Retraso en descargas debido a falta de acreditación de operador rampla. ",
         "responsable": "Fe Grande"
       },
+      "374": {
+        "corr": 374,
+        "nombre": "Traslado interno de estructura mediana - Pasarela KM 49.5",
+        "area": "TRAMO CR",
+        "unidad": "kg",
+        "rendimiento": 0.0263,
+        "cant_dia_base": 1230.0,
+        "cant_esperada": 1230.076,
+        "cant_ejecutada": 0.0,
+        "hh_esperadas": 32.35,
+        "hh_ejecutadas": 0.0,
+        "categoria": "Solo pendiente",
+        "causa": "No planificada en POD, pendiente habilitación de área y procedimiento. ",
+        "responsable": "Fe Grande"
+      },
       "377": {
         "corr": 377,
         "nombre": "Prearmado de estructura liviana - Pasarela KM 49.5",
@@ -2134,12 +2149,12 @@
         "rendimiento": 0.5219,
         "cant_dia_base": 20.0,
         "cant_esperada": 60.0034,
-        "cant_ejecutada": 60.0034,
+        "cant_ejecutada": 20.0,
         "hh_esperadas": 31.32,
-        "hh_ejecutadas": 31.32,
+        "hh_ejecutadas": 10.44,
         "categoria": "Planificada + pendiente",
-        "causa": "",
-        "responsable": ""
+        "causa": "Pendiente 40 m3 del trisemanal ",
+        "responsable": "Fe Grande"
       },
       "445": {
         "corr": 445,
@@ -2149,12 +2164,12 @@
         "rendimiento": 25.4777,
         "cant_dia_base": 1.0,
         "cant_esperada": 3.0,
-        "cant_ejecutada": 3.0,
+        "cant_ejecutada": 0.0,
         "hh_esperadas": 76.43,
-        "hh_ejecutadas": 76.43,
+        "hh_ejecutadas": 0.0,
         "categoria": "Planificada + pendiente",
-        "causa": "",
-        "responsable": ""
+        "causa": "No planificado en POD",
+        "responsable": "Fe Grande"
       },
       "446": {
         "corr": 446,
@@ -2164,12 +2179,12 @@
         "rendimiento": 138.5162,
         "cant_dia_base": 1.0,
         "cant_esperada": 3.0,
-        "cant_ejecutada": 3.0,
+        "cant_ejecutada": 1.0,
         "hh_esperadas": 415.55,
-        "hh_ejecutadas": 415.55,
+        "hh_ejecutadas": 138.52,
         "categoria": "Planificada + pendiente",
-        "causa": "",
-        "responsable": ""
+        "causa": "Se logra meta del POD, aún se mantiene retraso según trisemanal. ",
+        "responsable": "Fe Grande"
       },
       "447": {
         "corr": 447,
@@ -2179,12 +2194,12 @@
         "rendimiento": 107.7348,
         "cant_dia_base": 1.0,
         "cant_esperada": 3.0,
-        "cant_ejecutada": 3.0,
+        "cant_ejecutada": 0.0,
         "hh_esperadas": 323.2,
-        "hh_ejecutadas": 323.2,
+        "hh_ejecutadas": 0.0,
         "categoria": "Planificada + pendiente",
-        "causa": "",
-        "responsable": ""
+        "causa": "No ejecutado por retrasos en procesos de termofusión. ",
+        "responsable": "Fe Grande"
       },
       "490": {
         "corr": 490,
@@ -2209,12 +2224,12 @@
         "rendimiento": 3.2445,
         "cant_dia_base": 3.0,
         "cant_esperada": 3.0,
-        "cant_ejecutada": 3.0,
+        "cant_ejecutada": 2.0,
         "hh_esperadas": 9.73,
-        "hh_ejecutadas": 9.73,
+        "hh_ejecutadas": 6.49,
         "categoria": "Planificada del día",
-        "causa": "",
-        "responsable": ""
+        "causa": "Falta de suministros",
+        "responsable": "CODELCO"
       },
       "492": {
         "corr": 492,
@@ -2224,12 +2239,12 @@
         "rendimiento": 17.304,
         "cant_dia_base": 3.75,
         "cant_esperada": 3.75,
-        "cant_ejecutada": 3.75,
+        "cant_ejecutada": 2.0,
         "hh_esperadas": 64.89,
-        "hh_ejecutadas": 64.89,
+        "hh_ejecutadas": 34.61,
         "categoria": "Planificada del día",
-        "causa": "",
-        "responsable": ""
+        "causa": "Falta de suministros",
+        "responsable": "CODELCO"
       }
     }
   },
