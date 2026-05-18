@@ -2078,7 +2078,7 @@
         "hh_esperadas": 784.93,
         "hh_ejecutadas": 69.26,
         "categoria": "Planificada + pendiente",
-        "causa": "",
+        "causa": "Retraso en descargas debido a falta de acreditación de operador rampla. ",
         "responsable": "Fe Grande"
       },
       "357": {
@@ -2089,27 +2089,12 @@
         "rendimiento": 107.7348,
         "cant_dia_base": 2.0,
         "cant_esperada": 4.0,
-        "cant_ejecutada": 4.0,
+        "cant_ejecutada": 0.0,
         "hh_esperadas": 430.94,
-        "hh_ejecutadas": 430.94,
+        "hh_ejecutadas": 0.0,
         "categoria": "Planificada + pendiente",
-        "causa": "",
-        "responsable": ""
-      },
-      "374": {
-        "corr": 374,
-        "nombre": "Traslado interno de estructura mediana - Pasarela KM 49.5",
-        "area": "TRAMO CR",
-        "unidad": "kg",
-        "rendimiento": 0.0263,
-        "cant_dia_base": 1230.0,
-        "cant_esperada": 1230.076,
-        "cant_ejecutada": 1230.076,
-        "hh_esperadas": 32.35,
-        "hh_ejecutadas": 32.35,
-        "categoria": "Solo pendiente",
-        "causa": "",
-        "responsable": ""
+        "causa": "Retraso en descargas debido a falta de acreditación de operador rampla. ",
+        "responsable": "Fe Grande"
       },
       "377": {
         "corr": 377,
@@ -2119,12 +2104,12 @@
         "rendimiento": 0.0766,
         "cant_dia_base": 203.666667,
         "cant_esperada": 203.6667,
-        "cant_ejecutada": 203.6667,
+        "cant_ejecutada": 0.0,
         "hh_esperadas": 15.6,
-        "hh_ejecutadas": 15.6,
+        "hh_ejecutadas": 0.0,
         "categoria": "Planificada del día",
-        "causa": "",
-        "responsable": ""
+        "causa": "No planificada en POD, pendiente habilitación de área y procedimiento. ",
+        "responsable": "Fe Grande"
       },
       "378": {
         "corr": 378,
@@ -2134,12 +2119,12 @@
         "rendimiento": 0.0526,
         "cant_dia_base": 682.0,
         "cant_esperada": 682.0,
-        "cant_ejecutada": 682.0,
+        "cant_ejecutada": 0.0,
         "hh_esperadas": 35.87,
-        "hh_ejecutadas": 35.87,
+        "hh_ejecutadas": 0.0,
         "categoria": "Planificada del día",
-        "causa": "",
-        "responsable": ""
+        "causa": "No planificada en POD, pendiente habilitación de área y procedimiento. ",
+        "responsable": "Fe Grande"
       },
       "396": {
         "corr": 396,
